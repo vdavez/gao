@@ -6,8 +6,9 @@ class GAO:
         self.start_date = start_date
         self.end_date = end_date
 
-    def getOpinions(self):
+    def get_docket_list(self):
         """
+        A method to get the docket listing.
         """
         url = ("http://gao.gov/legal/bid-protests/search?snumber=&filenum=&"
                "now_sort=docdate+desc%2Cissue_date_dt+desc&page_name="
