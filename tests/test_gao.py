@@ -16,3 +16,10 @@ class TestGAO():
         res = gao.get_docket_list()
         assert res.status_code == 200
         assert "National Veterans Service Bureau" in res.text
+
+    @vcr.use_cassette('tests/test-multiple-request.yml')
+    def test_get_docket_list_multiple(self):
+        gao = GAO(start_date='2015-01-01', end_date='2015-12-31')
+        res = gao.get_docket_list()
+        assert res.status_code == 200
+        assert "National Veterans Service Bureau" not in res.text
