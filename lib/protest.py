@@ -1,4 +1,6 @@
 from lxml import etree, html
+import json
+import re
 
 
 class Protest:
@@ -9,33 +11,46 @@ class Protest:
         self.data = self.get_protest_data()
 
     def get_protest_data(self):
-        self.name = self.elems.xpath('//a/text()[(following::br)]')[0].strip()
-        self.docket_url = self.elems.find_class('release_info')[0].text_content().strip()
-        self.solicitation_number = self.elems.xpath('//following-sibling::b//following-sibling::text()')[0].replace(':','').strip()
-        self.agency = self.elems.xpath('//following-sibling::b//following-sibling::text()')[1].replace(':','').strip()
-        self.file_number = self.elems.xpath('//following-sibling::b//following-sibling::text()')[2].replace(':','').strip()
-        self.outcome = self.elems.xpath('//following-sibling::b//following-sibling::text()')[3].replace(':','').strip()
-        self.decided_date = self.elems.xpath('//following-sibling::b//following-sibling::text()')[4].replace(':','').strip()
-        self.filed_date = self.elems.xpath('//tr/td[2]/text()')[0]
-        self.due_date = self.elems.xpath('//tr/td[2]/text()')[1]
-        self.case_type = self.elems.xpath('//tr/td[2]/text()')[2]
-        self.gao_attorney = self.elems.xpath('//tr/td[2]/text()')[3]
+        data = {}
+        data["name"] = self.elems.xpath('//a/text()[(following::br)]')[0].strip()
+        data["docket_url"] = self.elems.find_class('release_info')[0]\
+                         .text_content().strip()
+        # This is currently pretty brittle because if there's no solicitation
+        # number, all of this gets thrown off, so really we need to validate
+        # the field that's identified, and then saving the attribute
+        for key in self.elems.xpath('//following-sibling::b'):
+            field = key.text_content().replace(' ', '_').lower()
+            data[field] = re.sub(r'^:', '', key.xpath('following-sibling::text()')[0]).strip()
 
-        return ({
-            "name": self.name,
-            "url": self.docket_url,
-            "solicitation_number": self.solicitation_number,
-            "agency": self.agency,
-            "file_number": self.file_number,
-            "outcome": self.outcome,
-            "decided_date": self.decided_date,
-            "filed_date": self.filed_date,
-            "due_date": self.due_date,
-            "case_type": self.case_type,
-            "gao_attorney": self.gao_attorney
-        })
+        # solicitation_number = self.elems.xpath('//following-sibling::b//following-sibling::text()')[0].replace(':','').strip()
+        # agency = self.elems.xpath('//following-sibling::b//following-sibling::text()')[1].replace(':','').strip()
+        # file_number = self.elems.xpath('//following-sibling::b//following-sibling::text()')[2].replace(':','').strip()
+        # outcome = self.elems.xpath('//following-sibling::b//following-sibling::text()')[3].replace(':','').strip()
 
-# print(x.xpath('a//text()')[2].strip())
+        # TODO: For all of these dates, convert them into dates,
+        # not like in current form "Dec 10, 2015"
+        # data["decided_date"] = self.elems.xpath('//following-sibling::b//following-sibling::text()')[4].replace(':','').strip()
+        data["filed_date"] = self.elems.xpath('//tr/td[2]/text()')[0]
+        data["due_date"] = self.elems.xpath('//tr/td[2]/text()')[1]
+
+        data["case_type"] = self.elems.xpath('//tr/td[2]/text()')[2]
+        data["gao_attorney"] = self.elems.xpath('//tr/td[2]/text()')[3]
+
+        return data
+        # return ({
+        #     "name": name,
+        #     "url": docket_url,
+        #     "solicitation_number": solicitation_number,
+        #     "agency": agency,
+        #     "file_number": file_number,
+        #     "outcome": outcome,
+        #     "decided_date": decided_date,
+        #     "filed_date": filed_date,
+        #     "due_date": due_date,
+        #     "case_type": case_type,
+        #     "gao_attorney": gao_attorney
+        # })
+
 
 if __name__ == "__main__":
 
@@ -43,6 +58,9 @@ if __name__ == "__main__":
         fullhtml = f.read()
         tree = html.fromstring(fullhtml)
         protests = tree.find_class('docketSearch')
+        out = []
         for p in protests:
             protest = Protest(etree.tostring(p).decode('utf-8'))
-            print(protest.data)
+            out.append(protest.data)
+        with open('gao.json', 'w') as outfile:
+            outfile.write(json.dumps(out, indent=2))

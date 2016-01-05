@@ -3,3 +3,4 @@
 *.pyc
 notes.md
 **/gao.egg-info/**
+gao.json
