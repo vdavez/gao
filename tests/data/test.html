@@ -23,7 +23,7 @@
 <link rel="stylesheet" type="text/css" href="/scripts/jquery/css/jquery-ui.min.css" />
 <script src="/scripts/libs/Ajaxer.js" ></script>
 <script src="/scripts/check_foresee.js" ></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>	
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">!window.jQuery && document.write(unescape("%3Cscript src='/scripts/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));</script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 <script type="text/javascript">!window.jQuery.ui && document.write(unescape("%3Cscript src='/scripts/jquery/jquery-ui.min.js' type='text/javascript'%3E%3C/script%3E"));</script>
@@ -43,20 +43,20 @@
 <script type="text/javascript">jQuery.noConflict();</script>
 <!--[if lte IE 7]>
     <style>#main_nav li.bg-Popup a.nav_item{padding-right:36px}</style>
-    <script type="text/javascript">                
+    <script type="text/javascript">
         jQuery(document).ready(function($) {
             // Adjust all main nav items so they are all the same height
-            // IE < 8 doesn't support css tables 
+            // IE < 8 doesn't support css tables
             box_height = 0;
             $('.nav_item').each(function() {
                 var height = $(this).outerHeight();
                 if (height>box_height) {
                     box_height = height;
-                }		
+                }
             });
             $('.nav_item').each(function() {
                 if($(this).outerHeight()<box_height) {
-                    var outerHeight = $(this).outerHeight();			
+                    var outerHeight = $(this).outerHeight();
                     $(this).css('padding-top',parseInt($(this).css('padding-top'))+Math.ceil((box_height-outerHeight)/2)+'px');
                     $(this).css('padding-bottom',parseInt($(this).css('padding-bottom'))+Math.floor((box_height-outerHeight)/2)+'px');
                 }
@@ -66,23 +66,23 @@
 <![endif]-->
 <script type="text/javascript">
 jQuery(document).ready(function($) {
-	// Adjust all main nav items so they are all the 
+	// Adjust all main nav items so they are all the
 	/*box_height = 0;
 	$('.nav_item').each(function() {
 		var height = $(this).outerHeight();
 		if (height>box_height) {
 			box_height = height;
-		}		
+		}
 	});
 	$('.nav_item').each(function() {
 		if($(this).outerHeight()<box_height) {
-			var outerHeight = $(this).outerHeight();			
+			var outerHeight = $(this).outerHeight();
 			$(this).css('padding-top',parseInt($(this).css('padding-top'))+Math.ceil((box_height-outerHeight)/2)+'px');
 			$(this).css('padding-bottom',parseInt($(this).css('padding-bottom'))+Math.floor((box_height-outerHeight)/2)+'px');
 		}
 		if($(this).hasClass('current')) {$(this).css('background-color','#D9D6D6');}
 	});*/
-        
+
         $('#main_nav').on('click','div.wrapper > ul > li:not(.bg-Popup)',function(e){
             e.preventDefault();
             document.location = $(this).children('a[href]').attr('href');
@@ -90,18 +90,18 @@ jQuery(document).ready(function($) {
 
 	// Create search box placeholder for browsers that don't support it
         $('#q').simulatePlaceholder();
-        
+
         // Create the nav popups
         $('.bg-Popup').createPopup({show_speed:200,hide_speed:200,animation_speed:300});
 
-	// Create Quicklinks popups if they exist	
+	// Create Quicklinks popups if they exist
 	$('div.listing[content_id], div.listing[data-content_id]').QuickLinks();
-	
+
 	// Create the Privacy Statement tooltip
 	$('.bg_tooltip').createTooltip();
 
 	// Remove Resources href if javascript is running
-        $('#main_nav li.bg-Popup a.nav_item').attr('href','#');	
+        $('#main_nav li.bg-Popup a.nav_item').attr('href','#');
 });
 </script>
 
@@ -124,16 +124,16 @@ jQuery(document).ready(function($) {
 		width: 300px;
 		z-index: 200;
 	}
-	
+
 	#header .bg_tooltip a{
 		color: #084A94;
 	}
-	
+
 	#header .bg_tooltip_close a{
 		color: #084A94;
 		font-size: 1.2em;
 	}
-	
+
 	#header .bg_tooltip_close {
 		cursor: pointer;
 		color: #084A94;
@@ -149,21 +149,21 @@ jQuery(document).ready(function($) {
 		margin: 0px 3px 0px 0px;
 		padding: 0px 3px 0px 0px;
 	}
-	
+
 	#header .bg_tooltip p {
 		color: #000000;
 		font-size: .9em;
 		margin: 0 0 5px;
 		text-align: left;
 	}
-	
-		
+
+
 		#header #connected_list li {
 		display: inline-block;
 		float: left;
 		vertical-align: left;
 	}
-	
+
 	#header #connected_list {
 		background-color: #FEFDF7;
 		border: 1px solid #DBDBDB;
@@ -172,27 +172,27 @@ jQuery(document).ready(function($) {
         	padding: 20px 0 46px 9px;
 		text-align: center;
 	}
-	
+
 	#header #contact_gao {
 		background: url("/img_library/connect_email_small.png") no-repeat scroll 0 0 transparent;
 		padding-left: 20px;
 	}
-	
+
 </style>
 
 
 </head>
-<body> 
+<body>
 <div id="skip_nav_link" style="height:0px; margin-left:-1000px;"><a href="#skip_nav">Skip Navigation</a></div>
 <div id="super_container">
 <div id="header"><!-- <div class="column-in"> --><div id="headerInner"><div id="head_wrap"><!-- [BEGIN] Utility Bar --><!-- [END] Utility Bar -->
- 
+
 <!-- [BEGIN] Search Form -->
 
 <div id="gaosearch">
  <form action="/search" method="get" id="seek1" name="seek1">
   <input name="q" id="q" type="search" title="Search the GAO website with a Keyword or Report number" placeholder="Keyword or Report #" />
-  <input id="q_search" class="formstyle_mainsearch" type="submit" name="Submit" value="Search" onmousedown="if (document.getElementById('q').value == 'Keyword or Report #') { document.getElementById('q').value = ''; }" />						
+  <input id="q_search" class="formstyle_mainsearch" type="submit" name="Submit" value="Search" onmousedown="if (document.getElementById('q').value == 'Keyword or Report #') { document.getElementById('q').value = ''; }" />
  </form>
  <a style="clear:both;" href="/search?advanced=1">Advanced Search</a></div>
 <!-- [END] Search Form -->
@@ -203,7 +203,7 @@ jQuery(document).ready(function($) {
     <div class="wrapper">
 <ul>
 <li><a class="nav_item" href="/browse/date/week">Reports &amp; Testimonies</a></li><li><a class="nav_item" href="/legal/">Bid Protests &amp;<br>Appropriations Law</a></li><li><a class="nav_item" href="/key_issues/overview">Key Issues</a></li><li><a class="nav_item" href="/about/index.html">About GAO</a></li><li><a class="nav_item" href="/careers/index.html">Careers</a></li><li><a class="nav_item" href="/multimedia/video">Multimedia</a></li>    <li class="bg-Popup" style="z-index:1000;">
-        <a class="nav_item" href="/resources.html">Resources</a>				
+        <a class="nav_item" href="/resources.html">Resources</a>
         <ul class="bg-pop_div">
             <li><a href="/resources/congress/overview">For Congress</a></li>
             <li><a href="/resources/journalists/overview">For Journalists</a></li>
@@ -211,7 +211,7 @@ jQuery(document).ready(function($) {
             <li><a href="/resources/federal_managers/overview">For Federal Managers</a></li>
             <li><a href="/resources/researchers/overview">For Researchers</a></li>
 	    <li><a href="/resources/centerforauditexcellence/overview">Center for Audit Excellence</a></li>
-        </ul>                                 
+        </ul>
     </li>
 </ul></div></div>
 <!-- [END] Main Nav -->
@@ -226,11 +226,11 @@ jQuery(document).ready(function($) {
 <!--    sub nav -->
 <!--  sub nav -->
 
-<div id='middle' 
-> 
-<div class='column-in'>  
+<div id='middle'
+>
+<div class='column-in'>
 <div id='content'>
-<a name="skip_nav"></a> 
+<a name="skip_nav"></a>
 
 <link href="/scripts/style/legal_style.css" rel="stylesheet">
 <link href="/scripts/collection_splash.css?v=1.3" type="text/css" rel="stylesheet">
@@ -244,9 +244,9 @@ jQuery(document).ready(function($) {
 
         </script>
 
-<ul style="padding-top:10px;" class="list-style-type-none pic-list" >			
+<ul style="padding-top:10px;" class="list-style-type-none pic-list" >
 	<li style="padding-left:0; padding-bottom:10px;" class="inline-pics" >
-		<div class="left">		
+		<div class="left">
 			<img style="margin-left:0;width:120px;" src="/img_library/legal/appro-law-main.jpg" />
 		</div>
 		<div class="right">
@@ -257,12 +257,12 @@ jQuery(document).ready(function($) {
 	</li>
 </ul>
 
-<div id="key_issues_splash">	
-		
+<div id="key_issues_splash">
+
 <div id="key_issues_tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
 	<div>
- 		
- 		<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">			
+
+ 		<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
  			<li class='ui-state-default ui-corner-top ui-state-active'><a href='/legal/bid-protests/search' >SEARCH PROTESTS</a></li><li class='ui-state-default ui-corner-top'><a href='/legal/bid-protests/our-process' >OUR PROCESS</a></li><li class='ui-state-default ui-corner-top'><a href='/legal/bid-protests/faqs' >FAQS</a></li><li class='ui-state-default ui-corner-top'><a href='/legal/bid-protests/file-a-bid-protest' >FILE A BID PROTEST</a></li><li class='ui-state-default ui-corner-top'><a href='/legal/bid-protests/gao-contacts' >GAO CONTACTS</a></li> 		</ul>
 
 		<div id="share_this">
@@ -271,14 +271,14 @@ jQuery(document).ready(function($) {
  				<li><a target="_blank" onclick="_gaq&amp;&amp;_gaq.push(['_trackPageview', '_Share_Facebook' ]);cls('http%3A%2F%2Fwww.gao.gov%2Fkey_issues%2Foverview','Key+Issues','Facebook');" href="http://www.facebook.com/sharer/sharer.php?src=bm&amp;u=http://gao.gov/legal/bid-protests/search&amp;v=3"><img width="20" height="20" alt="Share with Facebook" src="/img_library/connect_facebook.png">&nbsp;</a></li>
 				<li><a target="_blank" onclick="_gaq&amp;&amp;_gaq.push(['_trackPageview', '_Share_Twitter' ]);cls('http%3A%2F%2Fwww.gao.gov%2Fkey_issues%2Foverview','Key+Issues','Twitter');" href="http://twitter.com/home?status=http://gao.gov/legal/bid-protests/search"><img width="20" height="20" alt="Share with Twitter" src="/img_library/connect_twitter.png">&nbsp;</a></li>
 				<li><a target="_blank" onclick="_gaq&amp;&amp;_gaq.push(['_trackPageview', '_Share_LinkedIn' ]);cls('http%3A%2F%2Fwww.gao.gov%2Fkey_issues%2Foverview','Key+Issues','LinkedIn');" href="http://linkedin.com/shareArticle?url=http://gao.gov/legal/bid-protests/search"><img width="20" height="20" alt="Share with LinkedIn" src="/img_library/connect_linkedin.png">&nbsp;</a></li>
-				<li><a onclick="_gaq&amp;&amp;_gaq.push(['_trackPageview', '_Share_mail' ]);cls('http%3A%2F%2Fwww.gao.gov%2Fkey_issues%2Foverview','Key+Issues','mail');" href="mailto:?subject=Sharing: gao.gov:&amp;body=http://gao.gov/legal/bid-protests/search"><img width="20" height="20" alt="Share with mail" src="/img/email.png">&nbsp;</a></li> 		
+				<li><a onclick="_gaq&amp;&amp;_gaq.push(['_trackPageview', '_Share_mail' ]);cls('http%3A%2F%2Fwww.gao.gov%2Fkey_issues%2Foverview','Key+Issues','mail');" href="mailto:?subject=Sharing: gao.gov:&amp;body=http://gao.gov/legal/bid-protests/search"><img width="20" height="20" alt="Share with mail" src="/img/email.png">&nbsp;</a></li>
 			</ol>
 		</div>
-		
-		<div class="clear"></div>	  
+
+		<div class="clear"></div>
 	</div>
-		
-	<div>						
+
+	<div>
 		<div class="checkboxes">
 			<link rel="stylesheet" href="/scripts/search.css" />
 <link rel="stylesheet" type="text/css" href="/scripts/video.css?v=1" />
@@ -311,7 +311,7 @@ jQuery(document).ready(function($) {
     h1{
         padding-left:0 !important;
     }
-    
+
     #scroll_results div.listing{
         padding-left:0 !important;
         margin-bottom:0;
@@ -364,157 +364,157 @@ jQuery(document).ready(function($) {
 
 <ul id="recently_issued" class="list-style-type-none pic-list" >
     <li class="border-bottom" style="padding-bottom:10px;" >
-        
+
         <div class="float-left half-block" style="width:49%; margin-right:1%;" >
             <h1>Recently Issued Bid Protest Decisions</h1>
-            <div class="rip-box-holder" >			
+            <div class="rip-box-holder" >
                 <div id="scroll_results" style="height:311px; overflow:hidden;"  class="bgScroll inner" >
                     <div>
                     <h3>Dec 31, 2015</h3><ul>
-		
+
 			   <li id="bid_pros-0"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-					 
+
 					 <a href="/products/B-412220">Phoenix Management, Inc.</a><br /><div class="release_info">B-412220</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-		 
+
 		</ul><h3>Dec 28, 2015</h3><ul>
-		
+
 			   <li id="bid_pros-1"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-					 
+
 					 <a href="/products/B-412169">Hydromach, Inc.</a><br /><div class="release_info">B-412169</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-		 
+
 			   <li id="bid_pros-2"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-					 
+
 					 <a href="/products/B-410968.3">Starry Associates, Inc.</a><br /><div class="release_info">B-410968.3</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-		 
+
 		</ul><h3>Dec 24, 2015</h3><ul>
-		
+
 			   <li id="bid_pros-3"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-					 
+
 					 <a href="/products/B-412220.2">LOGMET LLC</a><br /><div class="release_info">B-412220.2</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-		 
+
 			   <li id="bid_pros-4"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-					 
+
 					 <a href="/products/B-412009,B-412009.2">TechTrend, Inc.</a><br /><div class="release_info">B-412009,B-412009.2</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-		 
+
 		</ul><h3>Dec 23, 2015</h3><ul>
-		
+
 			   <li id="bid_pros-5"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-					 
+
 					 <a href="/products/B-412147">Axxon International, LLC</a><br /><div class="release_info">B-412147</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-		 
+
 			   <li id="bid_pros-6"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-					 
+
 					 <a href="/products/B-412047,B-412047.2,B-412047.3">CORTEK, Inc.</a><br /><div class="release_info">B-412047,B-412047.2,B-412047.3</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-		 
+
 		</ul><h3>Dec 22, 2015</h3><ul>
-		
+
 			   <li id="bid_pros-7"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-					 
+
 					 <a href="/products/B-411623,B-411623.2">AMTIS-Advantage, LLC</a><br /><div class="release_info">B-411623,B-411623.2</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-		 
+
 		</ul><h3>Dec 21, 2015</h3><ul>
-		
+
 			   <li id="bid_pros-8"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-					 
+
 					 <a href="/products/B-411916.2">West Coast General Corporation</a><br /><div class="release_info">B-411916.2</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-		 
+
 			   <li id="bid_pros-9"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-					 
+
 					 <a href="/products/B-412017,B-412017.2,B-412017.3">Akira Technologies, Inc.; Team ASSIST</a><br /><div class="release_info">B-412017,B-412017.2,B-412017.3</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-		 
+
 		</ul>                    </div>
                 </div>
             </div>
         </div>
         <div class="float-left half-block" style="width:49%; margin-left:1%; margin-top:20px;" >
-            <p style="margin-bottom:3px">Federal agencies are required to award government contracts in accordance with 
-            numerous acquisition laws and regulations. If a party interested in a government 
+            <p style="margin-bottom:3px">Federal agencies are required to award government contracts in accordance with
+            numerous acquisition laws and regulations. If a party interested in a government
             contract believes that an agency has violated procurement law or regulation </p>
             <ul style="margin:0 0 0.5em 15px; padding:0;" >
                 <li>in a solicitation for goods or services, or </li>
                 <li>in the award of a contract,</li>
             </ul>
-            <p>it may file a bid protest with our Office. GAO provides an inexpensive and 
+            <p>it may file a bid protest with our Office. GAO provides an inexpensive and
             expeditious forum for the resolution of bid protests.</p>
-				             
+
             <ul class="list-style-type-none pic-list low-margin" style="margin-top:0px;" >
             	<li style="padding:0;margin-bottom:7px;" >
             		<p style="color:#a10e1f; margin-bottom:3px;"><b>Searching our Docket and our Decisions:</b></p>
 						<p style="margin-bottom:0px" ><b>Where can I find a GAO bid protest decision?</b></p>
-						<p style="margin-bottom:0;" >To access a published bid protest decision, search 
-						for the decision by keyword below. Published decisions on recently-decided protests 
-						may not yet be publicly available <a href="/legal/are-you-waiting-for-a-bid-protest-decision/about" >(Read more here.)</a></p>            	
+						<p style="margin-bottom:0;" >To access a published bid protest decision, search
+						for the decision by keyword below. Published decisions on recently-decided protests
+						may not yet be publicly available <a href="/legal/are-you-waiting-for-a-bid-protest-decision/about" >(Read more here.)</a></p>
             	</li>
             	<li style="padding:0;margin-bottom:7px;" >
 						<p style="margin-bottom:0px" ><b>Do all protests on our Docket result in a published decision?</b></p>
-						<p style="margin-bottom:0;" >No.  GAO does not publish most decisions dismissing a protest, 
-						including instances where an agency takes some form of corrective action.  
-						Also, a protester may choose to withdraw its protest prior to a decision being 
-						reached.</p>            	
+						<p style="margin-bottom:0;" >No.  GAO does not publish most decisions dismissing a protest,
+						including instances where an agency takes some form of corrective action.
+						Also, a protester may choose to withdraw its protest prior to a decision being
+						reached.</p>
             	</li>
             	<li style="padding:0;margin-bottom:7px;" >
 						<p style="margin-bottom:0px" ><b>Where can I find information about the status of a protest?</b></p>
-						<p style="margin-bottom:0;" >Search GAO’s bid protest docket for status information about protests filed in the past 12 months.  Docket information includes the protester, agency involved, solicitation at issue, GAO attorney assigned to the protest, and key dates.</p>            	
+						<p style="margin-bottom:0;" >Search GAO’s bid protest docket for status information about protests filed in the past 12 months.  Docket information includes the protester, agency involved, solicitation at issue, GAO attorney assigned to the protest, and key dates.</p>
             	</li>
             	<li style="padding:0" >
             		<p style="margin-bottom:0px" ><b>How often is the Docket updated?</b></p>
@@ -524,11 +524,11 @@ jQuery(document).ready(function($) {
         </div>
         <br class="clear" >
     </li>
-     <li class='border-bottom pad-bottom' >  
-           
+     <li class='border-bottom pad-bottom' >
+
         <h1  class='color-black'>Search All Published Bid Protest Decisions:</h1>
 		  <p>Use this keyword search to access any of our published decisions.</p>
-		  
+
                 <a name="search_form"></a>
         <form id="search_form" class="inline-form" action="#search_form" method="GET" onsubmit="resetFormIfChanged()" >
             <input type="hidden" name="page_name" value="bid_protest_decisions" />
@@ -540,14 +540,14 @@ jQuery(document).ready(function($) {
             <input type="hidden" name="o"               value="" />
             <input name="q"                             value="" onchange="this.form.changed.value=1" />            <input type="submit" value="Search" />
             <a href="/legal/bid-protests/search#search_form" style="font-size:11px;">Start over</a>
-        </form>      
+        </form>
     </li>
     <a name="bidProForm"></a>
     <li class='pad-bottom'>
         <h1 class='color-black' >Search the Bid Protest Docket:</h1>
         <p>Use these specific fields to find status information about cases filed in the past 12 months.</p>
-        
-                
+
+
         <form id="bidProForm" class='inline-form' action="#bidProForm" method="GET" onsubmit='formReset()' >
             <input type="hidden" name="rows" value="50" />
 <input type="hidden" name="now_sort" value="docdate desc,issue_date_dt desc" />
@@ -709,9 +709,9 @@ jQuery(document).ready(function($) {
         <div class="grayBorderTop grayBorderBottom" >
             About 2,251 results for <span class="search_string_with_facets">
 <!--path-->
-<strong>Legal:</strong> 
-<strong>Bid Protest:</strong> 
-<strong>Bid Protest Docket:</strong> 
+<strong>Legal:</strong>
+<strong>Bid Protest:</strong>
+<strong>Bid Protest Docket:</strong>
 <!--facets-->
 <strong>Closed Docket:</strong>
 <strong>2015-01-01to2015-12-31:</strong>
@@ -725,33 +725,33 @@ jQuery(document).ready(function($) {
 
             <div class="narrowingLabel">Show Results For</div>
             <div id="facet_out">
-                
+
         <ul class="facet_node_wrap">
             <li >
-                
+
             <!--Legal:Bid Protest:Bid Protest Docket-->
             <span class="node_link" >Bid Protest Docket</span>
                     <!--Legal:Bid Protest:Bid Protest Docket:Dismissed-->
-                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3ADismissed" id="node_10" 
+                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3ADismissed" id="node_10"
                     >Dismissed (1,393) </a>
                     <!--Legal:Bid Protest:Bid Protest Docket:Denied-->
-                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3ADenied" id="node_11" 
+                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3ADenied" id="node_11"
                     >Denied (382) </a>
                     <!--Legal:Bid Protest:Bid Protest Docket:Withdrawn-->
-                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3AWithdrawn" id="node_12" 
+                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3AWithdrawn" id="node_12"
                     >Withdrawn (392) </a>
                     <!--Legal:Bid Protest:Bid Protest Docket:Sustained-->
-                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3ASustained" id="node_14" 
+                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3ASustained" id="node_14"
                     >Sustained (84) </a>
             </li>
         </ul>
             <div class="grayBorderTop narrowingLabel">Refine By</div>
             <!--date_facet_out-->
-            
+
         <span class="filterLabel">Date</span><ul class="facet_wrap">
         <li class="parent_link"><a class="parent_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A2%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket">&lt; Any Date</a></li>
         <!--time_facet_out-->
-        
+
             <li>
                 <a href='?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-12-03to2016-01-03%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket'>Past Month</a>
                 &nbsp;(25)
@@ -813,7 +813,7 @@ jQuery(document).ready(function($) {
                 <ul class="facet_wrap">
             <li class="parent_link"><a class="parent_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A2%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket">&lt; Any Status</a></li>
                     <li id="Y_tag" class="chosen" >
-                    
+
                     <!-- <input type="checkbox"checked onclick="this.parentNode.click()" /> -->
                     Closed Docket
                     </li>
@@ -832,7 +832,7 @@ jQuery(document).ready(function($) {
 <option value="50" selected>50</option>
 </select></span></div>
             </div><!-- id="resultStatsContainer"/-->
-            
+
             <!--Bidpro::formatDocket-->
             <div class="listing grayBorderTop docketSearch" content_id="docket.4120753">
                 <a class="result" href="/docket/B-412075.3">
@@ -1383,14 +1383,14 @@ jQuery(document).ready(function($) {
     </div>
     </li>
     <li>
-		 <p>Are you looking for a protest but can’t find it? For questions 
-		 about bid protests, e-mail <a href="mailto:ProtestFinder@gao.gov">ProtestFinder@gao.gov</a>.</p>   
+		 <p>Are you looking for a protest but can’t find it? For questions
+		 about bid protests, e-mail <a href="mailto:ProtestFinder@gao.gov">ProtestFinder@gao.gov</a>.</p>
     </li>
 </ul>
-		</div>	  
+		</div>
 	</div>
-	
-</div>	 
+
+</div>
 </div>	</div></div> <!-- close main1 & main2 -->
 	<!--   sub nav -->
 		</div></div> <!-- close middle & column-in -->
@@ -1399,7 +1399,7 @@ jQuery(document).ready(function($) {
 	 <!--   sub nav -->
 
 
-	 
+
 	<div id="push"></div>
 </div>
 <!-- [BEGIN] Footer -->
@@ -1435,9 +1435,9 @@ jQuery(document).ready(function($) {
          <li><a class="spritely footer_stayconnected" href="/feeds.html"><span class="text_no_indent">Stay connected</a></span></li>
       </ul>
    </div>
-   
+
    <div style="border-bottom:1px solid #999999;width:1015px;margin: 0 auto">&nbsp;</div>
-   
+
    <div class="footer_lower">
 
       <div id="subfooter">
@@ -1449,9 +1449,9 @@ jQuery(document).ready(function($) {
                <li><a href="/browse/agency">Browse By Agency</a></li>
 		<li><a href="/restricted/restricted_reports">Restricted Products</a></li>
             </ul>
-         </div>   
+         </div>
          <!--/ .col -->
-         
+
          <div class="col">
             <h4><a href="/legal/">Bid Protests &amp; <br>Appropriations Law</a></h4>
             <ul>
@@ -1463,8 +1463,8 @@ jQuery(document).ready(function($) {
             </ul>
          </div>
          <!--/ .col -->
-            
-         <div class="col">	
+
+         <div class="col">
             <h4><a href="/key_issues/overview">Key Issues</a></h4>
             <ul>
                <li><a href="/key_issues/overview#t=1">Browse By Topic</a></li>
@@ -1473,7 +1473,7 @@ jQuery(document).ready(function($) {
             </ul>
          </div>
          <!--/ .col -->
-         
+
          <div class="col">
             <h4><a href="/about/index.html">About GAO</a></h4>
             <ul>
@@ -1490,8 +1490,8 @@ jQuery(document).ready(function($) {
              </ul>
          </div>
          <!--/ .col -->
-         
-         <div class="col">	
+
+         <div class="col">
             <h4><a href="/careers/index.html">Careers</a></h4>
             <ul>
                <li><a href="https://www.usajobs.gov/JobSearch/Search/GetResults?OrganizationID=LG00&amp;ApplicantEligibility=all">Current Job<br />Vacancies</a></li>
@@ -1500,10 +1500,10 @@ jQuery(document).ready(function($) {
                <li><a href="/careers/benefits.html">Benefits</a></li>
                <li><a href="/careers/student.html">Student and<br />Executive<br />Programs</a></li>
                <li><a href="/careers/diversity.html">Diversity &amp;<br />Inclusion</a></li>
-            </ul>   
+            </ul>
          </div>
          <!--/ .col -->
-         
+
          <div class="col">
             <h4><a href="/multimedia/video/">Multimedia</a></h4>
             <ul>
@@ -1512,7 +1512,7 @@ jQuery(document).ready(function($) {
             </ul>
          </div>
          <!--/ .col -->
-         
+
          <div class="col">
             <h4><a href="/resources.html">Resources</a></h4>
             <ul>
@@ -1525,10 +1525,10 @@ jQuery(document).ready(function($) {
             </ul>
          </div>
          <!--/ .col -->
-         
+
          <div style="clear:both"></div>
       </div>
-   
+
       <div class="air">
          <a href="/values/">ACCOUNTABILITY<span class="footer_star">&#9733;</span>INTEGRITY<span class="footer_star">&#9733;</span>RELIABILITY</a>
          <div class="footerstroke2">
@@ -1541,7 +1541,7 @@ jQuery(document).ready(function($) {
          </ul>
          </div>
       </div>
-   
+
    </div><!--footer_lower-->
 
 <!-- [END] Footer -->
