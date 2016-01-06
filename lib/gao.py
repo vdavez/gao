@@ -1,5 +1,5 @@
 import requests
-from lxml import html
+from lxml import etree, html
 from .protest import Protest
 
 
@@ -35,7 +35,6 @@ class GAO:
                str(offset)
                )
         self.res = requests.get(url)
-#        self.get_protests_from_listing(self.res.text)
         return self.res
 
     """
@@ -44,17 +43,17 @@ class GAO:
     50 Protest objects, cleaned and ready for the database
     """
     def get_protests_from_listing(self, docketlist):
+        tree = html.fromstring(docketlist)
+        protests = tree.find_class('docketSearch')
+        out = []
+        for p in protests:
+            protest = Protest(etree.tostring(p).decode('utf-8'))
+            out.append(protest.data)
+        return out
+
+    """
+    dump_json_into_db
+    Take the protest objects and insert them into a sqlite database
+    """
+    def dump_json_into_db(self, project):
         pass
-        # tree = html.fromstring(docketlist)
-
-        # For each protest, there is a div with class name "docketSearch". Use
-        # this to collect *all* of the protests and create Protest objects.
-        # for p in tree.find_class('docketSearch'):
-        #    protest = Protest(p)
-
-        # Once the Protest is created, this is where the database entry
-        # should occur... For now, we're printing to stdout.
-
-        # TODO: Replace with database
-
-        # return True
