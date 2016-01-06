@@ -27,15 +27,19 @@ cursor.execute(
 ''')
 
 # Initialize the GAO scraper
-gao = GAO(start_date="2015-12-01", end_date="2015-12-31")
-res_html = gao.get_docket_list()
-res_json = gao.get_protests_from_listing(res_html.text)
+gao = GAO(start_date="2015-01-01", end_date="2016-01-05")
 
-# Take the protests and dump them into the database
-for protest in res_json:
-    cursor.execute('''INSERT INTO protests (name, agency, solicitation_number, outcome, docket_url, filed_date, due_date, date_decided, case_type, gao_attorney)
-          VALUES(?,?,?,?,?,?,?,?,?,?)''', (protest["name"], protest["agency"], protest.get("solicitation_number", ""), protest["outcome"], protest["docket_url"], protest["filed_date"], protest["due_date"], protest["date_decided"], protest["case_type"], protest["gao_attorney"]))
-    db.commit()
+# Paginate through the docket lists
+for res in gao.get_docket_list():
+
+    # Get the paginated docket list
+    res_json = gao.get_protests_from_listing(res.text)
+
+    # Take the protests and dump them into the database
+    for protest in res_json:
+        cursor.execute('''INSERT INTO protests (name, agency, solicitation_number, outcome, docket_url, filed_date, due_date, date_decided, case_type, gao_attorney)
+              VALUES(?,?,?,?,?,?,?,?,?,?)''', (protest["name"], protest["agency"], protest.get("solicitation_number", ""), protest["outcome"], protest["docket_url"], protest["filed_date"], protest["due_date"], protest["date_decided"], protest["case_type"], protest["gao_attorney"]))
+        db.commit()
 
 # Close the database
 db.close()
