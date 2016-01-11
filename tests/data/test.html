@@ -14,7 +14,7 @@
 	<link rel='stylesheet' href='/inc/css/no_subnav.css?v1.04' />
 <meta property="og:description" content="Federal government procurement contracts may be protested by bidders or other interested parties." /><meta property="dc:description" content="Federal government procurement contracts may be protested by bidders or other interested parties." /><meta property="og:title" content="Bid Protests" />
 <meta property="og:type" content="Website" />
-<meta property="og:url" content="http://www.gao.gov/legal/bid-protests/search?snumber=&amp;filenum=&amp;now_sort=docdate+desc%2Cissue_date_dt+desc&amp;page_name=bid_protest_docket&amp;facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&amp;searched=1&amp;rows=50&amp;top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&amp;path=Legal%3ABid+Protest%3ABid+Protest+Docket" />
+<meta property="og:url" content="http://www.gao.gov/legal/bid-protests/search?snumber=&amp;filenum=&amp;now_sort=docdate+desc%2Cissue_date_dt+desc&amp;page_name=bid_protest_docket&amp;facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-01-15%22%3B%7D&amp;searched=1&amp;rows=50&amp;top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&amp;path=Legal%3ABid+Protest%3ABid+Protest+Docket&amp;o=0" />
 <meta property="og:image" content="http://www.gao.gov/img/gao_gov_icon.png" />
 <link rel="apple-touch-icon-precomposed" href="http://www.gao.gov/img_library/apple-touch-icon.png" />
 <!--[if lte IE 7]> <style type="text/css">@import "/inc/css/ie7.css";</style> <![endif]-->
@@ -23,7 +23,7 @@
 <link rel="stylesheet" type="text/css" href="/scripts/jquery/css/jquery-ui.min.css" />
 <script src="/scripts/libs/Ajaxer.js" ></script>
 <script src="/scripts/check_foresee.js" ></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>	
 <script type="text/javascript">!window.jQuery && document.write(unescape("%3Cscript src='/scripts/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));</script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 <script type="text/javascript">!window.jQuery.ui && document.write(unescape("%3Cscript src='/scripts/jquery/jquery-ui.min.js' type='text/javascript'%3E%3C/script%3E"));</script>
@@ -43,20 +43,20 @@
 <script type="text/javascript">jQuery.noConflict();</script>
 <!--[if lte IE 7]>
     <style>#main_nav li.bg-Popup a.nav_item{padding-right:36px}</style>
-    <script type="text/javascript">
+    <script type="text/javascript">                
         jQuery(document).ready(function($) {
             // Adjust all main nav items so they are all the same height
-            // IE < 8 doesn't support css tables
+            // IE < 8 doesn't support css tables 
             box_height = 0;
             $('.nav_item').each(function() {
                 var height = $(this).outerHeight();
                 if (height>box_height) {
                     box_height = height;
-                }
+                }		
             });
             $('.nav_item').each(function() {
                 if($(this).outerHeight()<box_height) {
-                    var outerHeight = $(this).outerHeight();
+                    var outerHeight = $(this).outerHeight();			
                     $(this).css('padding-top',parseInt($(this).css('padding-top'))+Math.ceil((box_height-outerHeight)/2)+'px');
                     $(this).css('padding-bottom',parseInt($(this).css('padding-bottom'))+Math.floor((box_height-outerHeight)/2)+'px');
                 }
@@ -66,23 +66,23 @@
 <![endif]-->
 <script type="text/javascript">
 jQuery(document).ready(function($) {
-	// Adjust all main nav items so they are all the
+	// Adjust all main nav items so they are all the 
 	/*box_height = 0;
 	$('.nav_item').each(function() {
 		var height = $(this).outerHeight();
 		if (height>box_height) {
 			box_height = height;
-		}
+		}		
 	});
 	$('.nav_item').each(function() {
 		if($(this).outerHeight()<box_height) {
-			var outerHeight = $(this).outerHeight();
+			var outerHeight = $(this).outerHeight();			
 			$(this).css('padding-top',parseInt($(this).css('padding-top'))+Math.ceil((box_height-outerHeight)/2)+'px');
 			$(this).css('padding-bottom',parseInt($(this).css('padding-bottom'))+Math.floor((box_height-outerHeight)/2)+'px');
 		}
 		if($(this).hasClass('current')) {$(this).css('background-color','#D9D6D6');}
 	});*/
-
+        
         $('#main_nav').on('click','div.wrapper > ul > li:not(.bg-Popup)',function(e){
             e.preventDefault();
             document.location = $(this).children('a[href]').attr('href');
@@ -90,18 +90,18 @@ jQuery(document).ready(function($) {
 
 	// Create search box placeholder for browsers that don't support it
         $('#q').simulatePlaceholder();
-
+        
         // Create the nav popups
         $('.bg-Popup').createPopup({show_speed:200,hide_speed:200,animation_speed:300});
 
-	// Create Quicklinks popups if they exist
+	// Create Quicklinks popups if they exist	
 	$('div.listing[content_id], div.listing[data-content_id]').QuickLinks();
-
+	
 	// Create the Privacy Statement tooltip
 	$('.bg_tooltip').createTooltip();
 
 	// Remove Resources href if javascript is running
-        $('#main_nav li.bg-Popup a.nav_item').attr('href','#');
+        $('#main_nav li.bg-Popup a.nav_item').attr('href','#');	
 });
 </script>
 
@@ -124,16 +124,16 @@ jQuery(document).ready(function($) {
 		width: 300px;
 		z-index: 200;
 	}
-
+	
 	#header .bg_tooltip a{
 		color: #084A94;
 	}
-
+	
 	#header .bg_tooltip_close a{
 		color: #084A94;
 		font-size: 1.2em;
 	}
-
+	
 	#header .bg_tooltip_close {
 		cursor: pointer;
 		color: #084A94;
@@ -149,21 +149,21 @@ jQuery(document).ready(function($) {
 		margin: 0px 3px 0px 0px;
 		padding: 0px 3px 0px 0px;
 	}
-
+	
 	#header .bg_tooltip p {
 		color: #000000;
 		font-size: .9em;
 		margin: 0 0 5px;
 		text-align: left;
 	}
-
-
+	
+		
 		#header #connected_list li {
 		display: inline-block;
 		float: left;
 		vertical-align: left;
 	}
-
+	
 	#header #connected_list {
 		background-color: #FEFDF7;
 		border: 1px solid #DBDBDB;
@@ -172,27 +172,27 @@ jQuery(document).ready(function($) {
         	padding: 20px 0 46px 9px;
 		text-align: center;
 	}
-
+	
 	#header #contact_gao {
 		background: url("/img_library/connect_email_small.png") no-repeat scroll 0 0 transparent;
 		padding-left: 20px;
 	}
-
+	
 </style>
 
 
 </head>
-<body>
+<body> 
 <div id="skip_nav_link" style="height:0px; margin-left:-1000px;"><a href="#skip_nav">Skip Navigation</a></div>
 <div id="super_container">
 <div id="header"><!-- <div class="column-in"> --><div id="headerInner"><div id="head_wrap"><!-- [BEGIN] Utility Bar --><!-- [END] Utility Bar -->
-
+ 
 <!-- [BEGIN] Search Form -->
 
 <div id="gaosearch">
  <form action="/search" method="get" id="seek1" name="seek1">
   <input name="q" id="q" type="search" title="Search the GAO website with a Keyword or Report number" placeholder="Keyword or Report #" />
-  <input id="q_search" class="formstyle_mainsearch" type="submit" name="Submit" value="Search" onmousedown="if (document.getElementById('q').value == 'Keyword or Report #') { document.getElementById('q').value = ''; }" />
+  <input id="q_search" class="formstyle_mainsearch" type="submit" name="Submit" value="Search" onmousedown="if (document.getElementById('q').value == 'Keyword or Report #') { document.getElementById('q').value = ''; }" />						
  </form>
  <a style="clear:both;" href="/search?advanced=1">Advanced Search</a></div>
 <!-- [END] Search Form -->
@@ -203,7 +203,7 @@ jQuery(document).ready(function($) {
     <div class="wrapper">
 <ul>
 <li><a class="nav_item" href="/browse/date/week">Reports &amp; Testimonies</a></li><li><a class="nav_item" href="/legal/">Bid Protests &amp;<br>Appropriations Law</a></li><li><a class="nav_item" href="/key_issues/overview">Key Issues</a></li><li><a class="nav_item" href="/about/index.html">About GAO</a></li><li><a class="nav_item" href="/careers/index.html">Careers</a></li><li><a class="nav_item" href="/multimedia/video">Multimedia</a></li>    <li class="bg-Popup" style="z-index:1000;">
-        <a class="nav_item" href="/resources.html">Resources</a>
+        <a class="nav_item" href="/resources.html">Resources</a>				
         <ul class="bg-pop_div">
             <li><a href="/resources/congress/overview">For Congress</a></li>
             <li><a href="/resources/journalists/overview">For Journalists</a></li>
@@ -211,7 +211,7 @@ jQuery(document).ready(function($) {
             <li><a href="/resources/federal_managers/overview">For Federal Managers</a></li>
             <li><a href="/resources/researchers/overview">For Researchers</a></li>
 	    <li><a href="/resources/centerforauditexcellence/overview">Center for Audit Excellence</a></li>
-        </ul>
+        </ul>                                 
     </li>
 </ul></div></div>
 <!-- [END] Main Nav -->
@@ -226,11 +226,11 @@ jQuery(document).ready(function($) {
 <!--    sub nav -->
 <!--  sub nav -->
 
-<div id='middle'
->
-<div class='column-in'>
+<div id='middle' 
+> 
+<div class='column-in'>  
 <div id='content'>
-<a name="skip_nav"></a>
+<a name="skip_nav"></a> 
 
 <link href="/scripts/style/legal_style.css" rel="stylesheet">
 <link href="/scripts/collection_splash.css?v=1.3" type="text/css" rel="stylesheet">
@@ -244,9 +244,9 @@ jQuery(document).ready(function($) {
 
         </script>
 
-<ul style="padding-top:10px;" class="list-style-type-none pic-list" >
+<ul style="padding-top:10px;" class="list-style-type-none pic-list" >			
 	<li style="padding-left:0; padding-bottom:10px;" class="inline-pics" >
-		<div class="left">
+		<div class="left">		
 			<img style="margin-left:0;width:120px;" src="/img_library/legal/appro-law-main.jpg" />
 		</div>
 		<div class="right">
@@ -257,12 +257,12 @@ jQuery(document).ready(function($) {
 	</li>
 </ul>
 
-<div id="key_issues_splash">
-
+<div id="key_issues_splash">	
+		
 <div id="key_issues_tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
 	<div>
-
- 		<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+ 		
+ 		<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">			
  			<li class='ui-state-default ui-corner-top ui-state-active'><a href='/legal/bid-protests/search' >SEARCH PROTESTS</a></li><li class='ui-state-default ui-corner-top'><a href='/legal/bid-protests/our-process' >OUR PROCESS</a></li><li class='ui-state-default ui-corner-top'><a href='/legal/bid-protests/faqs' >FAQS</a></li><li class='ui-state-default ui-corner-top'><a href='/legal/bid-protests/file-a-bid-protest' >FILE A BID PROTEST</a></li><li class='ui-state-default ui-corner-top'><a href='/legal/bid-protests/gao-contacts' >GAO CONTACTS</a></li> 		</ul>
 
 		<div id="share_this">
@@ -271,14 +271,14 @@ jQuery(document).ready(function($) {
  				<li><a target="_blank" onclick="_gaq&amp;&amp;_gaq.push(['_trackPageview', '_Share_Facebook' ]);cls('http%3A%2F%2Fwww.gao.gov%2Fkey_issues%2Foverview','Key+Issues','Facebook');" href="http://www.facebook.com/sharer/sharer.php?src=bm&amp;u=http://gao.gov/legal/bid-protests/search&amp;v=3"><img width="20" height="20" alt="Share with Facebook" src="/img_library/connect_facebook.png">&nbsp;</a></li>
 				<li><a target="_blank" onclick="_gaq&amp;&amp;_gaq.push(['_trackPageview', '_Share_Twitter' ]);cls('http%3A%2F%2Fwww.gao.gov%2Fkey_issues%2Foverview','Key+Issues','Twitter');" href="http://twitter.com/home?status=http://gao.gov/legal/bid-protests/search"><img width="20" height="20" alt="Share with Twitter" src="/img_library/connect_twitter.png">&nbsp;</a></li>
 				<li><a target="_blank" onclick="_gaq&amp;&amp;_gaq.push(['_trackPageview', '_Share_LinkedIn' ]);cls('http%3A%2F%2Fwww.gao.gov%2Fkey_issues%2Foverview','Key+Issues','LinkedIn');" href="http://linkedin.com/shareArticle?url=http://gao.gov/legal/bid-protests/search"><img width="20" height="20" alt="Share with LinkedIn" src="/img_library/connect_linkedin.png">&nbsp;</a></li>
-				<li><a onclick="_gaq&amp;&amp;_gaq.push(['_trackPageview', '_Share_mail' ]);cls('http%3A%2F%2Fwww.gao.gov%2Fkey_issues%2Foverview','Key+Issues','mail');" href="mailto:?subject=Sharing: gao.gov:&amp;body=http://gao.gov/legal/bid-protests/search"><img width="20" height="20" alt="Share with mail" src="/img/email.png">&nbsp;</a></li>
+				<li><a onclick="_gaq&amp;&amp;_gaq.push(['_trackPageview', '_Share_mail' ]);cls('http%3A%2F%2Fwww.gao.gov%2Fkey_issues%2Foverview','Key+Issues','mail');" href="mailto:?subject=Sharing: gao.gov:&amp;body=http://gao.gov/legal/bid-protests/search"><img width="20" height="20" alt="Share with mail" src="/img/email.png">&nbsp;</a></li> 		
 			</ol>
 		</div>
-
-		<div class="clear"></div>
+		
+		<div class="clear"></div>	  
 	</div>
-
-	<div>
+		
+	<div>						
 		<div class="checkboxes">
 			<link rel="stylesheet" href="/scripts/search.css" />
 <link rel="stylesheet" type="text/css" href="/scripts/video.css?v=1" />
@@ -311,7 +311,7 @@ jQuery(document).ready(function($) {
     h1{
         padding-left:0 !important;
     }
-
+    
     #scroll_results div.listing{
         padding-left:0 !important;
         margin-bottom:0;
@@ -364,157 +364,157 @@ jQuery(document).ready(function($) {
 
 <ul id="recently_issued" class="list-style-type-none pic-list" >
     <li class="border-bottom" style="padding-bottom:10px;" >
-
+        
         <div class="float-left half-block" style="width:49%; margin-right:1%;" >
             <h1>Recently Issued Bid Protest Decisions</h1>
-            <div class="rip-box-holder" >
+            <div class="rip-box-holder" >			
                 <div id="scroll_results" style="height:311px; overflow:hidden;"  class="bgScroll inner" >
                     <div>
-                    <h3>Dec 31, 2015</h3><ul>
-
+                    <h3>Jan 7, 2016</h3><ul>
+		
 			   <li id="bid_pros-0"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-
-					 <a href="/products/B-412220">Phoenix Management, Inc.</a><br /><div class="release_info">B-412220</div>
+					 
+					 <a href="/products/B-409917.11">Gella LLC</a><br /><div class="release_info">B-409917.11</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-
-		</ul><h3>Dec 28, 2015</h3><ul>
-
+		 
 			   <li id="bid_pros-1"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-
-					 <a href="/products/B-412169">Hydromach, Inc.</a><br /><div class="release_info">B-412169</div>
+					 
+					 <a href="/products/B-412037">Tri-Technic, Inc.</a><br /><div class="release_info">B-412037</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-
+		 
 			   <li id="bid_pros-2"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-
-					 <a href="/products/B-410968.3">Starry Associates, Inc.</a><br /><div class="release_info">B-410968.3</div>
+					 
+					 <a href="/products/B-411977,B-411977.2">MCR Federal, LLC</a><br /><div class="release_info">B-411977,B-411977.2</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-
-		</ul><h3>Dec 24, 2015</h3><ul>
-
+		 
+		</ul><h3>Jan 5, 2016</h3><ul>
+		
 			   <li id="bid_pros-3"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-
-					 <a href="/products/B-412220.2">LOGMET LLC</a><br /><div class="release_info">B-412220.2</div>
+					 
+					 <a href="/products/B-412265">Suntek Systems, Inc.</a><br /><div class="release_info">B-412265</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-
+		 
+		</ul><h3>Jan 4, 2016</h3><ul>
+		
 			   <li id="bid_pros-4"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-
-					 <a href="/products/B-412009,B-412009.2">TechTrend, Inc.</a><br /><div class="release_info">B-412009,B-412009.2</div>
+					 
+					 <a href="/products/B-412041.2">Sealift, Inc.</a><br /><div class="release_info">B-412041.2</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-
-		</ul><h3>Dec 23, 2015</h3><ul>
-
+		 
 			   <li id="bid_pros-5"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-
-					 <a href="/products/B-412147">Axxon International, LLC</a><br /><div class="release_info">B-412147</div>
+					 
+					 <a href="/products/B-409705.7,B-409705.8">B&B Medical Services, Inc.; Ed Medical, Inc.</a><br /><div class="release_info">B-409705.7,B-409705.8</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-
+		 
+		</ul><h3>Dec 31, 2015</h3><ul>
+		
 			   <li id="bid_pros-6"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-
-					 <a href="/products/B-412047,B-412047.2,B-412047.3">CORTEK, Inc.</a><br /><div class="release_info">B-412047,B-412047.2,B-412047.3</div>
+					 
+					 <a href="/products/B-412220">Phoenix Management, Inc.</a><br /><div class="release_info">B-412220</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-
-		</ul><h3>Dec 22, 2015</h3><ul>
-
+		 
+		</ul><h3>Dec 28, 2015</h3><ul>
+		
 			   <li id="bid_pros-7"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-
-					 <a href="/products/B-411623,B-411623.2">AMTIS-Advantage, LLC</a><br /><div class="release_info">B-411623,B-411623.2</div>
+					 
+					 <a href="/products/B-412169">Hydromach, Inc.</a><br /><div class="release_info">B-412169</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-
-		</ul><h3>Dec 21, 2015</h3><ul>
-
+		 
 			   <li id="bid_pros-8"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-
-					 <a href="/products/B-411916.2">West Coast General Corporation</a><br /><div class="release_info">B-411916.2</div>
+					 
+					 <a href="/products/B-410968.3">Starry Associates, Inc.</a><br /><div class="release_info">B-410968.3</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-
+		 
+		</ul><h3>Dec 24, 2015</h3><ul>
+		
 			   <li id="bid_pros-9"><div>
 				  <div class="links">
 						   </div></div>
 				  <div class="listing">
-
-					 <a href="/products/B-412017,B-412017.2,B-412017.3">Akira Technologies, Inc.; Team ASSIST</a><br /><div class="release_info">B-412017,B-412017.2,B-412017.3</div>
+					 
+					 <a href="/products/B-412220.2">LOGMET LLC</a><br /><div class="release_info">B-412220.2</div>
                   		 </div>
 					 <div class="clear"></div>
 			   </li>
-
+		 
 		</ul>                    </div>
                 </div>
             </div>
         </div>
         <div class="float-left half-block" style="width:49%; margin-left:1%; margin-top:20px;" >
-            <p style="margin-bottom:3px">Federal agencies are required to award government contracts in accordance with
-            numerous acquisition laws and regulations. If a party interested in a government
+            <p style="margin-bottom:3px">Federal agencies are required to award government contracts in accordance with 
+            numerous acquisition laws and regulations. If a party interested in a government 
             contract believes that an agency has violated procurement law or regulation </p>
             <ul style="margin:0 0 0.5em 15px; padding:0;" >
                 <li>in a solicitation for goods or services, or </li>
                 <li>in the award of a contract,</li>
             </ul>
-            <p>it may file a bid protest with our Office. GAO provides an inexpensive and
+            <p>it may file a bid protest with our Office. GAO provides an inexpensive and 
             expeditious forum for the resolution of bid protests.</p>
-
+				             
             <ul class="list-style-type-none pic-list low-margin" style="margin-top:0px;" >
             	<li style="padding:0;margin-bottom:7px;" >
             		<p style="color:#a10e1f; margin-bottom:3px;"><b>Searching our Docket and our Decisions:</b></p>
 						<p style="margin-bottom:0px" ><b>Where can I find a GAO bid protest decision?</b></p>
-						<p style="margin-bottom:0;" >To access a published bid protest decision, search
-						for the decision by keyword below. Published decisions on recently-decided protests
-						may not yet be publicly available <a href="/legal/are-you-waiting-for-a-bid-protest-decision/about" >(Read more here.)</a></p>
+						<p style="margin-bottom:0;" >To access a published bid protest decision, search 
+						for the decision by keyword below. Published decisions on recently-decided protests 
+						may not yet be publicly available <a href="/legal/are-you-waiting-for-a-bid-protest-decision/about" >(Read more here.)</a></p>            	
             	</li>
             	<li style="padding:0;margin-bottom:7px;" >
 						<p style="margin-bottom:0px" ><b>Do all protests on our Docket result in a published decision?</b></p>
-						<p style="margin-bottom:0;" >No.  GAO does not publish most decisions dismissing a protest,
-						including instances where an agency takes some form of corrective action.
-						Also, a protester may choose to withdraw its protest prior to a decision being
-						reached.</p>
+						<p style="margin-bottom:0;" >No.  GAO does not publish most decisions dismissing a protest, 
+						including instances where an agency takes some form of corrective action.  
+						Also, a protester may choose to withdraw its protest prior to a decision being 
+						reached.</p>            	
             	</li>
             	<li style="padding:0;margin-bottom:7px;" >
 						<p style="margin-bottom:0px" ><b>Where can I find information about the status of a protest?</b></p>
-						<p style="margin-bottom:0;" >Search GAO’s bid protest docket for status information about protests filed in the past 12 months.  Docket information includes the protester, agency involved, solicitation at issue, GAO attorney assigned to the protest, and key dates.</p>
+						<p style="margin-bottom:0;" >Search GAO’s bid protest docket for status information about protests filed in the past 12 months.  Docket information includes the protester, agency involved, solicitation at issue, GAO attorney assigned to the protest, and key dates.</p>            	
             	</li>
             	<li style="padding:0" >
             		<p style="margin-bottom:0px" ><b>How often is the Docket updated?</b></p>
@@ -524,11 +524,11 @@ jQuery(document).ready(function($) {
         </div>
         <br class="clear" >
     </li>
-     <li class='border-bottom pad-bottom' >
-
+     <li class='border-bottom pad-bottom' >  
+           
         <h1  class='color-black'>Search All Published Bid Protest Decisions:</h1>
 		  <p>Use this keyword search to access any of our published decisions.</p>
-
+		  
                 <a name="search_form"></a>
         <form id="search_form" class="inline-form" action="#search_form" method="GET" onsubmit="resetFormIfChanged()" >
             <input type="hidden" name="page_name" value="bid_protest_decisions" />
@@ -540,14 +540,14 @@ jQuery(document).ready(function($) {
             <input type="hidden" name="o"               value="" />
             <input name="q"                             value="" onchange="this.form.changed.value=1" />            <input type="submit" value="Search" />
             <a href="/legal/bid-protests/search#search_form" style="font-size:11px;">Start over</a>
-        </form>
+        </form>      
     </li>
     <a name="bidProForm"></a>
     <li class='pad-bottom'>
         <h1 class='color-black' >Search the Bid Protest Docket:</h1>
         <p>Use these specific fields to find status information about cases filed in the past 12 months.</p>
-
-
+        
+                
         <form id="bidProForm" class='inline-form' action="#bidProForm" method="GET" onsubmit='formReset()' >
             <input type="hidden" name="rows" value="50" />
 <input type="hidden" name="now_sort" value="docdate desc,issue_date_dt desc" />
@@ -631,6 +631,7 @@ jQuery(document).ready(function($) {
 <option value="Department of Justice : United States Marshals Service" >Department of Justice : United States Marshals Service</option>
 <option value="Department of Labor" >Department of Labor</option>
 <option value="Department of State" >Department of State</option>
+<option value="Department of State : Foreign Service Institute" >Department of State : Foreign Service Institute</option>
 <option value="Department of Transportation" >Department of Transportation</option>
 <option value="Department of Transportation : Federal Aviation Administration" >Department of Transportation : Federal Aviation Administration</option>
 <option value="Department of Transportation : Federal Highway Administration" >Department of Transportation : Federal Highway Administration</option>
@@ -679,7 +680,6 @@ jQuery(document).ready(function($) {
 <option value="National Aeronautics and Space Administration" >National Aeronautics and Space Administration</option>
 <option value="National Archives and Records Administration" >National Archives and Records Administration</option>
 <option value="National Science Foundation" >National Science Foundation</option>
-<option value="New York State Governor's Office of Storm Recovery" >New York State Governor's Office of Storm Recovery</option>
 <option value="Nuclear Regulatory Commission" >Nuclear Regulatory Commission</option>
 <option value="Office of Personnel Management" >Office of Personnel Management</option>
 <option value="Office of the Director of National Intelligence" >Office of the Director of National Intelligence</option>
@@ -707,14 +707,14 @@ jQuery(document).ready(function($) {
     <li style="padding:0;" >
             <div class="searchResults">
         <div class="grayBorderTop grayBorderBottom" >
-            About 2,251 results for <span class="search_string_with_facets">
+            About 72 results for <span class="search_string_with_facets">
 <!--path-->
-<strong>Legal:</strong>
-<strong>Bid Protest:</strong>
-<strong>Bid Protest Docket:</strong>
+<strong>Legal:</strong> 
+<strong>Bid Protest:</strong> 
+<strong>Bid Protest Docket:</strong> 
 <!--facets-->
 <strong>Closed Docket:</strong>
-<strong>2015-01-01to2015-12-31:</strong>
+<strong>2015-01-01to2015-01-15:</strong>
 <!--other fields-->
 <span class="boldRed">"*"</span>
 </span><!-- class="search_string_with_facets"-->
@@ -725,41 +725,33 @@ jQuery(document).ready(function($) {
 
             <div class="narrowingLabel">Show Results For</div>
             <div id="facet_out">
-
+                
         <ul class="facet_node_wrap">
             <li >
-
+                
             <!--Legal:Bid Protest:Bid Protest Docket-->
             <span class="node_link" >Bid Protest Docket</span>
                     <!--Legal:Bid Protest:Bid Protest Docket:Dismissed-->
-                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3ADismissed" id="node_10"
-                    >Dismissed (1,393) </a>
+                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-01-15%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3ADismissed" id="node_10" 
+                    >Dismissed (46) </a>
                     <!--Legal:Bid Protest:Bid Protest Docket:Denied-->
-                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3ADenied" id="node_11"
-                    >Denied (382) </a>
+                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-01-15%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3ADenied" id="node_11" 
+                    >Denied (15) </a>
                     <!--Legal:Bid Protest:Bid Protest Docket:Withdrawn-->
-                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3AWithdrawn" id="node_12"
-                    >Withdrawn (392) </a>
+                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-01-15%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3AWithdrawn" id="node_12" 
+                    >Withdrawn (7) </a>
                     <!--Legal:Bid Protest:Bid Protest Docket:Sustained-->
-                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3ASustained" id="node_14"
-                    >Sustained (84) </a>
+                    <a class="child_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-01-15%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket%3ASustained" id="node_14" 
+                    >Sustained (4) </a>
             </li>
         </ul>
             <div class="grayBorderTop narrowingLabel">Refine By</div>
             <!--date_facet_out-->
-
+            
         <span class="filterLabel">Date</span><ul class="facet_wrap">
         <li class="parent_link"><a class="parent_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A2%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket">&lt; Any Date</a></li>
         <!--time_facet_out-->
-
-            <li>
-                <a href='?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-12-03to2016-01-03%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket'>Past Month</a>
-                &nbsp;(25)
-            </li>
-            <li>
-                <a href='?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-07-03to2016-01-03%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket'>Past 6 Months</a>
-                &nbsp;(1,084)
-            </li><style>#cust_date{cursor:pointer;}#content ul.pic-list > li form#cust_date_form{margin-top:auto;}</style>
+        <style>#cust_date{cursor:pointer;}#content ul.pic-list > li form#cust_date_form{margin-top:auto;}</style>
 <li><a id="cust_date">Custom Date Range</a><form method="GET" name="custom_date" id="cust_date_form" action="" style="display:none" onsubmit="var c=this.elements,i=-1;while(c[++i])if(c[i].value==='mm/dd/yyyy')c[i].value=''" ><p style="margin-top:4px;"><input id="cust_begin_date" name="adv_begin_date" type="text" value="mm/dd/yyyy" style="width:100px"></p><p><h3>To</h3></p><p><input id="cust_end_date" name="adv_end_date" type="text" value="mm/dd/yyyy" style="width:100px"></p><input type="hidden" name="snumber" value="" />
 <input type="hidden" name="filenum" value="" />
 <input type="hidden" name="now_sort" value="docdate desc,issue_date_dt desc" />
@@ -811,9 +803,9 @@ jQuery(document).ready(function($) {
                 <!-- facet type: closed_s-->
             <span class="filterLabel">Status</span>
                 <ul class="facet_wrap">
-            <li class="parent_link"><a class="parent_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A2%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket">&lt; Any Status</a></li>
+            <li class="parent_link"><a class="parent_link" href="?snumber=&filenum=&now_sort=docdate+desc%2Cissue_date_dt+desc&page_name=bid_protest_docket&facets=a%3A2%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-01-15%22%3B%7D&searched=1&rows=50&top_path=Legal%3ABid+Protest%3ABid+Protest+Docket&path=Legal%3ABid+Protest%3ABid+Protest+Docket">&lt; Any Status</a></li>
                     <li id="Y_tag" class="chosen" >
-
+                    
                     <!-- <input type="checkbox"checked onclick="this.parentNode.click()" /> -->
                     Closed Docket
                     </li>
@@ -823,574 +815,575 @@ jQuery(document).ready(function($) {
         </div>
         <div class="searchResultsMain grayBorderLeft">
             <div id="resultStatsContainer">
-                <div id="resultStats"><span class="sortAndResults">Sort By:</span><span style="margin-right:10px;"><select style="font-size:11px;" onchange="new Scott().saveSearchSetting('now_sort',this.value,'bid_protest_docket');window.location='?openclosed=closed&agency=All&snumber=&filenum=&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&now_sort='+this.value+window.location.hash"><option value="docdate desc,issue_date_dt desc" selected>Date new->old</option>
+                <div id="resultStats"><span class="sortAndResults">Sort By:</span><span style="margin-right:10px;"><select style="font-size:11px;" onchange="new Scott().saveSearchSetting('now_sort',this.value,'bid_protest_docket');window.location='?openclosed=closed&agency=All&snumber=&filenum=&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-01-15%22%3B%7D&searched=1&now_sort='+this.value+window.location.hash"><option value="docdate desc,issue_date_dt desc" selected>Date new->old</option>
 <option value="docdate asc,issue_date_dt asc" >Date old->new</option>
 <option value="title_sort asc" >Title A-Z</option>
 <option value="title_sort desc" >Title Z-A</option>
-</select>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sortAndResults">Results per page:</span><select style="font-size:11px;" onchange="new Scott().saveSearchSetting('rows',this.value,'bid_protest_docket');window.location='?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&rows='+this.value+window.location.hash"><option value="10" >10</option>
+</select>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sortAndResults">Results per page:</span><select style="font-size:11px;" onchange="new Scott().saveSearchSetting('rows',this.value,'bid_protest_docket');window.location='?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-01-15%22%3B%7D&searched=1&rows='+this.value+window.location.hash"><option value="10" >10</option>
 <option value="25" >25</option>
 <option value="50" selected>50</option>
 </select></span></div>
             </div><!-- id="resultStatsContainer"/-->
-
+            
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4120753">
-                <a class="result" href="/docket/B-412075.3">
-                    Gartner Inc.
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110281">
+                <a class="result" href="/docket/B-411028.1">
+                    Man-Machine Systems Assessment Inc
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412075.3</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411028.1</div>
                 </a>
-                <br><b>Solicitation Number</b>: AG-3144-S-15-0086
-                <br><b>Agency</b>: Department of Agriculture<br><b>File Number</b>: B-412075.3&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 31, 2015<div id="filenum_B-412075.3_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 22, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 31, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Robert T. Wu</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Gartner Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 22, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 31, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Robert T. Wu</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: W91CRB-13-R-0009
+                <br><b>Agency</b>: Department of the Army : U.S. Army Materiel Command<br><b>File Number</b>: B-411028.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Mar 31, 2015<div id="filenum_B-411028.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Glenn G. Wolcott</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Man-Machine Systems Assessment Inc</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Glenn G. Wolcott</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.40964814">
-                <a class="result" href="/docket/B-409648.14">
-                    Sysorex Government Services, Inc.
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4105192">
+                <a class="result" href="/docket/B-410519.2">
+                    W P Tax & Accounting Group
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-409648.14</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-410519.2</div>
                 </a>
-                <br><b>Solicitation Number</b>: W52P1J-11-R-0059
-                <br><b>Agency</b>: Department of the Army : U.S. Army Materiel Command<br><b>File Number</b>: B-409648.14&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 23, 2015<div id="filenum_B-409648.14_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 18, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 28, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest: Entitlement</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Eric M. Ransom</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Sysorex Government Services, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 18, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 28, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest: Entitlement</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Eric M. Ransom</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: RFQP0700COBO140039
+                <br><b>Agency</b>: Department of Justice : Bureau of Prisons<br><b>File Number</b>: B-410519.2&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Feb 23, 2015<div id="filenum_B-410519.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Gary R. Allen</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>W P Tax & Accounting Group</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Gary R. Allen</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125531">
-                <a class="result" href="/docket/B-412553.1">
-                    Tongva Ancestral Territorial Tribal Nation
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412553.1</div>
-                </a>
-                <br><b>Agency</b>: National Aeronautics and Space Administration<br><b>File Number</b>: B-412553.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 30, 2015<div id="filenum_B-412553.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 24, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Heather Weiner</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Tongva Ancestral Territorial Tribal Nation</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 24, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Heather Weiner</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125491">
-                <a class="result" href="/docket/B-412549.1">
-                    RAO Contract Sales, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412549.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: VA261-16-Q-0053
-                <br><b>Agency</b>: Department of Veterans Affairs<br><b>File Number</b>: B-412549.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 28, 2015<div id="filenum_B-412549.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 24, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Robert T. Wu</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>RAO Contract Sales, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 24, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Robert T. Wu</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125541">
-                <a class="result" href="/docket/B-412554.1">
-                    Cartridge Savers, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412554.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: SPE8EN-16-T-0415
-                <br><b>Agency</b>: Department of Defense : Defense Logistics Agency<br><b>File Number</b>: B-412554.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 18, 2015<div id="filenum_B-412554.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 24, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Christina Sklarew</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Cartridge Savers, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 24, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Christina Sklarew</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125441">
-                <a class="result" href="/docket/B-412544.1">
-                    New Beginnings Capital Partnership LLC
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412544.1</div>
-                </a>
-                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: B-412544.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 29, 2015<div id="filenum_B-412544.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 23, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Frank Maguire</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>New Beginnings Capital Partnership LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 23, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Frank Maguire</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4122833">
-                <a class="result" href="/docket/B-412283.3">
-                    Deloitte & Touche LLP
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412283.3</div>
-                </a>
-                <br><b>Solicitation Number</b>: HT0011-15-R-0029
-                <br><b>Agency</b>: Department of Defense : Office of the Under Secretary for Personnel and Readiness : Defense Health Agency<br><b>File Number</b>: B-412283.3&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 18, 2015<div id="filenum_B-412283.3_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 23, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula J. Haurilesko</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Deloitte & Touche LLP</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 23, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula J. Haurilesko</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125451">
-                <a class="result" href="/docket/B-412545.1">
-                    SVD Stars II, LLC
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412545.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: ID11150028
-                <br><b>Agency</b>: General Services Administration : Federal Acquisition Service<br><b>File Number</b>: B-412545.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 30, 2015<div id="filenum_B-412545.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 11, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Peter D. Verchinski</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>SVD Stars II, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 11, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Peter D. Verchinski</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125401">
-                <a class="result" href="/docket/B-412540.1">
-                    Hana Industries, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412540.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: HSFLGL-15-R-00023
-                <br><b>Agency</b>: Department of Homeland Security : Directorate of Border and Transportation Security : Federal Law Enforcement Training Center<br><b>File Number</b>: B-412540.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 22, 2015<div id="filenum_B-412540.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 11, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Eric M. Ransom</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Hana Industries, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 11, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Eric M. Ransom</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125411">
-                <a class="result" href="/docket/B-412541.1">
-                    Lam-Tex Composites, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412541.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: SPE8EF-16-T-0343
-                <br><b>Agency</b>: Department of Defense : Defense Logistics Agency<br><b>File Number</b>: B-412541.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 18, 2015<div id="filenum_B-412541.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 11, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Brent Burris</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Lam-Tex Composites, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 11, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Brent Burris</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125223">
-                <a class="result" href="/docket/B-412522.3">
-                    Facility Services Management, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412522.3</div>
-                </a>
-                <br><b>Solicitation Number</b>: HSCG84-15-R-AA8453
-                <br><b>Agency</b>: Department of Homeland Security : United States Coast Guard<br><b>File Number</b>: B-412522.3&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 17, 2015<div id="filenum_B-412522.3_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 11, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula J. Haurilesko</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Facility Services Management, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 11, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula J. Haurilesko</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125341">
-                <a class="result" href="/docket/B-412534.1">
-                    Thompson Industrial Services, LLC
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412534.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: AG-6395-S-14-0073
-                <br><b>Agency</b>: Department of Agriculture : Animal and Plant Health Inspection Service<br><b>File Number</b>: B-412534.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 23, 2015<div id="filenum_B-412534.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 10, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Thompson Industrial Services, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 10, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125371">
-                <a class="result" href="/docket/B-412537.1">
-                    Major Contracting Services, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412537.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: N40085-16-T-2206
-                <br><b>Agency</b>: Department of the Navy : Naval Facilities Engineering Command<br><b>File Number</b>: B-412537.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 22, 2015<div id="filenum_B-412537.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 10, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young S. Lee</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Major Contracting Services, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 10, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young S. Lee</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125142">
-                <a class="result" href="/docket/B-412514.2">
-                    Downrange Operations & Training, LLC
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412514.2</div>
-                </a>
-                <br><b>Solicitation Number</b>: SAQMMA15R0318
-                <br><b>Agency</b>: Department of State<br><b>File Number</b>: B-412514.2&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 17, 2015<div id="filenum_B-412514.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 10, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Matthew T. Crosby</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Downrange Operations & Training, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 10, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 21, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Matthew T. Crosby</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125321">
-                <a class="result" href="/docket/B-412532.1">
-                    B&S Transport, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412532.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: SPRDL1-15-R-0341
-                <br><b>Agency</b>: Department of Defense : Defense Logistics Agency<br><b>File Number</b>: B-412532.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 31, 2015<div id="filenum_B-412532.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 18, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paul N. Wengert</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>B&S Transport, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 18, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paul N. Wengert</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125301">
-                <a class="result" href="/docket/B-412530.1">
-                    Latvian Connection, LLC
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412530.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: M68450-16-T-N002
-                <br><b>Agency</b>: Department of Defense : United States Marine Corps<br><b>File Number</b>: B-412530.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 30, 2015<div id="filenum_B-412530.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 8, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 17, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Kenneth Kilgour</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Latvian Connection, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 8, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 17, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Kenneth Kilgour</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125271">
-                <a class="result" href="/docket/B-412527.1">
-                    Planned Systems International, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412527.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: N00024-15-R-3315
-                <br><b>Agency</b>: Department of the Navy : Naval Supply Systems Command<br><b>File Number</b>: B-412527.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 23, 2015<div id="filenum_B-412527.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 8, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 17, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Charles W. Morrow</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Planned Systems International, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 8, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 17, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Charles W. Morrow</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125222">
-                <a class="result" href="/docket/B-412522.2">
-                    Facility Services Management, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412522.2</div>
-                </a>
-                <br><b>Solicitation Number</b>: HSCG84-15-R-AA8453
-                <br><b>Agency</b>: Department of Homeland Security : United States Coast Guard<br><b>File Number</b>: B-412522.2&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 17, 2015<div id="filenum_B-412522.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 8, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 17, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula J. Haurilesko</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Facility Services Management, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 8, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 17, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula J. Haurilesko</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4124232">
-                <a class="result" href="/docket/B-412423.2">
-                    Latvian Connection, LLC
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412423.2</div>
-                </a>
-                <br><b>Solicitation Number</b>: SP7000-16-Q-0006
-                <br><b>Agency</b>: Department of Defense : Defense Logistics Agency<br><b>File Number</b>: B-412423.2&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 18, 2015<div id="filenum_B-412423.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 16, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest: Entitlement</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young S. Lee</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Latvian Connection, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 16, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest: Entitlement</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young S. Lee</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125221">
-                <a class="result" href="/docket/B-412522.1">
-                    Satellite Services, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412522.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: HSCG84-15-R-AA8453
-                <br><b>Agency</b>: Department of Homeland Security : United States Coast Guard<br><b>File Number</b>: B-412522.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 17, 2015<div id="filenum_B-412522.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 16, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula J. Haurilesko</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Satellite Services, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 16, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula J. Haurilesko</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125231">
-                <a class="result" href="/docket/B-412523.1">
-                    Caduceus Healthcare, Inc
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412523.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: W91YTZ-15-R-0012
-                <br><b>Agency</b>: Department of the Army<br><b>File Number</b>: B-412523.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 15, 2015<div id="filenum_B-412523.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 16, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young H. Cho</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Caduceus Healthcare, Inc</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 16, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young H. Cho</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4123842">
-                <a class="result" href="/docket/B-412384.2">
-                    Raytheon Company
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412384.2</div>
-                </a>
-                <br><b>Solicitation Number</b>: R2-3G-0839
-                <br><b>Agency</b>: Department of the Army : U.S. Army Materiel Command<br><b>File Number</b>: B-412384.2&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 18, 2015<div id="filenum_B-412384.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 4, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 14, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Raytheon Company</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 4, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 14, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125161">
-                <a class="result" href="/docket/B-412516.1">
-                    Binary Information Technology
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412516.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: EXIM-15-Q-0057
-                <br><b>Agency</b>: Export-Import Bank of the United States<br><b>File Number</b>: B-412516.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 17, 2015<div id="filenum_B-412516.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 4, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 14, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paul N. Wengert</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Binary Information Technology</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 4, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 14, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paul N. Wengert</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4123492">
-                <a class="result" href="/docket/B-412349.2">
-                    Abt Associates, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412349.2</div>
-                </a>
-                <br><b>Solicitation Number</b>: CNSHQ-15-R-0010
-                <br><b>Agency</b>: Corporation for National and Community Service<br><b>File Number</b>: B-412349.2&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 10, 2015<div id="filenum_B-412349.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 4, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 14, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Scott H. Riback</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Abt Associates, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 4, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 14, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Scott H. Riback</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125181">
-                <a class="result" href="/docket/B-412518.1">
-                    Native Lakota Corporation
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412518.1</div>
-                </a>
-                <br><b>Agency</b>: Department of Homeland Security : Transportation Security Administration<br><b>File Number</b>: B-412518.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 9, 2015<div id="filenum_B-412518.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 4, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 14, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Jennifer D. Westfall-McGrail</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Native Lakota Corporation</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 4, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 14, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Jennifer D. Westfall-McGrail</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4121272">
-                <a class="result" href="/docket/B-412127.2">
-                    Latvian Connection, LLC
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412127.2</div>
-                </a>
-                <br><b>Solicitation Number</b>: F1ECES52220200
-                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: B-412127.2&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 30, 2015<div id="filenum_B-412127.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest: Reconsideration</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Noah B. Bleicher</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Latvian Connection, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest: Reconsideration</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Noah B. Bleicher</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4118902">
-                <a class="result" href="/docket/B-411890.2">
-                    Veterans Contracting, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411890.2</div>
-                </a>
-                <br><b>Solicitation Number</b>: FA6656-15-B-0001
-                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: B-411890.2&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 23, 2015<div id="filenum_B-411890.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Frank Maguire</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Veterans Contracting, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Frank Maguire</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125101">
-                <a class="result" href="/docket/B-412510.1">
-                    Advanced Management Strategies Group, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412510.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: N00024-15-R-3249
-                <br><b>Agency</b>: Department of Defense : United States Marine Corps<br><b>File Number</b>: B-412510.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 23, 2015<div id="filenum_B-412510.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Elizabeth Witwer</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Advanced Management Strategies Group, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Elizabeth Witwer</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125121">
-                <a class="result" href="/docket/B-412512.1">
-                    Protein Sciences Corporation
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412512.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: VA797-15-R-0091
-                <br><b>Agency</b>: Department of Veterans Affairs<br><b>File Number</b>: B-412512.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 23, 2015<div id="filenum_B-412512.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Glenn G. Wolcott</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Protein Sciences Corporation</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Glenn G. Wolcott</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125111">
-                <a class="result" href="/docket/B-412511.1">
-                    B&D Consulting, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412511.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: RFQ831505923
-                <br><b>Agency</b>: Department of Defense : Defense Information Systems Agency<br><b>File Number</b>: B-412511.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 22, 2015<div id="filenum_B-412511.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >K. Nicole Willems</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>B&D Consulting, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >K. Nicole Willems</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125141">
-                <a class="result" href="/docket/B-412514.1">
-                    Downrange Operations & Training, LLC
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412514.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: SAQMMA15R0318
-                <br><b>Agency</b>: Department of State<br><b>File Number</b>: B-412514.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 17, 2015<div id="filenum_B-412514.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Matthew T. Crosby</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Downrange Operations & Training, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Matthew T. Crosby</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125131">
-                <a class="result" href="/docket/B-412513.1">
-                    AIS Engineering, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412513.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: RFQ1005565
-                <br><b>Agency</b>: Department of Defense : Defense Information Systems Agency<br><b>File Number</b>: B-412513.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 16, 2015<div id="filenum_B-412513.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Cherie J. Owen</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>AIS Engineering, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Dec 2, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 11, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Cherie J. Owen</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.41233613">
-                <a class="result" href="/docket/B-412336.13">
-                    Prescient Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412336.13</div>
-                </a>
-                <br><b>Solicitation Number</b>: DU204SA-13-R-0005
-                <br><b>Agency</b>: Department of Housing and Urban Development<br><b>File Number</b>: B-412336.13&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 29, 2015<div id="filenum_B-412336.13_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young S. Lee</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Prescient Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young S. Lee</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125021">
-                <a class="result" href="/docket/B-412502.1">
-                    SSI Technology, Inc.
-                    <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412502.1</div>
-                </a>
-                <br><b>Solicitation Number</b>: SPE7L3-16-T-2393
-                <br><b>Agency</b>: Department of Defense : Defense Logistics Agency<br><b>File Number</b>: B-412502.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 23, 2015<div id="filenum_B-412502.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>SSI Technology, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr></tbody></table></div>
-        </div>
-            <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4116664">
-                <a class="result" href="/docket/B-411666.4">
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110311">
+                <a class="result" href="/docket/B-411031.1">
                     AeroSage LLC
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411666.4</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411031.1</div>
                 </a>
-                <br><b>Solicitation Number</b>: SPO600-13-R-0238
-                <br><b>Agency</b>: Department of Defense : Defense Logistics Agency<br><b>File Number</b>: B-411666.4&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 23, 2015<div id="filenum_B-411666.4_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest: Reconsideration</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula J. Haurilesko</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>AeroSage LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest: Reconsideration</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula J. Haurilesko</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: VA255-15-Q-0280
+                <br><b>Agency</b>: Department of Veterans Affairs<br><b>File Number</b>: B-411031.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Feb 13, 2015<div id="filenum_B-411031.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Eric M. Ransom</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>AeroSage LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Eric M. Ransom</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125041">
-                <a class="result" href="/docket/B-412504.1">
-                    Abhe & Svoboda, Inc.
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110291">
+                <a class="result" href="/docket/B-411029.1">
+                    Midwest Tube Fabricators, Inc.
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412504.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411029.1</div>
                 </a>
-                <br><b>Solicitation Number</b>: W912DW-15-R-0002
-                <br><b>Agency</b>: Department of the Army : Corps of Engineers<br><b>File Number</b>: B-412504.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 22, 2015<div id="filenum_B-412504.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Robert T. Wu</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Abhe & Svoboda, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Robert T. Wu</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: SPE7M3-15-T-1420
+                <br><b>Agency</b>: Department of Defense : Defense Logistics Agency<br><b>File Number</b>: B-411029.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Feb 9, 2015<div id="filenum_B-411029.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Peter D. Verchinski</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Midwest Tube Fabricators, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Peter D. Verchinski</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125081">
-                <a class="result" href="/docket/B-412508.1">
-                    SSI Technology, Inc.
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4109022">
+                <a class="result" href="/docket/B-410902.2">
+                    KPaul Properties, LLC
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412508.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-410902.2</div>
                 </a>
-                <br><b>Solicitation Number</b>: SPE4A6-16-Q-0148
-                <br><b>Agency</b>: Department of Defense : Defense Logistics Agency<br><b>File Number</b>: B-412508.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 15, 2015<div id="filenum_B-412508.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula A. Williams</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>SSI Technology, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula A. Williams</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: VA250-15-Q-0021
+                <br><b>Agency</b>: Department of Veterans Affairs<br><b>File Number</b>: B-410902.2&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Feb 3, 2015<div id="filenum_B-410902.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Frank Maguire</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>KPaul Properties, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Frank Maguire</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125061">
-                <a class="result" href="/docket/B-412506.1">
-                    KLS Engineering, LLC
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110072">
+                <a class="result" href="/docket/B-411007.2">
+                    Export 220Volt, Inc.
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412506.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411007.2</div>
                 </a>
-                <br><b>Solicitation Number</b>: DTFH61-15-R-00010
-                <br><b>Agency</b>: Department of Transportation : Federal Highway Administration<br><b>File Number</b>: B-412506.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 9, 2015<div id="filenum_B-412506.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Lois Hanshaw</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>KLS Engineering, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Lois Hanshaw</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: SGE50014R0021
+                <br><b>Agency</b>: Department of State<br><b>File Number</b>: B-411007.2&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Feb 3, 2015<div id="filenum_B-411007.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Louis A. Chiarella</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Export 220Volt, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Louis A. Chiarella</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125011">
-                <a class="result" href="/docket/B-412501.1">
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110301">
+                <a class="result" href="/docket/B-411030.1">
+                    Thermal Structures, Inc.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411030.1</div>
+                </a>
+                <br><b>Agency</b>: Department of Defense : Defense Logistics Agency<br><b>File Number</b>: B-411030.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Jan 28, 2015<div id="filenum_B-411030.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Katherine I. Riback</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Thermal Structures, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Katherine I. Riback</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110321">
+                <a class="result" href="/docket/B-411032.1">
+                    Food Services, Inc. of Gainesville
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411032.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: FA4484-15-R-0005
+                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: B-411032.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 28, 2015<div id="filenum_B-411032.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Brent Burris</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Food Services, Inc. of Gainesville</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 15, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 27, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Brent Burris</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110153">
+                <a class="result" href="/docket/B-411015.3">
+                    Logistics Management International, Inc.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411015.3</div>
+                </a>
+                <br><b>Solicitation Number</b>: FA8505-13-R-31138
+                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: <a href="/products/B-411015.2,B-411015.3">B-411015.3</a>&nbsp;&nbsp;<b>Outcome</b>: Sustained&nbsp;&nbsp;<b>Date Decided</b>: Apr 22, 2015<div id="filenum_B-411015.3_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411015.2,B-411015.3">B-411015.2,B-411015.3</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Logistics Management International, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411015.2,B-411015.3">B-411015.2,B-411015.3</a></td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4103643">
+                <a class="result" href="/docket/B-410364.3">
+                    DGC International
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-410364.3</div>
+                </a>
+                <br><b>Solicitation Number</b>: SOL-306-14-000014
+                <br><b>Agency</b>: United States Agency for International Development<br><b>File Number</b>: <a href="/products/B-410364.3">B-410364.3</a>&nbsp;&nbsp;<b>Outcome</b>: Denied&nbsp;&nbsp;<b>Date Decided</b>: Apr 22, 2015<div id="filenum_B-410364.3_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Pedro E. Briones</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-410364.3">B-410364.3</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>DGC International</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Pedro E. Briones</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-410364.3">B-410364.3</a></td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110261">
+                <a class="result" href="/docket/B-411026.1">
                     Booz Allen Hamilton, Inc.
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412501.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411026.1</div>
                 </a>
-                <br><b>Solicitation Number</b>: N00024-15-R-3064
-                <br><b>Agency</b>: Department of the Navy : Space and Naval Warfare Systems Command<br><b>File Number</b>: B-412501.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 7, 2015<div id="filenum_B-412501.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Heather Weiner</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Booz Allen Hamilton, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Heather Weiner</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: W911S0-14-R-0004
+                <br><b>Agency</b>: Department of the Army<br><b>File Number</b>: B-411026.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Apr 1, 2015<div id="filenum_B-411026.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Heather Weiner</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Booz Allen Hamilton, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Heather Weiner</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4125051">
-                <a class="result" href="/docket/B-412505.1">
-                    Ecology Mir Group
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110241">
+                <a class="result" href="/docket/B-411024.1">
+                    Honeywell Technology Solutions, Inc.
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412505.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411024.1</div>
                 </a>
-                <br><b>Solicitation Number</b>: W91247-16-T-XJ01
-                <br><b>Agency</b>: Department of the Army<br><b>File Number</b>: B-412505.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 4, 2015<div id="filenum_B-412505.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Susan K. McAuliffe</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Ecology Mir Group</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Susan K. McAuliffe</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: W52P1J-13-R-0161
+                <br><b>Agency</b>: Department of the Army : U.S. Army Materiel Command<br><b>File Number</b>: B-411024.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Feb 19, 2015<div id="filenum_B-411024.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Kenneth Kilgour</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Honeywell Technology Solutions, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Kenneth Kilgour</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4115835">
-                <a class="result" href="/docket/B-411583.5">
-                    Deloitte Consulting, LLP
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110251">
+                <a class="result" href="/docket/B-411025.1">
+                    Draeger Medical, Inc.
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411583.5</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411025.1</div>
                 </a>
-                <br><b>Solicitation Number</b>: D15PS00160
-                <br><b>Agency</b>: Department of the Interior<br><b>File Number</b>: B-411583.5&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 3, 2015<div id="filenum_B-411583.5_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Louis A. Chiarella</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Deloitte Consulting, LLP</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 30, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 9, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Louis A. Chiarella</td></tr></tbody></table></div>
+                <br><b>Agency</b>: Department of Veterans Affairs<br><b>File Number</b>: B-411025.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Feb 11, 2015<div id="filenum_B-411025.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Noah B. Bleicher</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Draeger Medical, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Noah B. Bleicher</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4120752">
-                <a class="result" href="/docket/B-412075.2">
-                    Gartner Inc.
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4106832">
+                <a class="result" href="/docket/B-410683.2">
+                    Diplomatic Language Services
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412075.2</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-410683.2</div>
                 </a>
-                <br><b>Solicitation Number</b>: AG-3144-S-15-0086
-                <br><b>Agency</b>: Department of Agriculture<br><b>File Number</b>: B-412075.2&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 31, 2015<div id="filenum_B-412075.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 25, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 4, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Robert T. Wu</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Gartner Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 25, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 4, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Robert T. Wu</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: 2014-14062300001
+                <br><b>Agency</b>: Office of the Director of National Intelligence<br><b>File Number</b>: B-410683.2&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Feb 5, 2015<div id="filenum_B-410683.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Scott H. Riback</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Diplomatic Language Services</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Scott H. Riback</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4124971">
-                <a class="result" href="/docket/B-412497.1">
-                    Terra Klean Solutions, Inc.
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110271">
+                <a class="result" href="/docket/B-411027.1">
+                    Major Contracting Services, Inc.
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412497.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411027.1</div>
                 </a>
-                <br><b>Solicitation Number</b>: W81K04-15-R-0003
-                <br><b>Agency</b>: Department of the Army<br><b>File Number</b>: B-412497.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 30, 2015<div id="filenum_B-412497.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 25, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 4, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Peter D. Verchinski</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Terra Klean Solutions, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 25, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 4, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Peter D. Verchinski</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: W9124E-15-B-0003
+                <br><b>Agency</b>: Department of the Army<br><b>File Number</b>: B-411027.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 28, 2015<div id="filenum_B-411027.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Susan K. McAuliffe</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Major Contracting Services, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 14, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 24, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Susan K. McAuliffe</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4124951">
-                <a class="result" href="/docket/B-412495.1">
-                    WorldWide Language Resources, Inc.
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110201">
+                <a class="result" href="/docket/B-411020.1">
+                    Bridges System Integration, LLC
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412495.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411020.1</div>
                 </a>
-                <br><b>Solicitation Number</b>: W911W4-15-R-0021
-                <br><b>Agency</b>: Department of the Army<br><b>File Number</b>: B-412495.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 16, 2015<div id="filenum_B-412495.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 25, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 4, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Mary G. Curcio</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>WorldWide Language Resources, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 25, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 4, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Mary G. Curcio</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: 3FNG-RG-020001-B
+                <br><b>Agency</b>: General Services Administration : Federal Acquisition Service<br><b>File Number</b>: <a href="/products/B-411020">B-411020.1</a>&nbsp;&nbsp;<b>Outcome</b>: Denied&nbsp;&nbsp;<b>Date Decided</b>: Apr 23, 2015<div id="filenum_B-411020.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Gary R. Allen</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411020">B-411020</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Bridges System Integration, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Gary R. Allen</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411020">B-411020</a></td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4124961">
-                <a class="result" href="/docket/B-412496.1">
-                    Tkacz Engineering, LLC
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110151">
+                <a class="result" href="/docket/B-411015.1">
+                    Dalma Tech2 Company
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412496.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411015.1</div>
                 </a>
-                <br><b>Solicitation Number</b>: FA8630-15-R-5003
-                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: B-412496.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 10, 2015<div id="filenum_B-412496.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 25, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 4, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young S. Lee</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Tkacz Engineering, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 25, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 4, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young S. Lee</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: FA8505-13-R-31138
+                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: <a href="/products/B-411015">B-411015.1</a>&nbsp;&nbsp;<b>Outcome</b>: Denied&nbsp;&nbsp;<b>Date Decided</b>: Apr 22, 2015<div id="filenum_B-411015.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411015">B-411015</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Dalma Tech2 Company</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411015">B-411015</a></td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4124891">
-                <a class="result" href="/docket/B-412489.1">
-                    Mike's Absolute Cleaning
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110152">
+                <a class="result" href="/docket/B-411015.2">
+                    Al Raha Group for Technical Services, Inc.
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412489.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411015.2</div>
                 </a>
-                <br><b>Solicitation Number</b>: RFP427
-                <br><b>Agency</b>: Department of the Army<br><b>File Number</b>: B-412489.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 23, 2015<div id="filenum_B-412489.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 23, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 2, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Frank Maguire</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Mike's Absolute Cleaning</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 23, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 2, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Frank Maguire</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: FA8505-13-R-31138
+                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: <a href="/products/B-411015.2,B-411015.3">B-411015.2</a>&nbsp;&nbsp;<b>Outcome</b>: Sustained&nbsp;&nbsp;<b>Date Decided</b>: Apr 22, 2015<div id="filenum_B-411015.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411015.2,B-411015.3">B-411015.2,B-411015.3</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Al Raha Group for Technical Services, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411015.2,B-411015.3">B-411015.2,B-411015.3</a></td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4124901">
-                <a class="result" href="/docket/B-412490.1">
-                    Unified Consultants Group, Inc.
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110191">
+                <a class="result" href="/docket/B-411019.1">
+                    In and Out Valet Company
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412490.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411019.1</div>
                 </a>
-                <br><b>Solicitation Number</b>: W9124B-15-R-0003
-                <br><b>Agency</b>: Department of the Army<br><b>File Number</b>: B-412490.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 22, 2015<div id="filenum_B-412490.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 23, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 2, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Heather Weiner</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Unified Consultants Group, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 23, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 2, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Heather Weiner</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: VA260-15-Q-0049
+                <br><b>Agency</b>: Department of Veterans Affairs<br><b>File Number</b>: <a href="/products/B-411019">B-411019.1</a>&nbsp;&nbsp;<b>Outcome</b>: Denied&nbsp;&nbsp;<b>Date Decided</b>: Apr 15, 2015<div id="filenum_B-411019.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Cherie J. Owen</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411019">B-411019</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>In and Out Valet Company</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Cherie J. Owen</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411019">B-411019</a></td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4124911">
-                <a class="result" href="/docket/B-412491.1">
-                    GS5, LLC
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110141">
+                <a class="result" href="/docket/B-411014.1">
+                    IBM US Federal
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412491.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411014.1</div>
                 </a>
-                <br><b>Solicitation Number</b>: W56KGY-15-R-0004
-                <br><b>Agency</b>: Department of the Army : U.S. Army Materiel Command<br><b>File Number</b>: B-412491.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 18, 2015<div id="filenum_B-412491.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 23, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 2, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Glenn G. Wolcott</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>GS5, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 23, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 2, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Glenn G. Wolcott</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: W15QKN-12-R-H023
+                <br><b>Agency</b>: Department of the Army : U.S. Army Materiel Command<br><b>File Number</b>: B-411014.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Mar 12, 2015<div id="filenum_B-411014.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Glenn G. Wolcott</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>IBM US Federal</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Glenn G. Wolcott</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4124881">
-                <a class="result" href="/docket/B-412488.1">
-                    Centerra Group, LLC
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4096722">
+                <a class="result" href="/docket/B-409672.2">
+                    O&M Contracting, Inc.
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412488.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-409672.2</div>
                 </a>
-                <br><b>Solicitation Number</b>: HSTS05-15-R-SPP064
-                <br><b>Agency</b>: Department of Homeland Security : Transportation Security Administration<br><b>File Number</b>: B-412488.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Dec 18, 2015<div id="filenum_B-412488.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 23, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 2, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Pedro E. Briones</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>Centerra Group, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 23, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 2, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Pedro E. Briones</td></tr></tbody></table></div>
+                <br><b>Solicitation Number</b>: SB1341-14-RQ-0008
+                <br><b>Agency</b>: Department of Commerce : National Institute of Standards and Technology<br><b>File Number</b>: B-409672.2&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Mar 10, 2015<div id="filenum_B-409672.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula A. Williams</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>O&M Contracting, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paula A. Williams</td></tr></tbody></table></div>
         </div>
             <!--Bidpro::formatDocket-->
-            <div class="listing grayBorderTop docketSearch" content_id="docket.4124781">
-                <a class="result" href="/docket/B-412478.1">
-                    W K Engineering International, Inc.
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110231">
+                <a class="result" href="/docket/B-411023.1">
+                    Mission1st Group, Inc.
                     <br />
-                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-412478.1</div>
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411023.1</div>
                 </a>
-                <br><b>Solicitation Number</b>: SPE7M4-16-T-0666
-                <br><b>Agency</b>: Department of Defense : Defense Logistics Agency<br><b>File Number</b>: B-412478.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Dec 9, 2015<div id="filenum_B-412478.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 23, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 2, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paul N. Wengert</td></tr></tbody></table></div><div class="search_popup" style="display:none">
-			 				<h3>W K Engineering International, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Nov 23, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Mar 2, 2016</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paul N. Wengert</td></tr></tbody></table></div>
-        </div><!--pagbar--><div><div id="page_btns"><span class="current_page">1</span><a class="non-current_page" href="?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&o=50">2</a><a class="non-current_page" href="?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&o=100">3</a><a class="non-current_page" href="?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&o=150">4</a><a class="non-current_page" href="?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&o=200">5</a><a class="non-current_page" href="?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&o=250">6</a><a class="non-current_page" href="?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&o=300">7</a><a class="non-current_page" href="?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&o=350">8</a><a class="non-current_page" href="?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&o=400">9</a><a class="non-current_page" href="?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-12-31%22%3B%7D&searched=1&o=50">Next&nbsp;&gt;</a><div class="cleaner"></div></div></div><!--/pagbar-->        </div>
+                <br><b>Solicitation Number</b>: F14PD00058
+                <br><b>Agency</b>: Department of the Interior<br><b>File Number</b>: B-411023.1&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Feb 6, 2015<div id="filenum_B-411023.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Cherie J. Owen</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Mission1st Group, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Cherie J. Owen</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110221">
+                <a class="result" href="/docket/B-411022.1">
+                    iSi Environmental
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411022.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: FA8125-14-R-0005
+                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: B-411022.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Feb 5, 2015<div id="filenum_B-411022.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young S. Lee</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>iSi Environmental</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young S. Lee</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110161">
+                <a class="result" href="/docket/B-411016.1">
+                    KURYAPI Construction and Trade Co., LTD
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411016.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: FA5685-14-R-0013
+                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: B-411016.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 29, 2015<div id="filenum_B-411016.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Mary G. Curcio</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>KURYAPI Construction and Trade Co., LTD</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Mary G. Curcio</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4106164">
+                <a class="result" href="/docket/B-410616.4">
+                    Receivia, Inc.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-410616.4</div>
+                </a>
+                <br><b>Solicitation Number</b>: VA731-14-Q-0041
+                <br><b>Agency</b>: Department of Veterans Affairs<br><b>File Number</b>: B-410616.4&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 28, 2015<div id="filenum_B-410616.4_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Robert T. Wu</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Receivia, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Robert T. Wu</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110181">
+                <a class="result" href="/docket/B-411018.1">
+                    GCH Services, LLC
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411018.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: FA8201-14-R-0015
+                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: B-411018.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 26, 2015<div id="filenum_B-411018.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paul N. Wengert</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>GCH Services, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Paul N. Wengert</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110211">
+                <a class="result" href="/docket/B-411021.1">
+                    MTN Government Services, Inc.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411021.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: CTC0200
+                <br><b>Agency</b>: Department of Defense : Defense Information Systems Agency<br><b>File Number</b>: B-411021.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 21, 2015<div id="filenum_B-411021.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Scott H. Riback</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>MTN Government Services, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Scott H. Riback</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110171">
+                <a class="result" href="/docket/B-411017.1">
+                    District Moving Companies, Inc.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411017.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: N00024-14-T-6328
+                <br><b>Agency</b>: Department of the Navy : Naval Sea Systems Command<br><b>File Number</b>: B-411017.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 14, 2015<div id="filenum_B-411017.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Tania Calhoun</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>District Moving Companies, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 13, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 23, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Tania Calhoun</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4104864">
+                <a class="result" href="/docket/B-410486.4">
+                    DZSP 21, LLC
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-410486.4</div>
+                </a>
+                <br><b>Solicitation Number</b>: N62742-13-R-1150
+                <br><b>Agency</b>: Department of the Navy : Naval Facilities Engineering Command<br><b>File Number</b>: <a href="/products/B-410486.4">B-410486.4</a>&nbsp;&nbsp;<b>Outcome</b>: Denied&nbsp;&nbsp;<b>Date Decided</b>: Jul 22, 2015<div id="filenum_B-410486.4_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest: Reconsideration</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Louis A. Chiarella</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-410486.4">B-410486.4</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>DZSP 21, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest: Reconsideration</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Louis A. Chiarella</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-410486.4">B-410486.4</a></td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110101">
+                <a class="result" href="/docket/B-411010.1">
+                    Tamimi Global Company, Ltd.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411010.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: FA5702-14-R-0004
+                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: B-411010.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Apr 8, 2015<div id="filenum_B-411010.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Robert T. Wu</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Tamimi Global Company, Ltd.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Robert T. Wu</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4108933">
+                <a class="result" href="/docket/B-410893.3">
+                    ExecuTech Strategic Consulting, LLC
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-410893.3</div>
+                </a>
+                <br><b>Solicitation Number</b>: FA4452-14-R-0001
+                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: <a href="/products/B-410893,B-410893.2,B-410893.3">B-410893.3</a>&nbsp;&nbsp;<b>Outcome</b>: Denied&nbsp;&nbsp;<b>Date Decided</b>: Mar 9, 2015<div id="filenum_B-410893.3_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Noah B. Bleicher</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-410893,B-410893.2,B-410893.3">B-410893,B-410893.2,B-410893.3</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>ExecuTech Strategic Consulting, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Noah B. Bleicher</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-410893,B-410893.2,B-410893.3">B-410893,B-410893.2,B-410893.3</a></td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110081">
+                <a class="result" href="/docket/B-411008.1">
+                    Phoenix Environmental Design, Inc.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411008.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: VA786-15-Q-0062
+                <br><b>Agency</b>: Department of Veterans Affairs<br><b>File Number</b>: B-411008.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Feb 11, 2015<div id="filenum_B-411008.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >K. Nicole Willems</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Phoenix Environmental Design, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >K. Nicole Willems</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110071">
+                <a class="result" href="/docket/B-411007.1">
+                    Export 220Volt, Inc.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411007.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: SGE50014R0021
+                <br><b>Agency</b>: Department of State<br><b>File Number</b>: B-411007.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Feb 3, 2015<div id="filenum_B-411007.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Louis A. Chiarella</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Export 220Volt, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Louis A. Chiarella</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110091">
+                <a class="result" href="/docket/B-411009.1">
+                    Advanced IT Concepts, Inc.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411009.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: W91249-14-R-0010
+                <br><b>Agency</b>: Department of the Army<br><b>File Number</b>: B-411009.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 29, 2015<div id="filenum_B-411009.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Kenneth Kilgour</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Advanced IT Concepts, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Kenneth Kilgour</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4109902">
+                <a class="result" href="/docket/B-410990.2">
+                    Pragmatics Inc.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-410990.2</div>
+                </a>
+                <br><b>Solicitation Number</b>: E200603
+                <br><b>Agency</b>: Department of Defense : Defense Information Systems Agency<br><b>File Number</b>: B-410990.2&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 22, 2015<div id="filenum_B-410990.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Louis A. Chiarella</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Pragmatics Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Louis A. Chiarella</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110111">
+                <a class="result" href="/docket/B-411011.1">
+                    Tom Smith Fire Equipment Company Inc
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411011.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: FA8056-14-R-0004
+                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: B-411011.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 20, 2015<div id="filenum_B-411011.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Charles W. Morrow</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Tom Smith Fire Equipment Company Inc</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 12, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 22, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Charles W. Morrow</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110051">
+                <a class="result" href="/docket/B-411005.1">
+                    Caddell Construction Company, Inc.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411005.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: SAQMMA-14-R-0073
+                <br><b>Agency</b>: Department of State<br><b>File Number</b>: B-411005.1&nbsp;&nbsp;<b>Outcome</b>: Sustained&nbsp;&nbsp;<b>Date Decided</b>: Apr 20, 2015<div id="filenum_B-411005.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Stephanie B. Magnell</td></tr><tr><td><b>Decision Summary</b>:</td><td>This protest is covered by a protective order, which means that some information in the decision may require redaction before public release. A final redacted version of the decision will be posted when this process is complete. <a href="/legal/are-you-waiting-for-a-bid-protest-decision/about?p=" >Learn more about our protective order and redaction process here</a>.</td></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Caddell Construction Company, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Stephanie B. Magnell</td></tr><tr><td><b>Decision Summary</b>:</td><td>This protest is covered by a protective order, which means that some information in the decision may require redaction before public release. A final redacted version of the decision will be posted when this process is complete. <a href="/legal/are-you-waiting-for-a-bid-protest-decision/about?p=" >Learn more about our protective order and redaction process here</a>.</td></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110052">
+                <a class="result" href="/docket/B-411005.2">
+                    Caddell Construction Company, Inc.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411005.2</div>
+                </a>
+                <br><b>Solicitation Number</b>: SAQMMA-14-R-0073
+                <br><b>Agency</b>: Department of State<br><b>File Number</b>: <a href="/products/B-411005.1,B-411005.2">B-411005.2</a>&nbsp;&nbsp;<b>Outcome</b>: Sustained&nbsp;&nbsp;<b>Date Decided</b>: Apr 20, 2015<div id="filenum_B-411005.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Stephanie B. Magnell</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411005.1,B-411005.2">B-411005.1,B-411005.2</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Caddell Construction Company, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Stephanie B. Magnell</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411005.1,B-411005.2">B-411005.1,B-411005.2</a></td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4097053">
+                <a class="result" href="/docket/B-409705.3">
+                    SS Medical Inc
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-409705.3</div>
+                </a>
+                <br><b>Solicitation Number</b>: VA249-14-R-0173
+                <br><b>Agency</b>: Department of Veterans Affairs<br><b>File Number</b>: <a href="/products/B-409705.3">B-409705.3</a>&nbsp;&nbsp;<b>Outcome</b>: Denied&nbsp;&nbsp;<b>Date Decided</b>: Apr 17, 2015<div id="filenum_B-409705.3_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Frank Maguire</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-409705.3">B-409705.3</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>SS Medical Inc</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Frank Maguire</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-409705.3">B-409705.3</a></td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110121">
+                <a class="result" href="/docket/B-411012.1">
+                    CI Filing Systems, LLC
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411012.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: 386-060S
+                <br><b>Agency</b>: Government Publishing Office<br><b>File Number</b>: <a href="/products/B-411012">B-411012.1</a>&nbsp;&nbsp;<b>Outcome</b>: Denied&nbsp;&nbsp;<b>Date Decided</b>: Apr 17, 2015<div id="filenum_B-411012.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Glenn G. Wolcott</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411012">B-411012</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>CI Filing Systems, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Glenn G. Wolcott</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-411012">B-411012</a></td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4094184">
+                <a class="result" href="/docket/B-409418.4">
+                    SupplyCore Inc
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-409418.4</div>
+                </a>
+                <br><b>Solicitation Number</b>: SPM7LX-14-R-0029
+                <br><b>Agency</b>: Department of Defense : Defense Logistics Agency<br><b>File Number</b>: <a href="/products/B-409418.4,B-409418.5,B-409418.6">B-409418.4</a>&nbsp;&nbsp;<b>Outcome</b>: Denied&nbsp;&nbsp;<b>Date Decided</b>: Apr 16, 2015<div id="filenum_B-409418.4_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young S. Lee</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-409418.4,B-409418.5,B-409418.6">B-409418.4,B-409418.5,B-409418.6</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>SupplyCore Inc</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Young S. Lee</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-409418.4,B-409418.5,B-409418.6">B-409418.4,B-409418.5,B-409418.6</a></td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110061">
+                <a class="result" href="/docket/B-411006.1">
+                    Center for Disease Detection
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411006.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: W81XWH-15-T-0082
+                <br><b>Agency</b>: Department of the Army<br><b>File Number</b>: B-411006.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 22, 2015<div id="filenum_B-411006.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Brent Burris</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Center for Disease Detection</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 9, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Brent Burris</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4097052">
+                <a class="result" href="/docket/B-409705.2">
+                    Department of Veterans Affairs
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-409705.2</div>
+                </a>
+                <br><b>Solicitation Number</b>: VA249-14-R-0173
+                <br><b>Agency</b>: Department of Veterans Affairs<br><b>File Number</b>: <a href="/products/B-409705.2">B-409705.2</a>&nbsp;&nbsp;<b>Outcome</b>: Denied&nbsp;&nbsp;<b>Date Decided</b>: Apr 17, 2015<div id="filenum_B-409705.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 8, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Frank Maguire</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-409705.2">B-409705.2</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Department of Veterans Affairs</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 8, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Frank Maguire</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-409705.2">B-409705.2</a></td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110041">
+                <a class="result" href="/docket/B-411004.1">
+                    Latvian Connection, LLC
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411004.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: 693810
+                <br><b>Agency</b>: Department of the Army<br><b>File Number</b>: B-411004.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Feb 20, 2015<div id="filenum_B-411004.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 8, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Peter D. Verchinski</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Latvian Connection, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 8, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 20, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Peter D. Verchinski</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4109912">
+                <a class="result" href="/docket/B-410991.2">
+                    ABM Government Services, LLC
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-410991.2</div>
+                </a>
+                <br><b>Solicitation Number</b>: W912DY-12-R-0046
+                <br><b>Agency</b>: Department of the Army : Corps of Engineers<br><b>File Number</b>: <a href="/products/B-410991.2">B-410991.2</a>&nbsp;&nbsp;<b>Outcome</b>: Denied&nbsp;&nbsp;<b>Date Decided</b>: Apr 17, 2015<div id="filenum_B-410991.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 17, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Eric M. Ransom</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-410991.2">B-410991.2</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>ABM Government Services, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 17, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Eric M. Ransom</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-410991.2">B-410991.2</a></td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110001">
+                <a class="result" href="/docket/B-411000.1">
+                    Latvian Connection, LLC
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411000.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: MIPR10623139
+                <br><b>Agency</b>: Department of the Air Force<br><b>File Number</b>: B-411000.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 27, 2015<div id="filenum_B-411000.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 17, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Scott H. Riback</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Latvian Connection, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 17, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Scott H. Riback</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110021">
+                <a class="result" href="/docket/B-411002.1">
+                    Arc-Tech, Inc.
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411002.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: 263-2008-PGG-0238
+                <br><b>Agency</b>: Department of Health and Human Services : Public Health Service : National Institutes of Health<br><b>File Number</b>: B-411002.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 14, 2015<div id="filenum_B-411002.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 17, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Kenneth Kilgour</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Arc-Tech, Inc.</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 17, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Kenneth Kilgour</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4110031">
+                <a class="result" href="/docket/B-411003.1">
+                    Latvian Connection, LLC
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-411003.1</div>
+                </a>
+                <br><b>Solicitation Number</b>: 694533
+                <br><b>Agency</b>: Department of the Army<br><b>File Number</b>: B-411003.1&nbsp;&nbsp;<b>Outcome</b>: Dismissed&nbsp;&nbsp;<b>Date Decided</b>: Jan 14, 2015<div id="filenum_B-411003.1_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 17, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Heather Weiner</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Latvian Connection, LLC</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 17, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Heather Weiner</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4109412">
+                <a class="result" href="/docket/B-410941.2">
+                    Spry Methods Inc
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-410941.2</div>
+                </a>
+                <br><b>Solicitation Number</b>: DJD-14-HQ-0090
+                <br><b>Agency</b>: Department of Justice : Drug Enforcement Administration<br><b>File Number</b>: B-410941.2&nbsp;&nbsp;<b>Outcome</b>: Withdrawn&nbsp;&nbsp;<b>Date Decided</b>: Jan 13, 2015<div id="filenum_B-410941.2_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 17, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Spry Methods Inc</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 7, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 17, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Evan D. Wesser</td></tr></tbody></table></div>
+        </div>
+            <!--Bidpro::formatDocket-->
+            <div class="listing grayBorderTop docketSearch" content_id="docket.4107605">
+                <a class="result" href="/docket/B-410760.5">
+                    Science Applications International Corporation
+                    <br />
+                    <div class="release_info" style="color: #063">http://gao.gov/docket/B-410760.5</div>
+                </a>
+                <br><b>Solicitation Number</b>: N00039-14-R-0003
+                <br><b>Agency</b>: Department of the Navy : Space and Naval Warfare Systems Command<br><b>File Number</b>: <a href="/products/B-410760.5">B-410760.5</a>&nbsp;&nbsp;<b>Outcome</b>: Denied&nbsp;&nbsp;<b>Date Decided</b>: Nov 24, 2015<div id="filenum_B-410760.5_div" style="margin-top: 10px;display: none;"><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 6, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 16, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest: Entitlement</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Noah B. Bleicher</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-410760.5">B-410760.5</a></td></tr></tbody></table></div><div class="search_popup" style="display:none">
+			 				<h3>Science Applications International Corporation</h3><table><tbody><tr><td><b>Filed Date</b>:</td><td>Jan 6, 2015</td></tr><tr><td><b>Due Date</b>:</td><td>Apr 16, 2015</td></tr><tr><td><b>Case Type</b>:</td><td>Bid Protest: Entitlement</td></tr><tr><td><b>GAO Attorney</b>:</td><td id="gao-attorney" >Noah B. Bleicher</td></tr><tr><td><b>Decision Summary</b>:</td><td><a href="/products/B-410760.5">B-410760.5</a></td></tr></tbody></table></div>
+        </div><!--pagbar--><div><div id="page_btns"><span class="current_page">1</span><a class="non-current_page" href="?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-01-15%22%3B%7D&searched=1&o=50">2</a><a class="non-current_page" href="?openclosed=closed&agency=All&snumber=&filenum=&now_sort=docdate desc,issue_date_dt desc&rows=50&page_name=bid_protest_docket&facets=a%3A3%3A%7Bs%3A4%3A%22site%22%3Bs%3A18%3A%22Bid+Protest+Docket%22%3Bs%3A8%3A%22closed_s%22%3Bs%3A1%3A%22Y%22%3Bs%3A7%3A%22docdate%22%3Bs%3A22%3A%222015-01-01to2015-01-15%22%3B%7D&searched=1&o=50">Next&nbsp;&gt;</a><div class="cleaner"></div></div></div><!--/pagbar-->        </div>
     </div>
     </li>
     <li>
-		 <p>Are you looking for a protest but can’t find it? For questions
-		 about bid protests, e-mail <a href="mailto:ProtestFinder@gao.gov">ProtestFinder@gao.gov</a>.</p>
+		 <p>Are you looking for a protest but can’t find it? For questions 
+		 about bid protests, e-mail <a href="mailto:ProtestFinder@gao.gov">ProtestFinder@gao.gov</a>.</p>   
     </li>
 </ul>
-		</div>
+		</div>	  
 	</div>
-
-</div>
+	
+</div>	 
 </div>	</div></div> <!-- close main1 & main2 -->
 	<!--   sub nav -->
 		</div></div> <!-- close middle & column-in -->
@@ -1399,7 +1392,7 @@ jQuery(document).ready(function($) {
 	 <!--   sub nav -->
 
 
-
+	 
 	<div id="push"></div>
 </div>
 <!-- [BEGIN] Footer -->
@@ -1435,9 +1428,9 @@ jQuery(document).ready(function($) {
          <li><a class="spritely footer_stayconnected" href="/feeds.html"><span class="text_no_indent">Stay connected</a></span></li>
       </ul>
    </div>
-
+   
    <div style="border-bottom:1px solid #999999;width:1015px;margin: 0 auto">&nbsp;</div>
-
+   
    <div class="footer_lower">
 
       <div id="subfooter">
@@ -1449,9 +1442,9 @@ jQuery(document).ready(function($) {
                <li><a href="/browse/agency">Browse By Agency</a></li>
 		<li><a href="/restricted/restricted_reports">Restricted Products</a></li>
             </ul>
-         </div>
+         </div>   
          <!--/ .col -->
-
+         
          <div class="col">
             <h4><a href="/legal/">Bid Protests &amp; <br>Appropriations Law</a></h4>
             <ul>
@@ -1463,8 +1456,8 @@ jQuery(document).ready(function($) {
             </ul>
          </div>
          <!--/ .col -->
-
-         <div class="col">
+            
+         <div class="col">	
             <h4><a href="/key_issues/overview">Key Issues</a></h4>
             <ul>
                <li><a href="/key_issues/overview#t=1">Browse By Topic</a></li>
@@ -1473,7 +1466,7 @@ jQuery(document).ready(function($) {
             </ul>
          </div>
          <!--/ .col -->
-
+         
          <div class="col">
             <h4><a href="/about/index.html">About GAO</a></h4>
             <ul>
@@ -1490,8 +1483,8 @@ jQuery(document).ready(function($) {
              </ul>
          </div>
          <!--/ .col -->
-
-         <div class="col">
+         
+         <div class="col">	
             <h4><a href="/careers/index.html">Careers</a></h4>
             <ul>
                <li><a href="https://www.usajobs.gov/JobSearch/Search/GetResults?OrganizationID=LG00&amp;ApplicantEligibility=all">Current Job<br />Vacancies</a></li>
@@ -1500,10 +1493,10 @@ jQuery(document).ready(function($) {
                <li><a href="/careers/benefits.html">Benefits</a></li>
                <li><a href="/careers/student.html">Student and<br />Executive<br />Programs</a></li>
                <li><a href="/careers/diversity.html">Diversity &amp;<br />Inclusion</a></li>
-            </ul>
+            </ul>   
          </div>
          <!--/ .col -->
-
+         
          <div class="col">
             <h4><a href="/multimedia/video/">Multimedia</a></h4>
             <ul>
@@ -1512,7 +1505,7 @@ jQuery(document).ready(function($) {
             </ul>
          </div>
          <!--/ .col -->
-
+         
          <div class="col">
             <h4><a href="/resources.html">Resources</a></h4>
             <ul>
@@ -1525,10 +1518,10 @@ jQuery(document).ready(function($) {
             </ul>
          </div>
          <!--/ .col -->
-
+         
          <div style="clear:both"></div>
       </div>
-
+   
       <div class="air">
          <a href="/values/">ACCOUNTABILITY<span class="footer_star">&#9733;</span>INTEGRITY<span class="footer_star">&#9733;</span>RELIABILITY</a>
          <div class="footerstroke2">
@@ -1541,7 +1534,7 @@ jQuery(document).ready(function($) {
          </ul>
          </div>
       </div>
-
+   
    </div><!--footer_lower-->
 
 <!-- [END] Footer -->

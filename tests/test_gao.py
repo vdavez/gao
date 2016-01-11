@@ -26,11 +26,12 @@ class TestGAO():
             assert res.status_code == 200
             assert "Science Applications International Corporation" or "Man-Machine Systems Assessment Inc" in res.text
 
-    @vcr.use_cassette('tests/data/test-multiple-request.yml')
+    @vcr.use_cassette('tests/data/test-multiple-request.yml', record_mode="new_episodes")
     def test_get_protests_from_listing(self):
         gao = GAO(start_date='2015-01-01', end_date='2015-01-15')
         res_json = []
         for res in gao.get_docket_list():
             res_json.append(gao.get_protests_from_listing(res.text))
         results = [protest for dockets in res_json for protest in dockets]
+        assert results[8]["opinion"].summary is not None
         assert len(results) == 73

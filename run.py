@@ -22,7 +22,9 @@ cursor.execute(
         due_date TEXT,
         date_decided TEXT,
         case_type TEXT,
-        gao_attorney TEXT
+        gao_attorney TEXT,
+        summary TEXT,
+        decision TEXT
     )
 ''')
 
@@ -37,8 +39,8 @@ for res in gao.get_docket_list():
 
     # Take the protests and dump them into the database
     for protest in res_json:
-        cursor.execute('''INSERT INTO protests (name, agency, solicitation_number, outcome, docket_url, filed_date, due_date, date_decided, case_type, gao_attorney)
-              VALUES(?,?,?,?,?,?,?,?,?,?)''', (protest["name"], protest["agency"], protest.get("solicitation_number", ""), protest["outcome"], protest["docket_url"], protest["filed_date"], protest["due_date"], protest["date_decided"], protest["case_type"], protest["gao_attorney"]))
+        cursor.execute('''INSERT INTO protests (name, agency, solicitation_number, outcome, docket_url, filed_date, due_date, date_decided, case_type, gao_attorney, summary, decision)
+              VALUES(?,?,?,?,?,?,?,?,?,?,?,?)''', (protest["name"], protest["agency"], protest.get("solicitation_number", ""), protest["outcome"], protest["docket_url"], protest["filed_date"], protest["due_date"], protest["date_decided"], protest["case_type"], protest["gao_attorney"], protest.get("opinion").summary if protest.get("opinion") else "", protest.get("opinion").decision if protest.get("opinion") else ""))
         db.commit()
 
 # Close the database
