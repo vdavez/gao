@@ -4,9 +4,16 @@ from .protest import Protest
 
 
 class GAO:
-    def __init__(self, start_date, end_date):
+    def __init__(self, start_date: str, end_date: str):
+        """Inits a GAO search period
+        
+        Args:
+            start_date: A string in the form "2022-01-01"
+            end_date: A string in the form "2022-01-08"
+        """
         self.start_date = start_date
         self.end_date = end_date
+
 
     def get_dockets_page_list(self, page: int) -> []:
         """ Gets a list of html results representing dockets, given a page
@@ -45,6 +52,10 @@ class GAO:
 
         return True
 
+
+    ##
+    ## THIS NEEDS REWORKING BELOW!!!
+    ## 
     """
     get_protests_from_listing
     Take a listing of 20 (generally) protests in the docket data and create

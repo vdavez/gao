@@ -1,4 +1,4 @@
-# GAO docket
+# GAO dockets
 
 A client/scraper for GAO bid protests.
 
@@ -9,6 +9,10 @@ A client/scraper for GAO bid protests.
 ## Data
 
 Although GAO publishes both *dockets* and *decisions* separately, but decision is always part of a docket. So, we will use the search for dockets and then, when there *is* a decision, we'll pull that too.
+
+## Getting set up 
+
+I am now using [Poetry](https://python-poetry.org/) to handle python dependencies. Please make sure you have Poetry installed and then, after getting the repository, run `poetry install`.
 
 ## Running tests
 
