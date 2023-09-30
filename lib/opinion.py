@@ -3,17 +3,16 @@ from lxml import html
 
 
 class Opinion:
-    """A written opinion/decision for a given bid protest
-    """
+    """A written opinion/decision for a given bid protest"""
 
     def __init__(self, docket: str):
         """Inits an Opinion with a docket number
-        
+
         Checks to see if there's an opinion and, if there is one,
-        stores the summary (highlights) and the full decision. 
+        stores the summary (highlights) and the full decision.
         """
         self.docket = docket
-        
+
         if self.get_opinion():
             self.summary = self.get_summary_from_opinion()
             self.decision = self.get_decision_from_opinion()
@@ -31,7 +30,7 @@ class Opinion:
     def opinion_not_found(tree):
         """Helper method to look within a page that isn't well formed"""
         return len(tree.xpath("//section[@id='block-gao-content']")) == 0
-        
+
     def get_summary_from_opinion(self):
         """Extracts the summary from the page"""
 
