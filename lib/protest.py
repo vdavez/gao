@@ -44,8 +44,14 @@ class Protest:
                 self.data["agency"] = (
                     agency_div[0].text_content() + ";" + agency_div[1].text_content()
                 )
-            else:
+            elif len(agency_div) == 1:
                 self.data["agency"] = agency_div[0].text_content()
+            elif len(agency_div) == 0:
+                self.data["agency"] = (
+                    elems.find_class("field--type-entity-reference")[0]
+                    .cssselect(".field__item")[0]
+                    .text_content()
+                )
             self.data["file_number"] = (
                 elems.find_class("field--type-entity-reference")[1]
                 .cssselect(".field__item")[0]
