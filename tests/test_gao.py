@@ -10,7 +10,7 @@ class TestGAO:
         assert gao.start_date == "2021-01-07"
         assert gao.end_date == "2021-01-08"
 
-    @pytest.mark.vcr(record_mode="new_episodes")
+    @pytest.mark.vcr(record_mode="once")
     def test_get_dockets_page_list(self):
         gao = GAO("2021-01-07", "2021-01-08")
         protests_page = gao.get_dockets_page_list(0)
@@ -18,7 +18,7 @@ class TestGAO:
             data = json.load(fp)
             assert protests_page == data
 
-    @pytest.mark.vcr(record_mode="new_episodes")
+    @pytest.mark.vcr(record_mode="none")
     def test_get_all_dockets(self):
         gao = GAO(start_date="2021-01-01", end_date="2021-01-08")
         docket_pages = [page for page in gao.generate_all_dockets()]
