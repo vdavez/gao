@@ -1,0 +1,58 @@
+[
+    {
+        "docket_url": "https://www.gao.gov/docket/b-418823.4",
+        "name": "Innovative Management & Technology Approaches, Inc.",
+        "solicitation_number": "1333BJ19Q00280146 ",
+        "agency": "Department of Commerce;Patent and Trademark Office",
+        "file_number": "B-418823.4",
+        "outcome": "Sustained",
+        "decision_date": "2021-01-07T17:00:00Z",
+        "filed_date": "2020-11-12T13:00:00Z",
+        "due_date": "2021-02-22T13:00:00Z",
+        "type": "Bid Protest",
+        "attorney": "John Sorrenti",
+        "opinion_url": "https://www.gao.gov/products/b-418823.3,b-418823.4"
+    },
+    {
+        "docket_url": "https://www.gao.gov/docket/b-418823.3",
+        "name": "Innovative Management & Technology Approaches, Inc.",
+        "solicitation_number": "1333BJ19Q00280146 ",
+        "agency": "Department of Commerce;Patent and Trademark Office",
+        "file_number": "B-418823.3",
+        "outcome": "Sustained",
+        "decision_date": "2021-01-07T17:00:00Z",
+        "filed_date": "2020-10-02T13:00:00Z",
+        "due_date": "2021-01-11T13:00:00Z",
+        "type": "Bid Protest",
+        "attorney": "John Sorrenti",
+        "opinion_url": "https://www.gao.gov/products/b-418823.3,b-418823.4"
+    },
+    {
+        "docket_url": "https://www.gao.gov/docket/b-419506.1",
+        "name": "Fisher Sand & Gravel Company",
+        "solicitation_number": "70C01C21R00000001",
+        "agency": "Department of Homeland Security;United States Customs and Border Protection",
+        "file_number": "B-419506.1",
+        "outcome": "Withdrawn",
+        "decision_date": "2021-01-07T17:00:00Z",
+        "filed_date": "2021-01-05T13:00:00Z",
+        "due_date": "2021-04-15T13:00:00Z",
+        "type": "Bid Protest",
+        "attorney": "Evan Williams",
+        "opinion_url": ""
+    },
+    {
+        "docket_url": "https://www.gao.gov/docket/b-419238.1",
+        "name": "Fisher Sand & Gravel Company",
+        "solicitation_number": "W9126G20R0087",
+        "agency": "Department of the Army;Corps of Engineers",
+        "file_number": "B-419238.1",
+        "outcome": "Denied",
+        "decision_date": "2021-01-07T17:00:00Z",
+        "filed_date": "2020-10-02T13:00:00Z",
+        "due_date": "2021-01-11T13:00:00Z",
+        "type": "Bid Protest",
+        "attorney": "Glenn G. Wolcott",
+        "opinion_url": "https://www.gao.gov/products/b-419238"
+    }
+]

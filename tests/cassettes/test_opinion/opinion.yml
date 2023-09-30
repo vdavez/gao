@@ -1,0 +1,1913 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: http://gao.gov/products/b-418029,b-418029.2,b-418029.3
+  response:
+    body:
+      string: '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+
+        <html><head>
+
+        <title>302 Found</title>
+
+        </head><body>
+
+        <h1>Found</h1>
+
+        <p>The document has moved <a href="http://www.gao.gov/products/b-418029,b-418029.2,b-418029.3">here</a>.</p>
+
+        <hr>
+
+        <address>Apache Server at gao.gov Port 80</address>
+
+        </body></html>
+
+        '
+    headers:
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '299'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      Date:
+      - Sat, 30 Sep 2023 13:12:09 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Location:
+      - http://www.gao.gov/products/b-418029,b-418029.2,b-418029.3
+      Server:
+      - Apache
+    status:
+      code: 302
+      message: Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: http://www.gao.gov/products/b-418029,b-418029.2,b-418029.3
+  response:
+    body:
+      string: '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+
+        <html><head>
+
+        <title>301 Moved Permanently</title>
+
+        </head><body>
+
+        <h1>Moved Permanently</h1>
+
+        <p>The document has moved <a href="https://www.gao.gov/products/b-418029,b-418029.2,b-418029.3">here</a>.</p>
+
+        </body></html>
+
+        '
+    headers:
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=1209600
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '267'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      Date:
+      - Sat, 30 Sep 2023 13:12:09 GMT
+      Expires:
+      - Sat, 14 Oct 2023 13:12:09 GMT
+      Location:
+      - https://www.gao.gov/products/b-418029,b-418029.2,b-418029.3
+      Server:
+      - nginx
+      Via:
+      - varnish
+      X-Cache:
+      - MISS
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-ID:
+      - v-f6368f84-5f92-11ee-9490-d726cc826ccc
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://www.gao.gov/products/b-418029,b-418029.2,b-418029.3
+  response:
+    body:
+      string: "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\">\n
+        \ <head>\n    <meta charset=\"utf-8\" />\n<meta name=\"description\" content=\"22nd
+        Century Technologies, Inc., of McLean, Virginia, protests the establishment
+        of a blanket purchase agreement (BPA) with Deloitte Consulting, LLP...\" />\n<link
+        rel=\"canonical\" href=\"https://www.gao.gov/products/b-418029%2Cb-418029.2%2Cb-418029.3\"
+        />\n<meta property=\"og:type\" content=\"Website\" />\n<meta property=\"og:url\"
+        content=\"https://www.gao.gov/products/b-418029%2Cb-418029.2%2Cb-418029.3\"
+        />\n<meta property=\"og:title\" content=\"22nd Century Technologies, Inc.\"
+        />\n<meta property=\"og:description\" content=\"22nd Century Technologies,
+        Inc., of McLean, Virginia, protests the establishment of a blanket purchase
+        agreement (BPA) with Deloitte Consulting, LLP...\" />\n<meta property=\"og:image\"
+        content=\"https://www.gao.gov/themes/custom/gao/img/gao-gov-icon-800-mod.jpg\"
+        />\n<meta property=\"article:author\" content=\"U.S. Government Accountability
+        Office\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta
+        name=\"twitter:description\" content=\"22nd Century Technologies, Inc., of
+        McLean, Virginia, protests the establishment of a blanket purchase agreement
+        (BPA) with Deloitte Consulting, LLP...\" />\n<meta name=\"twitter:site\" content=\"@USGAO\"
+        />\n<meta name=\"twitter:title\" content=\"22nd Century Technologies, Inc.\"
+        />\n<meta name=\"twitter:creator\" content=\"@USGAO\" />\n<meta name=\"twitter:url\"
+        content=\"https://www.gao.gov/products/b-418029%2Cb-418029.2%2Cb-418029.3\"
+        />\n<meta name=\"twitter:image\" content=\"https://www.gao.gov/themes/custom/gao/img/gao-gov-icon-800-mod.jpg\"
+        />\n<meta name=\"Generator\" content=\"Drupal 9 (https://www.drupal.org)\"
+        />\n<meta name=\"MobileOptimized\" content=\"width\" />\n<meta name=\"HandheldFriendly\"
+        content=\"true\" />\n<meta name=\"viewport\" content=\"width=device-width,
+        initial-scale=1.0\" />\n<link rel=\"icon\" href=\"/themes/custom/gao/favicon.ico\"
+        type=\"image/vnd.microsoft.icon\" />\n\n    <title>22nd Century Technologies,
+        Inc. | U.S. GAO</title>\n    <script>\n    // Facebook\n    (function (d,
+        s, id) {\n    var js, fjs = d.getElementsByTagName(s)[0];\n    if (d.getElementById(id))
+        return;\n    js = d.createElement(s); js.id = id;\n    js.src = '//connect.facebook.net/en_US/all.js';\n
+        \   fjs.parentNode.insertBefore(js, fjs);\n    }(document, 'script', 'facebook-jssdk'));\n
+        \   window.fbAsyncInit = function() {\n      var fb_id = document.querySelectorAll('[property=\"fb:app_id\"]')[0].getAttribute(\"content\");\n
+        \     FB.init({\n        appId      : fb_id, // App ID\n        status     :
+        true, // check login status\n        cookie     : true, // enable cookies
+        to allow the server to access the session\n        xfbml      : true  // parse
+        XFBML\n      });\n    };\n    </script>\n    <meta http-equiv=\"X-UA-Compatible\"
+        content=\"IE=edge\"><script type=\"text/javascript\">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:[\"bam.nr-data.net\"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:\"1588625732\",accountID:\"2881534\",trustKey:\"26315\",licenseKey:\"NRJS-025d5a9ac81a843ddec\",applicationID:\"1448534985\"};;/*!
+        For license information please see nr-loader-rum-1.242.0.min.js.LICENSE.txt
+        */\n(()=>{\"use strict\";var e,t,n={234:(e,t,n)=>{n.d(t,{P_:()=>h,Mt:()=>m,C5:()=>s,DL:()=>w,OP:()=>j,lF:()=>N,Yu:()=>_,Dg:()=>v,CX:()=>c,GE:()=>A,sU:()=>T});var
+        r=n(8632),i=n(9567);const a={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void
+        0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void
+        0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void
+        0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw
+        new Error(\"All info objects require an agent identifier!\");if(!o[e])throw
+        new Error(\"Info for \".concat(e,\" was never set\"));return o[e]}function
+        c(e,t){if(!e)throw new Error(\"All info objects require an agent identifier!\");o[e]=(0,i.D)(t,a),(0,r.Qy)(e,o[e],\"info\")}const
+        d=e=>{if(!e||\"string\"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var
+        u=n(7056),l=n(50);const f=()=>{const e={mask_selector:\"*\",block_selector:\"[data-nr-block]\",mask_input_options:{color:!1,date:!1,\"datetime-local\":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{proxy:{assets:void
+        0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void
+        0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void
+        0,allowed_origins:void 0},session:{domain:void 0,expiresMs:u.oD,inactiveMs:u.Hb},ssl:void
+        0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,mask_all_inputs:!0,get
+        mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector=t+\",[data-nr-mask]\":null===t?e.mask_selector=t:(0,l.Z)(\"An
+        invalid session_replay.mask_selector was provided and will not be used\",t)},get
+        block_class(){return\"nr-block\"},get ignore_class(){return\"nr-ignore\"},get
+        mask_text_class(){return\"nr-mask\"},get block_selector(){return e.block_selector},set
+        block_selector(t){d(t)?e.block_selector+=\",\".concat(t):\"\"!==t&&(0,l.Z)(\"An
+        invalid session_replay.block_selector was provided and will not be used\",t)},get
+        mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&\"object\"==typeof
+        t?e.mask_input_options={...t,password:!0}:(0,l.Z)(\"An invalid session_replay.mask_input_option
+        was provided and will not be used\",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},g={},p=\"All
+        configuration objects require an agent identifier!\";function h(e){if(!e)throw
+        new Error(p);if(!g[e])throw new Error(\"Configuration for \".concat(e,\" was
+        never set\"));return g[e]}function v(e,t){if(!e)throw new Error(p);g[e]=(0,i.D)(t,f()),(0,r.Qy)(e,g[e],\"config\")}function
+        m(e,t){if(!e)throw new Error(p);var n=h(e);if(n){for(var r=t.split(\".\"),i=0;i<r.length-1;i++)if(\"object\"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return
+        n}const b={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void
+        0,applicationID:void 0,xpid:void 0},y={};function w(e){if(!e)throw new Error(\"All
+        loader-config objects require an agent identifier!\");if(!y[e])throw new Error(\"LoaderConfig
+        for \".concat(e,\" was never set\"));return y[e]}function A(e,t){if(!e)throw
+        new Error(\"All loader-config objects require an agent identifier!\");y[e]=(0,i.D)(t,b),(0,r.Qy)(e,y[e],\"loader_config\")}const
+        _=(0,r.mF)().o;var x=n(385),D=n(6818);const k={buildEnv:D.Re,customTransaction:void
+        0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(x._A?.performance?.timeOrigin||x._A?.performance?.timing?.navigationStart||Date.now()),onerror:void
+        0,origin:\"\"+x._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:\"function\"==typeof
+        x._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void
+        0},E={};function j(e){if(!e)throw new Error(\"All runtime objects require
+        an agent identifier!\");if(!E[e])throw new Error(\"Runtime for \".concat(e,\"
+        was never set\"));return E[e]}function T(e,t){if(!e)throw new Error(\"All
+        runtime objects require an agent identifier!\");E[e]=(0,i.D)(t,k),(0,r.Qy)(e,E[e],\"runtime\")}function
+        N(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{n.d(t,{D:()=>i});var
+        r=n(50);function i(e,t){try{if(!e||\"object\"!=typeof e)return(0,r.Z)(\"Setting
+        a Configurable requires an object as input\");if(!t||\"object\"!=typeof t)return(0,r.Z)(\"Setting
+        a Configurable requires a model to set its initial properties\");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(n).length?e:n;for(let
+        o in a)if(void 0!==e[o])try{\"object\"==typeof e[o]&&\"object\"==typeof t[o]?n[o]=i(e[o],t[o]):n[o]=e[o]}catch(e){(0,r.Z)(\"An
+        error occurred while setting a property of a Configurable\",e)}return n}catch(e){(0,r.Z)(\"An
+        error occured while setting a Configurable\",e)}}},6818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>a,q4:()=>r});const
+        r=\"1.242.0\",i=\"PROD\",a=\"CDN\"},385:(e,t,n)=>{n.d(t,{Nk:()=>u,Tt:()=>s,_A:()=>a,cv:()=>l,iS:()=>o,il:()=>r,ux:()=>c,v6:()=>i,w1:()=>d});const
+        r=\"undefined\"!=typeof window&&!!window.document,i=\"undefined\"!=typeof
+        WorkerGlobalScope&&(\"undefined\"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator
+        instanceof WorkerNavigator||\"undefined\"!=typeof globalThis&&globalThis instanceof
+        WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=r?window:\"undefined\"!=typeof
+        WorkerGlobalScope&&(\"undefined\"!=typeof self&&self instanceof WorkerGlobalScope&&self||\"undefined\"!=typeof
+        globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean(\"hidden\"===a?.document?.visibilityState),s=(a?.location,/iPad|iPhone|iPod/.test(a.navigator?.userAgent)),c=s&&\"undefined\"==typeof
+        SharedWorker,d=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\\s](\\d+\\.\\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(r&&window.document.documentMode)),u=!!a.navigator?.sendBeacon,l=Math.floor(a?.performance?.timeOrigin||a?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,n)=>{n.d(t,{w:()=>a});var
+        r=n(50);const i={agentIdentifier:\"\",ee:void 0};class a{constructor(e){try{if(\"object\"!=typeof
+        e)return(0,r.Z)(\"shared context requires an object as input\");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)(\"An
+        error occured while setting SharedContext\",e)}}}},8e3:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var
+        r=n(8325),i=n(1284),a=n(4322),o=n(3325);const s={};function c(e,t){const n={staged:!1,priority:o.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function
+        d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void
+        0!==arguments[0]?arguments[0]:\"\",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:\"feature\";if(d(e),!e||!s[e].get(t))return
+        o(t);s[e].get(t).staged=!0;const n=[...s[e]];function o(t){const n=e?r.ee.get(e):r.ee,o=a.X.handlers;if(n.backlog&&o){var
+        s=n.backlog[t],c=o[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete
+        o[t],n.backlog[t]=null,n.emit(\"drain-\"+t,[])}}n.every((e=>{let[t,n]=e;return
+        n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((t=>{let[n]=t;s[e].delete(n),o(n)})))}function
+        l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var
+        i=n[1],a=e[3],o=e[2];i.apply(a,o)}}))}},8325:(e,t,n)=>{n.d(t,{A:()=>c,ee:()=>d});var
+        r=n(8632),i=n(2210),a=n(234);class o{constructor(e){this.contextId=e}}var
+        s=n(3117);const c=\"nr@context:\".concat(s.a),d=function e(t,n){var r={},s={},u={},f=!1;try{f=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var
+        g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var
+        i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,a){!1!==a&&(a=!0);if(d.aborted&&!i)return;t&&a&&t.emit(e,n,r);for(var
+        o=p(r),c=v(e),u=c.length,l=0;l<u;l++)c[l].apply(o,n);var f=b()[s[e]];f&&f.push([g,e,n,o]);return
+        o},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||\"feature\",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t
+        in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&\"object\"==typeof
+        t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof o?e:e?(0,i.X)(e,c,(()=>new
+        o(c))):new o(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function
+        m(t){return u[t]=u[t]||e(g,t)}function b(){return g.backlog}}(void 0,\"globalEE\"),u=(0,r.fP)();function
+        l(){d.aborted=!0,d.backlog={}}u.ee||(u.ee=d)},5546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var
+        r=n(8325).ee.get(\"handle\");function i(e,t,n,i,a){a?(a.buffer([e],i),a.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{n.d(t,{X:()=>a});var
+        r=n(5546);a.on=o;var i=a.handlers={};function a(e,t,n,a){o(a||r.E,i,e,t,n)}function
+        o(e,t,n,i,a){a||(a=\"feature\"),e||(e=r.E);var o=t[a]=t[a]||{};(o[n]=o[n]||[]).push([e,i])}},3239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var
+        r=n(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return
+        a=!0,!1}};r._A.addEventListener(\"test\",null,e),r._A.removeEventListener(\"test\",null,e)}catch(e){}function
+        o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let
+        n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void
+        0;window.addEventListener(e,t,o(n,r))}function c(e,t){let n=arguments.length>2&&void
+        0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(n,r))}},3117:(e,t,n)=>{n.d(t,{a:()=>r});const
+        r=(0,n(4402).Rl)()},4402:(e,t,n)=>{n.d(t,{Rl:()=>o,ky:()=>s});var r=n(385);const
+        i=\"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx\";function a(e,t){return e?15&e[t]:16*Math.random()|0}function
+        o(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new
+        Uint8Array(31))),i.split(\"\").map((e=>\"x\"===e?a(t,++n).toString(16):\"y\"===e?(3&a()|8).toString(16):e)).join(\"\")}function
+        s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new
+        Uint8Array(31)));const o=[];for(var s=0;s<e;s++)o.push(a(n,++i).toString(16));return
+        o.join(\"\")}},7056:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>a,oD:()=>i});const r=\"NRBA\",i=144e5,a=18e5},7894:(e,t,n)=>{function
+        r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function
+        r(e,t){\"function\"==typeof console.warn&&(console.warn(\"New Relic: \".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var
+        r=n(8325),i=n(5546),a=n(3325);const o={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]},s=new
+        Set;function c(e,t){const n=r.ee.get(t);e&&\"object\"==typeof e&&(s.has(t)||Object.entries(e).forEach((e=>{let[t,r]=e;o[t]?o[t].forEach((e=>{r?(0,i.p)(\"feat-\"+t,[],void
+        0,e,n):(0,i.p)(\"block-\"+t,[],void 0,e,n),(0,i.p)(\"rumresp-\"+t,[Boolean(r)],void
+        0,e,n)})):r&&(0,i.p)(\"feat-\"+t,[],void 0,void 0,n),d[t]=Boolean(r)})),Object.keys(o).forEach((e=>{void
+        0===d[e]&&(o[e]?.forEach((t=>(0,i.p)(\"rumresp-\"+e,[!1],void 0,t,n))),d[e]=!1)})),s.add(t))}const
+        d={}},2210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function
+        i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return
+        Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return
+        e[t]=i,i}},1284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return
+        t(n,r)}))},4351:(e,t,n)=>{n.d(t,{P:()=>a});var r=n(8325);const i=()=>{const
+        e=new WeakSet;return(t,n)=>{if(\"object\"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return
+        n}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit(\"internal-error\",[e])}catch(e){}}}},3960:(e,t,n)=>{n.d(t,{K:()=>o,b:()=>a});var
+        r=n(3239);function i(){return\"undefined\"==typeof document||\"complete\"===document.readyState}function
+        a(e,t){if(i())return e();(0,r.bP)(\"load\",e,t)}function o(e){if(i())return
+        e();(0,r.iz)(\"DOMContentLoaded\",e)}},8632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>a,fP:()=>o,gG:()=>u,mF:()=>s});var
+        r=n(7894),i=n(385);const a={beacon:\"bam.nr-data.net\",errorBeacon:\"bam.nr-data.net\"};function
+        o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function
+        s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function
+        c(e,t,n){let i=o();const a=i.initializedAgents||{},s=a[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new
+        Date}),i.initializedAgents={...a,[e]:{...s,[n]:t}},i}function d(e,t){o()[e]=t}function
+        u(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let
+        e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},7956:(e,t,n)=>{n.d(t,{N:()=>i});var
+        r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void
+        0,i=arguments.length>3?arguments[3]:void 0;(0,r.iz)(\"visibilitychange\",(function(){if(t)return
+        void(\"hidden\"===document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{n.d(t,{gF:()=>a,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>o});const
+        r=n(3325).D.metrics,i=\"sm\",a=\"cm\",o=\"storeSupportabilityMetrics\",s=\"storeEventMetrics\"},7633:(e,t,n)=>{n.d(t,{t:()=>r});const
+        r=n(3325).D.pageViewEvent},9251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{n.d(t,{W:()=>a});var
+        r=n(234),i=n(8325);class a{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,r.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=n,this.blocked=!1}}},7530:(e,t,n)=>{n.d(t,{j:()=>b});var
+        r=n(3325),i=n(234),a=n(5546),o=n(8325),s=n(7894),c=n(8e3),d=n(3960),u=n(385),l=n(50),f=n(3081),g=n(8632);function
+        p(){const e=(0,g.gG)();[\"setErrorHandler\",\"finished\",\"addToTrace\",\"inlineHit\",\"addRelease\",\"addPageAction\",\"setCurrentRouteName\",\"setPageViewName\",\"setCustomAttribute\",\"interaction\",\"noticeError\",\"setUserId\",\"setApplicationVersion\",\"start\"].forEach((t=>{e[t]=function(){for(var
+        n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var
+        n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let
+        a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...r))})),a.length>1?a:a[0]}(t,...r)}}))}var
+        h=n(2587);const v=e=>{n.p=e};let m=!1;function b(e){let t=arguments.length>1&&void
+        0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void
+        0,{init:w,info:A,loader_config:_,runtime:x={loaderType:b},exposed:D=!0}=t;const
+        k=(0,g.gG)();A||(w=k.init,A=k.info,_=k.loader_config),(0,i.Dg)(e,w||{}),(0,i.GE)(e,_||{}),A.jsAttributes??={},u.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e,A);const
+        E=(0,i.P_)(e),j=[A.beacon,A.errorBeacon];m||(m=!0,E.proxy.assets&&(v(E.proxy.assets+\"/\"),j.push(E.proxy.assets)),E.proxy.beacon&&j.push(E.proxy.beacon)),x.denyList=[...E.ajax.deny_list||[],...E.ajax.block_internal?j:[]],(0,i.sU)(e,x),p();const
+        T=function(e,t){t||(0,c.R)(e,\"api\");const g={};var p=o.ee.get(e),h=p.get(\"tracer\"),v=\"api-\",m=v+\"ixn-\";function
+        b(t,n,r,a){const o=(0,i.C5)(e);return null===n?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:n}}),A(v,r,!0,a||null===n?\"session\":void
+        0)(t,n)}function y(){}[\"setErrorHandler\",\"finished\",\"addToTrace\",\"inlineHit\",\"addRelease\"].forEach((e=>{g[e]=A(v,e,!0,\"api\")})),g.addPageAction=A(v,\"addPageAction\",!0,r.D.pageAction),g.setCurrentRouteName=A(v,\"routeName\",!0,r.D.spa),g.setPageViewName=function(t,n){if(\"string\"==typeof
+        t)return\"/\"!==t.charAt(0)&&(t=\"/\"+t),(0,i.OP)(e).customTransaction=(n||\"http://custom.transaction\")+t,A(v,\"setPageViewName\",!0)()},g.setCustomAttribute=function(e,t){let
+        n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(\"string\"==typeof
+        e){if([\"string\",\"number\"].includes(typeof t)||null===t)return b(e,t,\"setCustomAttribute\",n);(0,l.Z)(\"Failed
+        to execute setCustomAttribute.\\nNon-null value must be a string or number
+        type, but a type of <\".concat(typeof t,\"> was provided.\"))}else(0,l.Z)(\"Failed
+        to execute setCustomAttribute.\\nName must be a string type, but a type of
+        <\".concat(typeof e,\"> was provided.\"))},g.setUserId=function(e){if(\"string\"==typeof
+        e||null===e)return b(\"enduser.id\",e,\"setUserId\",!0);(0,l.Z)(\"Failed to
+        execute setUserId.\\nNon-null value must be a string type, but a type of <\".concat(typeof
+        e,\"> was provided.\"))},g.setApplicationVersion=function(e){if(\"string\"==typeof
+        e||null===e)return b(\"application.version\",e,\"setApplicationVersion\",!1);(0,l.Z)(\"Failed
+        to execute setApplicationVersion. Expected <String | null>, but got <\".concat(typeof
+        e,\">.\"))},g.start=e=>{try{const t=e?\"defined\":\"undefined\";(0,a.p)(f.xS,[\"API/start/\".concat(t,\"/called\")],void
+        0,r.D.metrics,p);const n=Object.values(r.D);if(void 0===e)e=n;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!n.includes(e))))return(0,l.Z)(\"Invalid
+        feature name supplied. Acceptable feature names are: \".concat(n));e.includes(r.D.pageViewEvent)||e.push(r.D.pageViewEvent)}e.forEach((e=>{p.emit(\"\".concat(e,\"-opt-in\"))}))}catch(e){(0,l.Z)(\"An
+        unexpected issue occurred\",e)}},g.interaction=function(){return(new y).get()};var
+        w=y.prototype={createTracer:function(e,t){var n={},i=this,o=\"function\"==typeof
+        t;return(0,a.p)(m+\"tracer\",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((o?\"\":\"no-\")+\"fn-start\",[(0,s.z)(),i,o],n),o)try{return
+        t.apply(this,arguments)}catch(e){throw h.emit(\"fn-err\",[arguments,this,e],n),e}finally{h.emit(\"fn-end\",[(0,s.z)()],n)}}}};function
+        A(e,t,n,i){return function(){return(0,a.p)(f.xS,[\"API/\"+t+\"/called\"],void
+        0,r.D.metrics,p),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void
+        0:this}}function _(){n.e(75).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,\"api\")})).catch((()=>(0,l.Z)(\"Downloading
+        runtime APIs failed...\")))}return[\"actionText\",\"setName\",\"setAttribute\",\"save\",\"ignore\",\"onEnd\",\"getContext\",\"end\",\"get\"].forEach((e=>{w[e]=A(m,e,void
+        0,r.D.spa)})),g.noticeError=function(e,t){\"string\"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,[\"API/noticeError/called\"],void
+        0,r.D.metrics,p),(0,a.p)(\"err\",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>_()),!0):_(),g}(e,y);return(0,g.Qy)(e,T,\"api\"),(0,g.Qy)(e,D,\"exposed\"),(0,g.EZ)(\"activatedFeatures\",h.T),T}},3325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const
+        r={ajax:\"ajax\",jserrors:\"jserrors\",metrics:\"metrics\",pageAction:\"page_action\",pageViewEvent:\"page_view_event\",pageViewTiming:\"page_view_timing\",sessionReplay:\"session_replay\",sessionTrace:\"session_trace\",spa:\"spa\"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function
+        i(e){var t=r[e];if(void 0!==t)return t.exports;var a=r[e]={exports:{}};return
+        n[e](a,a.exports,i),a.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>\"nr-rum-1.242.0.min.js\",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t=\"NRBA-1.242.0.PROD:\",i.l=(n,r,a,o)=>{if(e[n])e[n].push(r);else{var
+        s,c;if(void 0!==a)for(var d=document.getElementsByTagName(\"script\"),u=0;u<d.length;u++){var
+        l=d[u];if(l.getAttribute(\"src\")==n||l.getAttribute(\"data-webpack\")==t+a){s=l;break}}s||(c=!0,(s=document.createElement(\"script\")).charset=\"utf-8\",s.timeout=120,i.nc&&s.setAttribute(\"nonce\",i.nc),s.setAttribute(\"data-webpack\",t+a),s.src=n),e[n]=[r];var
+        f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return
+        t(r)},g=setTimeout(f.bind(null,void 0,{type:\"timeout\",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{\"undefined\"!=typeof
+        Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},i.p=\"https://js-agent.newrelic.com/\",(()=>{var
+        e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var
+        a=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=a);var o=i.p+i.u(t),s=new
+        Error;i.l(o,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var a=n&&(\"load\"===n.type?\"missing\":n.type),o=n&&n.target&&n.target.src;s.message=\"Loading
+        chunk \"+t+\" failed.\\n(\"+a+\": \"+o+\")\",s.name=\"ChunkLoadError\",s.type=a,s.request=o,r[1](s)}}),\"chunk-\"+t,t)}};var
+        t=(t,n)=>{var r,a,[o,s,c]=n,d=0;if(o.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<o.length;d++)a=o[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},n=self[\"webpackChunk:NRBA-1.242.0.PROD\"]=self[\"webpackChunk:NRBA-1.242.0.PROD\"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{var
+        e=i(50);class t{addPageAction(t,n){(0,e.Z)(\"Call to agent api addPageAction
+        failed. The session trace feature is not currently initialized.\")}setPageViewName(t,n){(0,e.Z)(\"Call
+        to agent api setPageViewName failed. The page view feature is not currently
+        initialized.\")}setCustomAttribute(t,n,r){(0,e.Z)(\"Call to agent api setCustomAttribute
+        failed. The js errors feature is not currently initialized.\")}noticeError(t,n){(0,e.Z)(\"Call
+        to agent api noticeError failed. The js errors feature is not currently initialized.\")}setUserId(t){(0,e.Z)(\"Call
+        to agent api setUserId failed. The js errors feature is not currently initialized.\")}setApplicationVersion(t){(0,e.Z)(\"Call
+        to agent api setApplicationVersion failed. The agent is not currently initialized.\")}setErrorHandler(t){(0,e.Z)(\"Call
+        to agent api setErrorHandler failed. The js errors feature is not currently
+        initialized.\")}finished(t){(0,e.Z)(\"Call to agent api finished failed. The
+        page action feature is not currently initialized.\")}addRelease(t,n){(0,e.Z)(\"Call
+        to agent api addRelease failed. The agent is not currently initialized.\")}start(t){(0,e.Z)(\"Call
+        to agent api addRelease failed. The agent is not currently initialized.\")}}var
+        n=i(3325),r=i(234);const a=Object.values(n.D);function o(e){const t={};return
+        a.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,\"\".concat(e,\".enabled\"))}(n,e)})),t}var
+        s=i(7530);var c=i(8e3),d=i(5938),u=i(3960),l=i(385);class f extends d.W{constructor(e,t,n){let
+        i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=i,this.abortHandler=void
+        0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,r.Mt)(this.agentIdentifier,\"\".concat(this.featureName,\".autoStart\"))&&(this.auto=!1),this.auto&&(0,c.R)(e,n)}importAggregator(){let
+        t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return
+        void this.ee.on(\"\".concat(this.featureName,\"-opt-in\"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const
+        n=l.il&&!0===(0,r.Mt)(this.agentIdentifier,\"privacy.cookies_enabled\");let
+        a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let r;try{if(n){const{setupAgentSession:e}=await
+        i.e(75).then(i.bind(i,3228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)(\"A
+        problem occurred when starting up session manager. This page will not start
+        or extend any session.\",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,c.L)(this.agentIdentifier,this.featureName),void
+        a(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:n}=await
+        e(this.featureName,\"aggregate\");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)(\"Downloading
+        and initializing \".concat(this.featureName,\" failed...\"),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),a(!1)}};l.il?(0,u.b)((()=>o()),!0):o()}shouldImportAgg(e,t){return
+        e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,\"session_trace.enabled\")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var
+        g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let n=!(arguments.length>2&&void
+        0!==arguments[2])||arguments[2];super(e,t,g.t,n),this.importAggregator()}}var
+        h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var
+        a=this.getBucket(e,t,n,i);return a.metrics=function(e,t){t||(t={count:0});return
+        t.count+=1,(0,v.D)(e,(function(e,n){t[e]=b(n,t[e])})),t}(r,a.metrics),a}merge(e,t,n,r,i){var
+        a=this.getBucket(e,t,r,i);if(a.metrics){var o=a.metrics;o.count+=n.count,(0,v.D)(n,(function(e,t){if(\"count\"!==e){var
+        r=o[e],i=n[e];i&&!i.c?o[e]=b(i.t,r):o[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return
+        t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else
+        a.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=b(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var
+        i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return
+        t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var
+        t={},n=\"\",r=!1,i=0;i<e.length;i++)t[n=e[i]]=w(this.aggregatedData[n]),t[n].length&&(r=!0),delete
+        this.aggregatedData[n];return r?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return
+        e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function
+        y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return\"object\"!=typeof
+        e?[]:(0,v.D)(e,A)}function A(e,t){return t}var _=i(8632),x=i(4402),D=i(4351);var
+        k=i(5546),E=i(7956),j=i(3239),T=i(7894),N=i(9251);class S extends f{static
+        featureName=N.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,n),l.il&&((0,E.N)((()=>(0,k.p)(\"docHidden\",[(0,T.z)()],void
+        0,N.t,this.ee)),!0),(0,j.bP)(\"pagehide\",(()=>(0,k.p)(\"winPagehide\",[(0,T.z)()],void
+        0,N.t,this.ee))),this.importAggregator())}}var P=i(3081);class C extends f{static
+        featureName=P.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t9,n),this.importAggregator()}}new
+        class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=n,this.sharedAggregator=new
+        m({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new
+        Set(t.features||[]),this.desiredFeatures.add(p),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||\"agent\")),this.run()):(0,e.Z)(\"Failed
+        to initial the agent. Could not determine the runtime environment.\")}get
+        config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}run(){const
+        t=\"features\";try{const r=o(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===n.D.pageViewEvent){const
+        i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case
+        n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>r[e]))||(0,e.Z)(\"\".concat(t.featureName,\"
+        is enabled but one or more dependent features has been disabled (\").concat((0,D.P)(i),\").
+        This may cause unintended consequences or missing data...\")),this.features[t.featureName]=new
+        t(this.agentIdentifier,this.sharedAggregator)}})),(0,_.Qy)(this.agentIdentifier,this.features,t)}catch(n){(0,e.Z)(\"Failed
+        to initialize all enabled instrument classes (agent aborted) -\",n);for(const
+        e in this.features)this.features[e].abortHandler?.();const r=(0,_.fP)();return
+        delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete
+        this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)(\"Call
+        to agent api addToTrace failed. The page action feature is not currently initialized.\")}setCurrentRouteName(t){(0,e.Z)(\"Call
+        to agent api setCurrentRouteName failed. The spa feature is not currently
+        initialized.\")}interaction(){(0,e.Z)(\"Call to agent api interaction failed.
+        The spa feature is not currently initialized.\")}}({features:[p,S,C],loaderType:\"lite\"})})()})();</script>\n
+        \   <link rel=\"stylesheet\" media=\"all\" href=\"/assets/css/css_9m8-tA3IQf8ThlLQYTTZUyEweCvyR908Tg0XCbKYOfY.css\"
+        />\n<link rel=\"stylesheet\" media=\"all\" href=\"/assets/css/menu_icons_1695910868.css?s1p96u\"
+        />\n<link rel=\"stylesheet\" media=\"all\" href=\"/assets/css/css_lgn5F3shmpuGxkXZetfGmqojbgX6fWKFBiclGt9ICv4.css\"
+        />\n<link rel=\"stylesheet\" media=\"all\" href=\"/assets/css/css_fraAPPgoyu7-HZc6dBnOOtcP8jlhVJa7zW8dQwEOi0M.css\"
+        />\n<link rel=\"stylesheet\" media=\"all\" href=\"https://use.fontawesome.com/releases/v5.9.0/css/all.css\"
+        />\n<link rel=\"stylesheet\" media=\"all\" href=\"/assets/css/css_SOnE0HkuPC5Ozvxf0nedbZ_f-eUSoi1fS9NDH0ffdXA.css\"
+        />\n\n    \n  </head>\n  <body class=\"path-node page-node-type-product full-path-products-b-418029b-4180292b-4180293\">\n
+        \       <a href=\"#main-content\" class=\"visually-hidden focusable skip-link\">\n
+        \     Skip to main content\n    </a>\n    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-TZMWNH7\"\n
+        \                 height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n\n
+        \     <div class=\"dialog-off-canvas-main-canvas\" data-off-canvas-main-canvas>\n
+        \     \n<div class=\"page layout-container layout-no-sidebars\">\n      <section
+        class=\"layout-navigation container-fluid\">\n      <div class=\"layout-navigation__content\">\n
+        \                                 <div class=\"layout-main-nav\">\n            <div
+        class=\"layout-main-nav__content\">\n                              \n  \n<section
+        class=\"topbar-container fixed-top\">\n\t<nav class=\"block--gao-main-menu-top
+        navbar navbar-expand-xl\" aria-label=\"Utility Navigation\">\n\t\t<div class=\"site-title\">\n\t\t\t<a
+        class=\"gao-name\" href=\"https://www.gao.gov/\">\n\t\t\t\tU.S. Government
+        Accountability Office\n\t\t\t</a>\n\t\t</div>\n\t\t<div class=\"utility-links\">\n\t\t\t<ul
+        class=\"navbar-nav ml-auto\">\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a
+        class=\"\" href=\"/for-congress\">For Congress</a>\n\t\t\t\t</li>\n\t\t\t\t<li
+        class=\"nav-item\">\n\t\t\t\t\t<a class=\"\" href=\"/press-center\">Press
+        Center</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"\"
+        href=\"/about/careers\">Careers</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a
+        class=\"\" href=\"/blog\">Blog</a>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t</div>\n\t\t<div
+        class=\"social-icons\">\n\t\t\t<ul>\n\t\t\t\t<li><a href=\"https://www.facebook.com/usgao\"
+        target=\"_blank\"><span class=\"text\">\n        GAO on Facebook</span><span
+        class=\"fab fa-facebook-f\"></span></a></li>\n\t\t\t\t<li><a href=\"https://twitter.com/usgao\"
+        target=\"_blank\"><span class=\"text\">\n        GAO on Twitter</span><span
+        class=\"fab fa-twitter\"></span></a></li>\n\t\t\t\t<li><a href=\"https://www.linkedin.com/company/us-government/\"
+        target=\"_blank\"><span class=\"text\">\n        GAO on LinkedIn</span><span
+        class=\"fab fa-linkedin-in\"></span></a></li>\n\t\t\t</ul>\n\t\t</div>\n\t</nav>\n</section>\n\n<section
+        class=\"navbar-container fixed-top\">\n\t<nav aria-labelledby=\"block-gao-main-menu-menu\"
+        \ id=\"block-gao-main-menu\" class=\"block block-system block-system-menu-blockmain
+        block-menu navigation menu--main navbar navbar-expand-xl block--gao-main-menu\"
+        data-entity-id=\"system_menu_block:main\" data-entity-type=\"block\">\n\t\t<a
+        class=\"navbar-brand\" href=\"https://www.gao.gov/\"><img src=\"/themes/custom/gao/img/GAO-logo.png\"
+        alt=\"GAO logo\"/></a>\n\t\t<div id=\"site-title\">U.S. Government Accountability
+        Office</div>\n\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\"
+        data-target=\"#mainNavbarToggler\" aria-controls=\"mainNavbarToggler\" aria-expanded=\"false\"\n
+        \   aria-label=\"Toggle navigation\">\n\t\t\t<span class=\"navbar-toggler-icon\">\n\t\t\t\t<span
+        class=\"fas fa-bars\"></span>\n\t\t\t</span>\n\t\t</button>\n\t\t<div\n\t\t\tclass=\"collapse
+        navbar-collapse\" id=\"mainNavbarToggler\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t<h2
+        class=\"title block__title block-system-menu-blockmain__title visually-hidden\"
+        id=\"block-gao-main-menu-menu\">Main navigation</h2>\n\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\n
+        \             <ul class=\"nav navbar-nav ml-auto\" >\n                                                    <li
+        class=\"nav-item dropdown\">\n            <a href=\"/reports-testimonies\"
+        class=\"nav-link dropdown-toggle\">Reports &amp; Testimonies <span class=\"caret\"></span></a>\n
+        \                         <ul class=\"dropdown-menu\">\n                                          <li
+        class=\"nav-item\" ><a href=\"/reports-testimonies/recommendations-database\"
+        class=\"nav-link\" data-drupal-link-system-path=\"node/381\">Recommendations
+        Database</a></li>\n                                            <li class=\"nav-item\"
+        ><a href=\"/reports-testimonies/month-in-review\" class=\"nav-link\" data-drupal-link-system-path=\"node/386\">Month
+        in Review</a></li>\n                                            <li class=\"nav-item\"
+        ><a href=\"/reports-testimonies/ordering\" class=\"nav-link\" data-drupal-link-system-path=\"node/391\">Order
+        Copies</a></li>\n                                            <li class=\"nav-item\"
+        ><a href=\"/reports-testimonies/restricted\" class=\"nav-link\" data-drupal-link-system-path=\"node/396\">Restricted
+        Reports</a></li>\n              </ul>\n  \n          </li>\n                                                    <li
+        class=\"nav-item\" ><a href=\"/topics\" class=\"nav-link\" data-drupal-link-system-path=\"node/406\">View
+        Topics</a></li>\n                                            <li class=\"nav-item\"
+        ><a href=\"/agencies\" class=\"nav-link\" data-drupal-link-system-path=\"node/1151811\">View
+        Agencies</a></li>\n                                                      <li
+        class=\"nav-item dropdown\">\n            <a href=\"/legal\" class=\"nav-link
+        dropdown-toggle\">Bid Protests &amp; Appropriations Law <span class=\"caret\"></span></a>\n
+        \                         <ul class=\"dropdown-menu\">\n                                          <li
+        class=\"nav-item\" ><a href=\"/legal/bid-protests\" class=\"nav-link\" data-drupal-link-system-path=\"node/421\">Bid
+        Protests</a></li>\n                                            <li class=\"nav-item\"
+        ><a href=\"/legal/appropriations-law\" class=\"nav-link\" data-drupal-link-system-path=\"node/446\">Appropriations
+        Law</a></li>\n                                            <li class=\"nav-item\"
+        ><a href=\"/legal/federal-vacancies-reform-act\" class=\"nav-link\" data-drupal-link-system-path=\"node/481\">Federal
+        Vacancies Reform Act</a></li>\n                                            <li
+        class=\"nav-item\" ><a href=\"/legal/other-legal-work\" class=\"nav-link\"
+        data-drupal-link-system-path=\"node/1221\">Other Legal</a></li>\n              </ul>\n
+        \ \n          </li>\n                                                              <li
+        class=\"nav-item dropdown\">\n            <a href=\"/about\" class=\"nav-link
+        dropdown-toggle\">About <span class=\"caret\"></span></a>\n                          <ul
+        class=\"dropdown-menu\">\n                                          <li class=\"nav-item\"
+        ><a href=\"/about/what-gao-does\" class=\"nav-link\" data-drupal-link-system-path=\"node/506\">What
+        GAO Does</a></li>\n                                            <li class=\"nav-item\"
+        ><a href=\"/about/comptroller-general\" class=\"nav-link\" data-drupal-link-system-path=\"node/571\">U.S.
+        Comptroller General</a></li>\n                                            <li
+        class=\"nav-item\" ><a href=\"/about/careers\" class=\"nav-link\" data-drupal-link-system-path=\"node/596\">Careers</a></li>\n
+        \                                           <li class=\"nav-item\" ><a href=\"/about/contact-us\"
+        class=\"nav-link\" data-drupal-link-system-path=\"node/361\">Contact Us</a></li>\n
+        \             </ul>\n  \n          </li>\n                      </ul>\n  \n\n\n\t\t\t\t\t</div>\n\t\t\t\t<div
+        class=\"search-container\">\n\t\t\t\t\t\t\t<div class=\"search-widget\">\n\t\t\t\t\t<button
+        class=\"search-button\" type=\"button\" aria-label=\"Open Search Input\">\n\t\t\t\t\t\t<span
+        class=\"fas fa-search\"></span>\n\t\t\t\t\t\tSearch</button>\n\t\t\t</div>\n\t\t</div>\n\t</nav>\n</section>\n\n\n
+        \ <div class=\"site-wide-search-form\">\n    <div class=\"input-group form--inline
+        clearfix\">\n      <form action=\"/products/b-418029,b-418029.2,b-418029.3\"
+        method=\"post\" id=\"search-block-auto-form\" accept-charset=\"UTF-8\">\n
+        \   <div class=\"js-form-item form-item js-form-type-textfield form-type-textfield
+        js-form-item-search form-item-search form-no-label\">\n        <input placeholder=\"Search
+        GAO.gov\" title=\"Search GAO.gov\" class=\"form-control form-text\" data-drupal-selector=\"edit-search\"
+        type=\"text\" id=\"edit-search\" name=\"search\" value=\"\" size=\"60\" maxlength=\"128\"
+        aria-label=\"Submit Search Button\" />\n\n        </div>\n<button id=\"edit-submit-site-wide-search\"
+        class=\"btn btn-primary button js-form-submit form-submit\" data-drupal-selector=\"edit-submit\"
+        type=\"submit\" name=\"op\" value=\"Search\" aria-label=\"Submit Search Button\">\n
+        \ <span class=\"fas fa-search\"></span>\n</button>\n<input autocomplete=\"off\"
+        data-drupal-selector=\"form-naecbbxqlvcizvwgaocxubirxgf8g6ku0zumnbjvjri\"
+        type=\"hidden\" name=\"form_build_id\" value=\"form-nAeCbbXQlvcizvwGaocXUBIRXGf8g6kU0zUMNBJvjRI\"
+        />\n<input data-drupal-selector=\"edit-search-block-auto-form\" type=\"hidden\"
+        name=\"form_id\" value=\"search_block_auto_form\" />\n\n  </form>\n\n      <div
+        class=\"close-container\">\n        <a href=\"#\" class=\"close-button\" aria-label=\"Close
+        Search Input\">\n          <span class=\"fas fa-times\"></span>\n        </a>\n
+        \     </div>\n    </div>\n  </div>\n\n\n                          </div>\n
+        \         </div>\n              </div>\n    </section>\n  \n      <section
+        class=\"layout-breadcrumbs container-fluid\">\n      <div class=\"layout-breadcrumbs__content\">\n
+        \       \n  <section id=\"block-gao-breadcrumbs\" class=\"block block-system
+        block-system-breadcrumb-block\" data-entity-id=\"system_breadcrumb_block\"
+        data-entity-type=\"block\">\n  \n    \n  <div class=\"block__content block-system-breadcrumb-block__content\">\n
+        \           <nav class=\"breadcrumb\" aria-labelledby=\"system-breadcrumb\">\n
+        \   <h2 id=\"system-breadcrumb\" class=\"visually-hidden\">Breadcrumb</h2>\n
+        \   <ol>\n          <li>\n                  <a href=\"/\">Home</a>\n              </li>\n
+        \         <li>\n                  <a href=\"/legal\">Legal Products</a>\n
+        \             </li>\n          <li>\n                  22nd Century Technologies,
+        Inc.\n              </li>\n        </ol>\n  </nav>\n\n      </div>\n</section>\n<div
+        data-drupal-messages-fallback class=\"hidden\"></div>\n\n\n      </div>\n
+        \   </section>\n  \n  <div class=\"main-page-content--wrapper container-fluid
+        layout-container\">\n    <div class=\"row\">\n            <div class=\"main-page-content--inner
+        col-12\">\n        <header>\n                      <section class=\"layout-header\">\n
+        \             <div class=\"layout-header__content\">\n                                  <div
+        class=\"layout-header-info\">\n                    <div class=\"layout-header-info__content\">\n
+        \                     \n                      \n  \n\n<section id=\"block-gao-page-title\"
+        class=\"block block-core block-page-title-block\" data-entity-id=\"page_title_block\"
+        data-entity-type=\"block\">\n  <div class=\"block__inner\">\n\n    \n          <h1
+        class=\"split-headings\">\n                          22nd Century Technologies,
+        Inc.\n                      </h1>\n      </div>\n</section>\n\n\n                      \n
+        \   \n  <section id=\"block--post-title-info\" class=\"block-post-title-info
+        product\">\n    <div class=\"block-content\">\n              <span class=\"d-block
+        text-small\"><strong>B-418029,B-418029.2,B-418029.3</strong></span>\n        <span
+        class=\"d-block text-small\">\n                      Dec 26, 2019\n                  </span>\n
+        \         </div>\n  </section>\n\n<section class=\"social-share\">\n  <ul>\n
+        \   <li>\n      <a href=\"#\" class=\"icon-facebook js-fb-share\" data-fb-link=\"https://www.gao.gov/products/b-418029%2Cb-418029.2%2Cb-418029.3\"
+        title=\"Share on Facebook\" rel=\"noopener\" aria-label=\"Facebook\">\n        <span
+        class=\"fab fa-facebook-f\"></span>\n      </a>\n    </li>\n    <li>\n      <a
+        href=\"#\" class=\"icon-twitter js-tw-share\" data-tw-message=\"Check out
+        this report: https://www.gao.gov/products/b-418029%2Cb-418029.2%2Cb-418029.3\"
+        title=\"Share on Twitter\" rel=\"noopener\" aria-label=\"Twitter\">\n        <span
+        class=\"fab fa-twitter\"></span>\n      </a>\n    </li>\n    <li>\n      <a
+        href=\"#\" class=\"icon-linkedin js-linkedin-share\" data-li-link=\"https://www.gao.gov/products/b-418029%2Cb-418029.2%2Cb-418029.3\"
+        title=\"Share on LinkedIn\" aria-label=\"LinkedInLinkedIn\">\n        <span
+        class=\"fab fa-linkedin-in\"></span>\n      </a>\n    </li>\n    <li>\n      <a
+        href=\"#\" class=\"icon-email js-email-share\" aria-label=\"Send email\" title=\"Share
+        by email\" data-email-link=\"mailto:?subject=Check out this link from GAO.gov&body=GAO.gov
+        link: https://www.gao.gov/products/b-418029%2Cb-418029.2%2Cb-418029.3\">\n
+        \       <span class=\"fa fa-envelope\"></span>\n      </a>\n    </li>\n  </ul>\n</section>\n<div
+        class=\"jumptocontainer\">\n  <a href=\"#block-jump-to-content\" class=\"sidebar-expander\">\n
+        \   Jump To:  </a>\n  <nav aria-labelledby=\"block-jump-to-content-menu\"
+        id=\"block-jump-to-content\" class=\"block block-system block-system-menu-blockjump-to
+        block-menu navigation menu--jump-to\" data-entity-id=\"system_menu_block:jump-to\"
+        data-entity-type=\"block\">\n            \n    <header class=\"title block__title
+        block-system-menu-blockjump-to__title\" id=\"block-jump-to-content-menu\">Jump
+        To</header>\n    \n\n              \n              <ul class=\"nav nav-fill
+        menu\" >\n              <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--retirement--elder-abuse\" data-element=\"js-endpoint-retirement--elder-abuse\">Elder
+        Abuse</a>\n                      </div>\n        </div>\n      </li>\n          <li
+        \ class=\"nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link js-link
+        link--retirement--services-older-adults\" data-element=\"js-endpoint-retirement--services-older-adults\">Services
+        for Older Adults</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--fiscal-future--local-drivers-trends\" data-element=\"js-endpoint-fiscal-future--local-drivers-trends\">State
+        and Local-Level Drivers and Trends</a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--fiscal-future-_local-fiscal-projections\" data-element=\"js-endpoint-fiscal-future-_local-fiscal-projections\">State
+        and Local Fiscal Projections</a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--fiscal-future--how-government-borrows\" data-element=\"js-endpoint-fiscal-future--how-government-borrows\">Federal
+        Borrowing</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--fiscal-future--managing-the-debt\" data-element=\"js-endpoint-fiscal-future--managing-the-debt\">Managing
+        the Debt</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--fiscal-future--managing-the-debt\" data-element=\"js-endpoint-Funding-Provisions\">Summary
+        of Funding Provisions</a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--fiscal-future--auditing\" data-element=\"js-endpoint-fiscal-future--auditing\">Auditing
+        the Government&#039;s Books</a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--fiscal-future--unpacking-financial-report\" data-element=\"js-endpoint-fiscal-future--unpacking-financial-report\">Unpacking
+        the Financial Report</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" data-element=\"js-endpoint-highlights\"
+        class=\"jump-to-link js-link link--highlights\">Highlights</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" class=\"jump-to-link js-link link--explore-actions\" data-element=\"js-endpoint-explore-actions\">Recommendations</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"nav-item\">\n
+        \       <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" class=\"jump-to-link js-link link--background\" data-element=\"js-endpoint-background\">Background</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"nav-item\">\n
+        \       <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" class=\"jump-to-link js-link link--fiscal-future--managing-the-debt\"
+        data-element=\"js-endpoint-about-this-work2\">About This Work</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"menu-icon menu-icon-1496
+        nav-item\">\n        <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" class=\"jump-to-link js-link link--duplication\"
+        data-element=\"js-endpoint-about-this-work\">About This Work</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" class=\"jump-to-link js-link link--trends\" data-element=\"js-endpoint-trends\">Trends</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"nav-item\">\n
+        \       <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" class=\"jump-to-link js-link link--fiscal-future--managing-the-debt\"
+        data-element=\"jump-to-endpoint-csf\">About the Center</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-why-high-risk\" class=\"jump-to-link
+        js-link link--why-high-risk\">Why It&#039;s High Risk</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-what-remains\" class=\"jump-to-link js-link
+        link--what-remains\">What Remains To Be Done</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-key-reports\" class=\"jump-to-link js-link
+        link--key-reports\">Key Reports</a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--recent-reports\" data-element=\"js-endpoint-covid-reports\">Newest
+        COVID-Related Reports</a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--flood-insurance\" data-element=\"js-endpoint-flood-insurance\">Flood
+        Insurance</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--recent-reports\" data-element=\"js-endpoint-pandemic-reports\">Past
+        Pandemic-Related Reports</a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--recent-reports\" data-element=\"js-endpoint-cares-act\">CARES
+        Act Oversight Reports</a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--recent-reports\" data-element=\"js-endpoint-covid-reports-all\">All
+        COVID-19 Reports</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--fraud\" data-element=\"js-endpoint-fraud\">Report Suspected
+        Fraud</a>\n                      </div>\n        </div>\n      </li>\n          <li
+        \ class=\"nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link js-link
+        link--explore-actions\" data-element=\"js-endpoint-Subjects2\">Subjects</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"nav-item\">\n
+        \       <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" data-element=\"js-endpoint-notified\">How to Get
+        Notified</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--recent-reports\" data-element=\"js-endpoint-Past-Racial-Inequality-Reports\">Past
+        Reports</a>\n                      </div>\n        </div>\n      </li>\n          <li
+        \ class=\"nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link js-link
+        link--public-health-threats\" data-element=\"js-endpoint-public-health-threats\">Public
+        Health Threats</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"menu-icon menu-icon-2596 nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" class=\"jump-to-link js-link\" data-element=\"js-endpoint-summary-funds\">Explore
+        the FY 2022 and 2023 Funds</a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" data-element=\"js-endpoint-lessons\">Lessons
+        Learned</a>\n                      </div>\n        </div>\n      </li>\n          <li
+        \ class=\"nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link js-link
+        link--recent-reports\" data-element=\"js-endpoint-agency-reports\">Agency
+        Reports</a>\n                      </div>\n        </div>\n      </li>\n          <li
+        \ class=\"nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" data-element=\"js-endpoint-recent-reports\"
+        class=\"jump-to-link js-link link--recent-reports\">Recent Reports</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-recommendations\" class=\"jump-to-link
+        js-link link--recommendations\">Recommendations</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" class=\"jump-to-link js-link link--supplemental-material\" data-element=\"js-endpoint-supplemental-material\">Supplemental
+        Material</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" data-element=\"js-endpoint-full-report\"
+        class=\"jump-to-link js-link link--full-report\">Full Report</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-additional-data\" class=\"jump-to-link
+        js-link link--additional-data\">Additional Data</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-view-decision\" class=\"jump-to-link
+        js-link link--view-decision\">View Decision</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" class=\"jump-to-link js-link link--downloads\" data-element=\"js-endpoint-downloads\">Downloads</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"nav-item\">\n
+        \       <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" class=\"jump-to-link js-link link--previous-actions\"
+        data-element=\"js-endpoint-previous-actions\">Previously Identified Actions</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"nav-item\">\n
+        \       <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" data-element=\"js-endpoint-related-pages\" class=\"jump-to-link
+        js-link link--related-pages\">Related Pages</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-associated-agencies\" class=\"jump-to-link
+        js-link link--associated-agencies\">Associated Agencies</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" class=\"jump-to-link js-link link--tough-choices\" data-element=\"js-endpoint-tough-choices\">Tough
+        Choices and Opportunities Ahead</a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--americas-fiscal-future-key-areas\" data-element=\"js-endpoint-americas-fiscal-future-key-areas\">Americas
+        Fiscal Future Key Areas</a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--retirement-sec-key-areas\" data-element=\"js-endpoint-retirement-security-key-areas\">Retirement
+        Security Key Areas</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--current-list\" data-element=\"js-endpoint-current-list\">Current
+        List</a>\n                      </div>\n        </div>\n      </li>\n          <li
+        \ class=\"nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link js-link
+        link--about-high-risk-list\" data-element=\"js-endpoint-about-high-risk-list\">About
+        The High Risk List</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--area-ratings\" data-element=\"js-endpoint-area-ratings\">Area
+        Ratings</a>\n                      </div>\n        </div>\n      </li>\n          <li
+        \ class=\"nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link js-link
+        link--previous-high-risk-products\" data-element=\"js-endpoint-previous-high-risk-products\">Previous
+        High Risk Products</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" data-element=\"js-endpoint-search-vacancies\"
+        class=\"jump-to-link js-link link--search-vacancies\">Search Federal Vacancies</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"nav-item\">\n
+        \       <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" data-element=\"js-endpoint-past-vacancies\" class=\"jump-to-link
+        js-link link--past-vacancies\">Past Federal Vacancies</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-violation-letters\" class=\"jump-to-link
+        js-link link--violation-letters\">Violation Letters</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" class=\"jump-to-link js-link link--yellow book\" data-element=\"js-endpoint-yellowbook\">About
+        the Yellow Book</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--advisory-council\" data-element=\"js-endpoint-advisory-council\">Advisory
+        Council</a>\n                      </div>\n        </div>\n      </li>\n          <li
+        \ class=\"nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link js-link
+        link--comment-letters\" data-element=\"js-endpoint-comment-letters\">Comment
+        Letters</a>\n                      </div>\n        </div>\n      </li>\n          <li
+        \ class=\"nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link js-link
+        link--related-publications\" data-element=\"js-endpoint-related-publications\">Related
+        Publications</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--contacts\" data-element=\"js-endpoint-contacts-resources\">Contacts
+        and Resources</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--fiscal-future--managing-the-debt\" data-element=\"js-endpoint-major-issues\">Major
+        Issues Facing the Nation</a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--fiscal-future--unpacking-financial-report\" data-element=\"js-endpoint-gov-challenges\">Meeting
+        Strategic Challenges</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--resources\" data-element=\"js-endpoint-addl-resources\">Additional
+        Resources</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link
+        js-link link--contacts\" data-element=\"js-endpoint-contacts\">GAO Contacts</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"nav-item\">\n
+        \       <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" class=\"jump-to-link js-link link--resources\" data-element=\"js-endpoint-resources\">Resources</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"menu-icon
+        menu-icon-1901 nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" data-element=\"js-endpoint-MissionTeams\">Mission
+        Teams</a>\n                      </div>\n        </div>\n      </li>\n          <li
+        \ class=\"menu-icon menu-icon-1906 nav-item\">\n        <div class=\"item-container\">\n
+        \         <div class=\"item-inner\">\n            <a href=\"\" data-element=\"js-endpoint-OperationsandStaffOffices
+        \">Operations and Staff Offices </a>\n                      </div>\n        </div>\n
+        \     </li>\n          <li  class=\"menu-icon menu-icon-1911 nav-item\">\n
+        \       <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" data-element=\"js-endpoint-OrganizationChart \">Organization
+        Chart </a>\n                      </div>\n        </div>\n      </li>\n          <li
+        \ class=\"nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" class=\"jump-to-link js-link
+        link--key-reports\" data-element=\"js-endpoint-WhyGAO\">Why a Career at GAO?</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"menu-icon
+        menu-icon-1916 nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" data-element=\"js-endpoint-AmIQualified\">Am
+        I Qualified?</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"menu-icon menu-icon-1926 nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-CompanyCulture\">Company Culture</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"menu-icon
+        menu-icon-1931 nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" data-element=\"js-endpoint-ReasonableAccommodations\">Reasonable
+        Accommodations</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"menu-icon menu-icon-2406 nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-VideoGallery\">Video Gallery</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"menu-icon menu-icon-2431
+        nav-item\">\n        <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" data-element=\"js-endpoint-PaidInternships\">Paid
+        Internships</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"menu-icon menu-icon-1941 nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-StudentVolunteers\">Student Volunteers</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"menu-icon
+        menu-icon-1951 nav-item\">\n        <div class=\"item-container\">\n          <div
+        class=\"item-inner\">\n            <a href=\"\" data-element=\"js-endpoint-ProfessionalDevelopmentProgram\">Professional
+        Development Program</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"menu-icon menu-icon-1956 nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-Advancement\">Advancement</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"menu-icon menu-icon-1961
+        nav-item\">\n        <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" data-element=\"js-endpoint-ExecutiveCandidateAssessmentandDevelopmentProgram\">Executive
+        Candidate Assessment and Development Program</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"menu-icon menu-icon-1981
+        nav-item\">\n        <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" data-element=\"js-endpoint-SummerAssociates\">Summer
+        Associates</a>\n                      </div>\n        </div>\n      </li>\n
+        \         <li  class=\"menu-icon menu-icon-1971 nav-item\">\n        <div
+        class=\"item-container\">\n          <div class=\"item-inner\">\n            <a
+        href=\"\" data-element=\"js-endpoint-Externships\">Externships</a>\n                      </div>\n
+        \       </div>\n      </li>\n          <li  class=\"menu-icon menu-icon-1976
+        nav-item\">\n        <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" data-element=\"js-endpoint-Benefits\">Benefits</a>\n
+        \                     </div>\n        </div>\n      </li>\n          <li  class=\"nav-item\">\n
+        \       <div class=\"item-container\">\n          <div class=\"item-inner\">\n
+        \           <a href=\"\" class=\"jump-to-link js-link link--contacts\" data-element=\"js-endpoint-contacts2\">Contacts</a>\n
+        \                     </div>\n        </div>\n      </li>\n        </ul>\n
+        \ \n\n\n      </nav>\n</div>\n\n\n                    </div>\n                  </div>\n
+        \                                             </div>\n            </section>\n
+        \         \n                  </header>\n        <main class=\"layout-main
+        container-fluid p-0\" id=\"main-content\" tabindex=\"-1\">\n                    <div
+        class=\"layout-main__content row\">\n            <div class=\"layout-main-content
+        container-fluid col-12\">\n              \n\n              <div class=\"layout-main-content__content\">\n
+        \               \n  <section id=\"block-gao-content\" class=\"block block-system
+        block-system-main-block\" data-entity-id=\"system_main_block\" data-entity-type=\"block\">\n
+        \ \n    \n  <div class=\"block__content block-system-main-block__content\">\n
+        \         \n<div class=\"node node--type-product node--view-mode-full\" data-entity-id=\"1108607\"
+        data-entity-type=\"node\">\n\n  \n    \n\n  <div class=\"node__content\">\n
+        \   <a id=\"summary\" class=\"visually-hidden focusable highlights-anchor\">Skip
+        to Highlights</a>\n<div class=\" clearfix text-formatted field field--name-product-highlights-custom
+        field--type-text-long field--label-above quickedit-field\">\n  <header class=\"field__label\">Highlights</header>\n
+        \ <div class=\"field__item\">\n    <!DOCTYPE html PUBLIC \"-//W3C//DTD HTML
+        4.0 Transitional//EN\" \"http://www.w3.org/TR/REC-html40/loose.dtd\">\n<html><body><p>22nd
+        Century Technologies, Inc., of McLean, Virginia, protests the establishment
+        of a blanket purchase agreement (BPA) with Deloitte Consulting, LLP, of Arlington,
+        Virginia under request for quotations (RFQ) No. 1605DC-19-Q-00006, issued
+        by the Department of Labor (DOL), for enterprise-wide support services. 22nd
+        Century argues that the agency's evaluation was unreasonable, the agency treated
+        vendors disparately, and the best-value tradeoff was flawed.</p>\n\n</body></html>\n
+        \         <div class=\"status highlighted-status\">\n        We deny the protest.\n
+        \     </div>\n            \n  </div>\n</div>\n  <div class=\"js-endpoint-view-decision
+        field field--name-field-html-block field--type-text-long field--label-above\">\n
+        \   <header class=\"field__label\">View Decision</header>\n    <div class=\"field-items-wrapper\">\n
+        \                   <div class=\"field__item\"><p>DOCUMENT FOR PUBLIC RELEASE<br
+        />\n    The decision issued on the date below was subject to a GAO Protective
+        Order. This redacted\n    version has been approved for public release.</p>\n
+        \   <div>\n        <p><strong>Decision</strong></p>\n        <p><strong>Matter
+        of:\_</strong> 22nd Century Technologies, Inc.</p>\n        <p><strong>File:\_</strong>
+        B-418029; B-418029.2; B-418029.3</p>\n        <p><strong>Date:</strong>\_
+        December 26, 2019</p>\n        <div>\n            <p>Elizabeth N. Jochum,
+        Esq., Todd M. Garland, Esq., and Nora K. Brent, Esq., Smith\n            Pachter
+        McWhorter PLC, for the protester.<br />\n            Keith R. Szeliga, Esq.,
+        Katie A. Calogero, Esq., and Adam A. Bartolanzo, Esq.,\n            Sheppard,
+        Mullin, Richter, and Hampton LLP, for Deloitte Consulting, LLP, the\n            intervenor.<br
+        />\n            Jose Otero, Esq., and Virginia Ackerman, Esq., Department
+        of Labor, for the agency.<br />\n            Young H. Cho, Esq., and Laura
+        Eyester, Esq., Office of the General Counsel, GAO,\n            participated
+        in the preparation of the decision.</p>\n        </div>\n        <p>DIGEST</p>\n
+        \       <p>Protest challenging agency\u2019s evaluation and selection of higher-rated,
+        higher-priced\n        quotation is denied where the record shows that the
+        agency\u2019s evaluation and selection were\n        reasonable and consistent
+        with the solicitation.\_</p>\n        <div>\n            <p>DECISION</p>\n
+        \       </div>\n        <p>22nd Century Technologies, Inc., of McLean, Virginia,
+        protests the establishment of a\n        blanket purchase agreement (BPA)
+        with Deloitte Consulting, LLP, of Arlington, Virginia\n        under request
+        for quotations (RFQ) No. 1605DC-19-Q-00006, issued by the Department of Labor\n
+        \       (DOL), for enterprise-wide support services.\_ 22nd Century argues
+        that the agency\u2019s\n        evaluation was unreasonable, the agency treated
+        vendors disparately, and the best-value\n        tradeoff was flawed.</p>\n
+        \       <p>We deny the protest.</p>\n        <p>BACKGROUND</p>\n        <p>The
+        RFQ was issued on January 1, 2019 to establish a BPA against the Federal Supply\n
+        \       Schedule (FSS) using Federal Acquisition Regulation (FAR) subpart
+        8.4 procedures for\n        enterprise-wide support for DOL\u2019s cybersecurity
+        and information assurance and program\n        integration support services
+        for department-wide information technology (IT)\n        initiatives.<a name=\"_ftnref1\"
+        id=\"_ftnref1\" href=\"#_ftn1\">[1]</a>\_ Agency Report (AR), Tab 5, RFQ at\n
+        \       9.<a name=\"_ftnref2\" id=\"_ftnref2\" href=\"#_ftn2\">[2]</a>\_ The
+        RFQ stated that the agency would\n        establish a BPA with one 12-month
+        base period and four 12-month option periods using a\n        best-value tradeoff
+        considering the following factors:\_ technical, past performance,\n        and
+        price.\_ <u>Id.</u> at 9, 100.\_ The technical factor included the following\n
+        \       five equally weighted subfactors:\_ understanding of the requirement,
+        key personnel,\n        corporate experience, start-up/phase-out plan, and
+        quality control plan.\_ <u>Id.</u>\n        at 100-102.\_ The RFQ stated that
+        the technical factor was significantly more important\n        than the past
+        performance factor, and that the non-price factors, when combined, were\n
+        \       significantly more important than price.\_ <u>Id.</u> at\_100.\_ The
+        RFQ also\n        stated that the agency would evaluate vendors\u2019 price
+        quotations for reasonableness and\n        completeness, and that vendors\u2019
+        total proposed price would be utilized in the\n        tradeoff.\_ <u>Id.</u>
+        at 102.\_</p>\n        <p>The agency received five quotations, including quotations
+        from 22nd Century and\n        Deloitte, which were evaluated as follows:</p>\n
+        \       <table><tbody><tr><td>\_</td>\n                    <td>\n                        <p><strong>22nd
+        Century</strong></p>\n                    </td>\n                    <td>\n
+        \                       <p><strong>Deloitte</strong></p>\n                    </td>\n
+        \               </tr><tr><td>\n                        <p><strong>Technical\_</strong></p>\n
+        \                   </td>\n                    <td>\n                        <p>Acceptable</p>\n
+        \                   </td>\n                    <td>\n                        <p>Good</p>\n
+        \                   </td>\n                </tr><tr><td>\n                        <p><strong>Understanding
+        of the Requirement</strong></p>\n                    </td>\n                    <td>\n
+        \                       <p>Acceptable</p>\n                    </td>\n                    <td>\n
+        \                       <p>Good</p>\n                    </td>\n                </tr><tr><td>\n
+        \                       <p><strong>Key Personnel</strong></p>\n                    </td>\n
+        \                   <td>\n                        <p>Acceptable</p>\n                    </td>\n
+        \                   <td>\n                        <p>Good</p>\n                    </td>\n
+        \               </tr><tr><td>\n                        <p><strong>Corporate
+        Experience</strong></p>\n                    </td>\n                    <td>\n
+        \                       <p>Acceptable</p>\n                    </td>\n                    <td>\n
+        \                       <p>Good</p>\n                    </td>\n                </tr><tr><td>\n
+        \                       <p><strong>Start-Up/Phase-Out Plan</strong></p>\n
+        \                   </td>\n                    <td>\n                        <p>Acceptable</p>\n
+        \                   </td>\n                    <td>\n                        <p>Acceptable</p>\n
+        \                   </td>\n                </tr><tr><td>\n                        <p><strong>Quality
+        Control Plan</strong></p>\n                    </td>\n                    <td>\n
+        \                       <p>Acceptable</p>\n                    </td>\n                    <td>\n
+        \                       <p>Good</p>\n                    </td>\n                </tr><tr><td>\n
+        \                       <p><strong>Past Performance</strong></p>\n                    </td>\n
+        \                   <td>\n                        <p>Good/Low Risk</p>\n                    </td>\n
+        \                   <td>\n                        <p>Good/Low Risk</p>\n                    </td>\n
+        \               </tr><tr><td>\n                        <p><strong>Total Proposed
+        Price</strong></p>\n                    </td>\n                    <td>\n
+        \                       <p>$111,994,220</p>\n                    </td>\n                    <td>\n
+        \                       <p>$137,366,343</p>\n                    </td>\n                </tr></tbody></table><br
+        /><br /><p>AR, Tab 14, Award Decision Document (ADD), at 2, 3.\_</p>\n        <p>The
+        contracting officer, who served as the selection official, reviewed the technical\n
+        \       evaluation panel\u2019s (TEP) consensus evaluation under the technical
+        factor, performed a price\n        analysis and a past performance evaluation,
+        and conducted a comparative assessment between\n        the vendors.\_ The
+        contracting officer identified discriminators between the\n        quotations;
+        found that Deloitte\u2019s quotation was superior to 22nd Century\u2019s quotation
+        under\n        the understanding of the requirements, key personnel, corporate
+        experience and quality\n        control plan subfactors; and concluded that
+        Deloitte\u2019s technical superiority was worth the\n        price premium
+        over 22nd Century\u2019s quotation.\_ <u>Id.</u> at\_25\u201128.\_ 22nd\n
+        \       Century was notified of Deloitte\u2019s selection on September 20,
+        2019.\_ After receiving a\n        brief explanation of the basis of award,
+        this protest followed.\_</p>\n        <p>DISCUSSION</p>\n        <p>22nd Century
+        challenges the agency\u2019s evaluation of its and Deloitte\u2019s quotation\n
+        \       essentially under every factor and subfactor, and the best-value tradeoff
+        decision.\n        Although we do not specifically address all of 22nd Century\u2019s
+        arguments, we have fully\n        considered all of them and find that they
+        afford no basis on which to sustain the\n        protest.<a name=\"_ftnref3\"
+        id=\"_ftnref3\" href=\"#_ftn3\">[3]</a>\_</p>\n        <p>Technical Factor--Understanding
+        of the Requirement Subfactor</p>\n        <p>Under the technical factor, understanding
+        of the requirement subfactor, vendors were\n        required to demonstrate
+        their understanding of the work to be performed pursuant to the\n        Performance
+        Work Statement\u2019s (PWS) five task areas and their respective subtasks.<a
+        name=\"_ftnref4\" id=\"_ftnref4\" href=\"#_ftn4\">[4]</a>\_ RFQ at 23-37,
+        96, 101.\_ 22nd\n        Century was assessed one strength and six weaknesses,
+        and assigned an acceptable rating\n        under this subfactor.\_ AR, Tab
+        10, TEP Consensus Evaluation Report (TEP Report), at\n        4-6.\_ Deloitte
+        was assessed five strengths and no weaknesses and assigned a good\n        rating.\_
+        <u>Id.</u> at 9-10. \_</p>\n        <p>The contracting officer performed a
+        comparative assessment between the two\n        quotations.\_ AR, Tab 14,
+        ADD, at 25.\_ The contracting officer identified several\n        weaknesses
+        in 22nd Century\u2019s quotation, including:\_ (1) failing to highlight or\n
+        \       address enterprise architecture or EGov capabilities in its quotation;
+        and (2)\_failing\n        to describe a process to support the agency\u2019s
+        major information systems authority to\n        operate (ATO) management.\_
+        <u>Id.</u> at 25-26.\_ The contracting officer\n        identified Deloitte\u2019s
+        strength for its superior knowledge of identity control and access\n        management
+        (ICAM) to be a discriminator.\_ <u>Id.</u> at 25.\_ As a result, the\n        contracting
+        officer found Deloitte\u2019s quotation to be more advantageous than 22nd
+        Century\u2019s\n        quotation under this subfactor, and worth the additional
+        cost.\_ <u>Id.</u> at 26.</p>\n        <p>22nd Century challenges five of
+        the six weaknesses assessed to its quotation.\_ 22nd\n        Century also
+        challenges the strength and discriminator assessed to Deloitte\u2019s quotation
+        for\n        its knowledge of ICAM.\_ Protest at 8-13;<a name=\"_ftnref5\"
+        id=\"_ftnref5\" href=\"#_ftn5\">[5]</a> Comments and Supp. Protest at\_7-8,\n
+        \       21\u201126; Protester\u2019s Supp. Comments, Nov. 21, 2019, at 2-5.\_</p>\n
+        \       <p>Where, as here, an agency issues an RFQ to FSS vendors under FAR
+        subpart 8.4 and\n        conducts a competition for the issuance of an order
+        or establishment of a BPA, we will\n        review the record to ensure that
+        the agency\u2019s evaluation was reasonable and consistent with\n        the
+        terms of the solicitation and applicable procurement laws and regulations.\_\n
+        \       <u>AllWorld Language Consultants, Inc.</u>, B-414244, B\u2011414244.2,
+        Apr. 3, 2017, 2017 CPD\n        \xB6\_111 at 2; <u>Digital Solutions, Inc.</u>,
+        B-402067, Jan. 12, 2010, 2010 CPD \xB6 26 at\n        3-4. \_A protester\u2019s
+        disagreement with the agency\u2019s judgment, without more, does not\n        establish
+        that an evaluation was unreasonable. \_<u>DEI Consulting</u>, B-401258, July\n
+        \       13, 2009, 2009 CPD \xB6 151 at 3.\_ Further, it is a vendor\u2019s
+        responsibility to submit a\n        well-written quotation, with adequately
+        detailed information which clearly demonstrates\n        compliance with the
+        solicitation requirements; the vendor runs the risk that the agency\n        will
+        unfavorably evaluate its proposal where it fails to do so.\_ <u>The Concourse\n
+        \       Grp., LLC</u>, B-411962.5, Jan. 6, 2017, 2017 CPD \xB6 36 at 7.</p>\n
+        \       <p>Based on our review, we find that the agency\u2019s evaluation
+        with respect to four of the\n        weaknesses was reasonable.\_ We also
+        find that the agency\u2019s evaluation was not\n        reasonable with regard
+        to one of the weaknesses assessed to 22nd Century.\_ However, we\n        conclude
+        that this error did not prejudice the protester, and we therefore find no
+        basis to\n        sustain the protest.\_ We address several representative
+        examples below.</p>\n        <p>Failure to Address Enterprise Architecture
+        or EGov Capability</p>\n        <p>22nd Century first argues that the agency
+        unreasonably assessed a weakness for failing\n        to \u201Chighlight or
+        address Enterprise Architecture (EA) or EGov capability\u201D and cites to\n
+        \       sections of its quotation that addressed its enterprise architect
+        approach.\_ Protest\n        at\_9\u201110; Comments and Supp. Protest at
+        23.\_ The agency responds that 22nd\n        Century\u2019s quotation did
+        not adequately address its plan for the integration of security\n        objectives
+        identified in the RFQ.\_ Memorandum of Law (MOL) at 27-28.\_ The agency\n
+        \       also contends that 22nd Century\u2019s assertions that its quotation
+        addressed its enterprise\n        architect approach pertained to a completely
+        different subtask area, and did not adequately\n        address the solicitation
+        requirement.\_ <u>Id.</u> \_</p>\n        <p>Under the DIA program management
+        support task, information assurance administration\n        subtask, the contractor
+        was to provide recommendations on how to integrate security\n        objectives
+        into other aspects of the DOL organization, including enterprise architecture,\n
+        \       EGov, CPIC, and specific technological initiatives; and how to include
+        and expand upon the\n        activities of other organizations to the benefit
+        of DOL.\_ RFQ at 24.\_ 22nd\n        Century\u2019s quotation stated that
+        it would utilize its knowledge, initiative and experience\n        to provide
+        recommendations, guidance, and goals to improve the organization.\_ AR, Tab\n
+        \       6, 22nd Century Tech. Quotation, at 2-3.\_ 22nd Century\u2019s quotation
+        further stated that\n        it was familiar with the CPIC control process
+        for IT.\_ <u>Id.</u> at 3.\_ In\n        assessing a weakness, the agency
+        found that 22nd Century did not address enterprise\n        architecture or
+        EGov capability, and only addressed its CPIC experience, and therefore did\n
+        \       not demonstrate its understanding of the specific requirements and
+        comprehension of the\n        tasks outlined in the PWS.\_ AR, Tab 10, TEP
+        Report, at 5.\_</p>\n        <p>Based on our review of the record, we find
+        reasonable the agency\u2019s conclusion.\_ The\n        agency reasonably
+        concluded that the quotation did not sufficiently address enterprise\n        architecture
+        or EGov, and agencies are not required to infer information from an\n        inadequately
+        detailed proposal, or to supply information that the protester elected not
+        to\n        provide.\_ <u>See</u> <u>Engility Corp.</u>, B-413120.3 <u>et
+        al.</u>, Feb. 14 2017,\n        2017 CPD \xB6 70 at 16.\_ Accordingly, this
+        protest ground is denied.\_ \_</p>\n        <p>Failure to Address ATO Management
+        Process</p>\n        <p>22nd Century next argues that the agency unreasonably
+        assessed a weakness for failing to\n        address the RFQ\u2019s requirement
+        to perform an in-depth analysis and prepare recommendations\n        to support
+        the ATO management task.\_ Protest at 11-13; Comments and Supp. Protest at\n
+        \       25-26.\_ The agency responds that while 22nd Century\u2019s quotation
+        claimed that it had a\n        successful and proven approach, it provided
+        little information that specifically addressed\n        DOL\u2019s ATO requirements
+        or the process used.\_ MOL at\_30\u201131.</p>\n        <p>The RFQ described
+        in detail the requirements under the enterprise security authorization\n        management
+        support task, ATO management subtask, including a requirement to:</p>\n        <p>Perform
+        an in-depth analysis of current processes to\n        determine the adequacy
+        and shall prepare recommendations describing the technical approach,\n        organizational
+        resources, and management controls to be employed to meet the cost,\n        performance
+        and schedule requirements for the task; ensuring conformance with federal\n
+        \       policies and guidelines.</p>\n        <p>RFQ at 30-32.\_ 22nd Century\u2019s
+        quotation stated that it had a \u201Csuccessful and proven\n        approach\u201D
+        that followed the National Institute of Standards (NIST) Special Publication
+        (SP)\n        800-37 Risk Management Framework that could be tailored to support
+        DOL processes and\n        procedures.\_ AR, Tab 6, 22nd Century Tech. Quotation,
+        at\_19.\_ In assessing a\n        weakness, the agency found that 22nd Century\u2019s
+        quotation did not describe processes that\n        show how it would manage
+        and support DOL major information system ATOs.\_ AR, Tab 10,\n        TEP
+        Report, at 5-6.</p>\n        <p>22nd Century\u2019s arguments provide no basis
+        to sustain the protest.\_ The record\n        supports the agency\u2019s conclusion
+        that 22nd Century\u2019s quotation did not provide a\n        methodology
+        that specifically addressed how it would manage and support DOL\u2019s major\n
+        \       information system ATOs.\_ While 22nd Century contends otherwise,
+        the record shows that\n        22nd Century\u2019s quotation provided a general
+        approach without details.\_ AR, Tab 6, 22nd\n        Century Tech. Quotation,
+        at 18-19.\_ Accordingly, we find it reasonable for the agency\n        to
+        have assessed a weakness.\_ <u>See</u> <u>Great Lakes Towing Co. d/b/a Great
+        Lakes\n        Shipyard</u>, B-408210, June 26, 2013, 2013 CPD \xB6 151 at
+        7-8 (where a proposal omits,\n        inadequately addresses, or fails to
+        clearly convey required information, the offeror runs\n        the risk of
+        an adverse agency evaluation).</p>\n        <p>Outdated NIST Guidance</p>\n
+        \       <p>22nd Century also argues that the agency unreasonably assessed
+        a weakness because the\n        quotation\u2019s executive summary referenced
+        NIST SP \u201C800-53a (rev.3),\u201D rather than the most\n        recent
+        NIST guidance, which was revision 4.\_ The protester argues that its executive\n
+        \       summary only described the work previously performed by its subcontract
+        and its quotation\n        elsewhere indicated its understanding that the
+        relevant tasks were to be performed using\n        the most recent NIST guidance.\_
+        Protest at 9; Comments and Supp. Protest at 22.\_\n        The agency responds
+        that the quotation showed that 22nd Century\u2019s subcontractor had been\n
+        \       advising DOL using outdated guidance, which was an \u201Cobvious concern.\u201D\_
+        MOL at 26-27;\n        2nd Supp. MOL at 4-5.\_</p>\n        <p>Under the enterprise
+        security authorization management support task, centralized\n        information
+        systems security officer (ISSO) services subtask, the contractor was to develop\n
+        \       and maintain all security documentation for systems under its purview
+        in accordance with\n        the latest NIST SP 800-37 revision.\_ RFQ at 32.\_
+        The executive summary of 22nd\n        Century\u2019s quotation included a
+        table highlighting 22nd Century\u2019s and its subcontractors\n        \u201Cstrengths,\u201D
+        including a statement that \u201C[f]or the DOL, over the last three years
+        we have\n        been providing cybersecurity assessments managing the NIST
+        SP 800-53a (rev. 3) control\n        assessments.\u201D\_ AR, Tab 6, 22nd
+        Century Tech. Quotation, at v.\_ 22nd Century\u2019s\n        quotation, however,
+        also indicated its familiarity with \u201Cvarious compliance program\n        updates\u201D
+        including \u201Cthe upcoming NIST SP 800-53 Rev 5 due sometime in 2019.\u201D\_\n
+        \       <u>Id.</u> at 18. The agency, however, assessed the following weakness:\_</p>\n
+        \       <p>The Executive Summary references 800-53a (rev.3).\_ This\n        is
+        old guidance and has been superseded by rev. 4 and soon rev. 5.\_ As well,
+        it is not\n        in alignment with the most recent versions as identified
+        in the RFQ on page 32 (\u201Cthe latest\n        NIST SP 800-53 Revision\u201D).\_</p>\n
+        \       <p>AR, Tab 10, TEP Report, at 5.</p>\n        <p>On this record, we
+        agree with the protester that the weakness is not supported by the\n        record.\_
+        The RFQ stated that the agency would evaluate quotations to ensure vendors\n
+        \       demonstrated their understanding of the work described in the PWS
+        and the extent to which\n        potential risks were identified and mitigated.\_
+        RFQ at 101.\_ As discussed above,\n        22nd Century\u2019s quotation demonstrated
+        its understanding that ISSO services were to be\n        performed in accordance
+        with the most recent NIST SP 800-53a revision and that a revision\n        was
+        forthcoming.\_ It was therefore not reasonable for the agency to assess a
+        weakness\n        based on 22nd Century\u2019s executive summary description
+        of the work its subcontractor had\n        previously performed, which the
+        agency now contends had been performed using outdated\n        guidance.\_</p>\n
+        \       <p>While we agree that the assessment of this weakness was unreasonable,
+        we do not find it\n        provides a basis to sustain the protest.\_ Competitive
+        prejudice is an essential\n        element of a viable protest, and we will
+        sustain a protest only where the protester\n        demonstrates that, but
+        for the agency\u2019s improper actions, it would have had a substantial\n
+        \       chance of receiving the award. \_<u>DRS ICAS, LLC</u>, B-401852.4,
+        B-401852.5, Sept. 8,\n        2010, 2010 CPD \xB6 261 at\_21-22.\_ Here, the
+        record shows that 22nd Century was\n        assessed five other weaknesses,
+        one of which 22nd Century did not challenge.\_ Further,\n        while the
+        contracting officer identified several weaknesses as discriminators between\n
+        \       Deloitte\u2019s quotation and 22nd Century\u2019s quotation under
+        this subfactor, this weakness was\n        not one of them.\_</p>\n      <p>Evaluation
+        of Deloitte\u2019s Quotation</p>\n    <p>22nd Century argues that the agency
+        unreasonably and unequally assessed and identified\n        as a discriminator
+        Deloitte\u2019s strength for its superior knowledge of ICAM.\_ Comments\n
+        \       and Supp. Protest at 7-8; Protester\u2019s Supp. Comments, Nov. 21,
+        2019, at\_2\u20115;\n        Protester\u2019s Supp. Comments, Dec. 3, 2019,
+        at 10-12.\_ The agency explains that it\n        reasonably found Deloitte\u2019s
+        ICAM experience to be a strength and discriminator and the\n        differing
+        evaluation results were based on the differences in the quotations.\_ Supp.\n
+        \       MOL at 2-3; 2nd Supp. MOL at 8-9.</p>\n        <p>In conducting procurements,
+        agencies may not generally engage in conduct that amounts to\n        unfair
+        or disparate treatment of competing vendors. \_<u>Arc Aspicio, LLC et al.</u>,\n
+        \       B-412612 <u>et al.</u>, Apr. 11, 2016, 2016 CPD \xB6 117 at 13. \_It
+        is a fundamental\n        principle of federal procurement law that a contracting
+        agency must treat all vendors\n        equally and evaluate their quotations
+        evenhandedly against the solicitation\u2019s requirements\n        and evaluation
+        criteria. \_<u>See</u> <u>Sumaria Sys., Inc.; COLSA Corp.</u>, B-412961,\n
+        \       B-412961.2, June\_21, 2016, 2016 CPD \xB6 188 at 10. \_Where a protester
+        alleges\n        unequal treatment in a technical evaluation, it must show
+        that the differences in ratings\n        did not stem from differences between
+        the proposals or quotations. \_<u>Camber\n        Corp.</u>, B-413505, Nov.
+        10, 2016, 2016 CPD \xB6 350 at 8.</p>\n        <p>Under the DIA program management
+        support task, ICAM subtask, the RFQ required the\n        contractor provide
+        support to the DOL ICAM solution project framework, which was in direct\n
+        \       support of the agency\u2019s identity access management (IAM) program.\_
+        RFQ at 27.\_\n        The specific duties included providing an in-depth analysis
+        of the adequacy of DOL\u2019s IAM\n        efforts--to include conformance
+        with the most current version of federal policies and\n        guidelines--and
+        recommendations on implementation.\_ <u>Id.</u>\_ The solicitation\n        also
+        required the contractor to actively participate on the IAM integrated project
+        team\n        (IPT) and associated advisory and working groups and lead DOL\u2019s
+        technical workgroups.\_\n        <u>Id.</u></p>\n        <p>Deloitte\u2019s
+        quotation explained that it supported some of the largest IAM programs in
+        the\n        federal government to include those that are defining the future
+        of ICAM, and would draw\n        upon its experience to support the ICAM subtask.\_
+        <u>See</u> AR, Tab 16, Deloitte\n        Tech. Quotation, at 8-9.<a name=\"_ftnref6\"
+        id=\"_ftnref6\" href=\"#_ftn6\">[6]</a>\_ Deloitte\u2019s quotation also highlighted\n
+        \       that its leadership helped shape identity management for the federal
+        government, and\n        identified its experience leading \u201Cthe Federal
+        CIO [Chief Information Officer] Council ICAM\n        Policy and Standards
+        Tiger Team advising on updates for authentication policy and\n        standards.\u201D\_
+        <u>Id.</u> at 8.\_ As a result, the TEP assessed Deloitte a strength,\n        finding
+        that Deloitte demonstrated its knowledge and experience and would assist the
+        agency\n        to stay current in the ICAM field.\_ AR, Tab 10, TEP Report,
+        at 10.\_ In the\n        contracting officer\u2019s comparative assessment,
+        the contracting officer identified this\n        strength as a discriminator.\_
+        AR, Tab\_14, ADD, at 25.</p>\n        <p>In comparison, 22nd Century\u2019s
+        quotation stated that it had supported system development\n        life cycle
+        processes and that its subject matter experts (SMEs) would use that knowledge\n
+        \       and expertise to support DOL\u2019s ICAM solution.\_ AR, Tab 6, 22nd
+        Century Tech.\n        Quotation, at 8.\_ 22nd Century also stated that it
+        recognized the importance of\n        participating in various IPTs, associated
+        advisory and working groups, and that its SMEs\n        would support all
+        such efforts.\_ <u>Id.</u> at 9.\_</p>\n        <p>Based on this record, we
+        do not find that the agency\u2019s assessment of a strength to be\n        unreasonable
+        or unequal.\_ While 22nd Century\u2019s quotation described its understanding\n
+        \       of the requirements and explained that it has supported processes
+        and has SMEs, Deloitte\u2019s\n        quotation detailed its experience in
+        the ICAM field in leading a team, which it would\n        utilize to perform
+        the tasks under this requirement.\_ Accordingly, this protest ground\n        is
+        denied.\_ <u>See</u> <u>Camber Corp.</u>, <u>supra</u>.</p>\n        <p>Key
+        Personnel Subfactor</p>\n        <p>22nd Century argues that the agency treated
+        vendors unequally by assessing strengths to\n        Deloitte\u2019s quotation,
+        but not 22nd Century\u2019s, for exceeding certification requirements and\n
+        \       for mapping its quotation with the RFQ requirements.\_ Comments and
+        Supp. Protest at\n        10, 14; Protester\u2019s Supp. Comments, Nov. 21,
+        2019, at 8-11; Protester\u2019s Supp. Comments,\n        Dec. 3, 2019, at
+        8-10.<a name=\"_ftnref7\" id=\"_ftnref7\" href=\"#_ftn7\">[7]</a>\_ The agency
+        responds that Deloitte\u2019s\n        quotation demonstrated that several
+        key personnel possessed multiple relevant\n        certifications and 22nd
+        Century\u2019s quotation did not.\_ Supp. MOL at 6-8.\_\n        Similarly,
+        Deloitte\u2019s quotation mapped its key personnel to most of the PWS task
+        areas\n        while 22nd Century\u2019s quotation did not.\_ 2nd Supp. MOL
+        at 6-7.\_</p>\n        <p>The RFQ identified five key personnel positions
+        and described education and\n        certification requirements for each position.\_
+        RFQ at 37-39.\_ With the exception\n        of the lead project/program manager,
+        the RFQ required that key personnel possess Certified\n        Information
+        Systems Security Professional and Information Technology Infrastructure Library\n
+        \       (ITIL) 4 Foundation certifications, and identified the Project Management
+        Institute Project\n        Management Professional (PMP) certification as
+        a \u201Chighly recommended\u201D certification.\_\n        <u>Id.</u>\_ The
+        RFQ instructed vendors to provide resumes for key personnel and a\n        matrix
+        that included the background/experience mapped to the appropriate PWS task
+        area\n        supporting the proposed labor category, which the agency would
+        evaluate.\_ <u>Id.</u>\n        at\_96, 101.</p>\n        <p>22nd Century
+        was assessed one strength and one weakness, and assigned an acceptable\n        rating
+        under the key personnel subfactor.\_ AR, Tab 10, TEP Report, at 6. Deloitte
+        was assessed six strengths and assigned a good rating under the key personnel\n
+        \       subfactor.\_ <u>Id.</u> at 10.\_ Of the six strengths, three were
+        assessed because\n        its proposed project manager, senior security architect,
+        and senior security engineer\n        exceeded the certification requirements
+        for their respective positions.\_\n        <u>Id.</u>\_ Deloitte was\_ also
+        assessed two strengths for having mapped the\n        skills of its key personnel
+        to the requirements of the RFQ that:\_ (1) provided insight\n        into
+        how Deloitte planned to support the required task areas, and (2) documented
+        that\n        Deloitte was proposing a \u201Cteam of professionals who will
+        enhance DOL\u2019s security\n        posture.\u201D\_ <u>Id.</u> at 11.\_
+        Finally, Deloitte was assessed a strength for\n        proposing leads that
+        exceeded the certification requirements for their positions but also\n        exceeded
+        the experience in the field of IT security specific for the tasks set forth
+        by the\n        agency.\_ <u>Id.</u>\_</p>\n        <p>The contracting officer
+        identified as a discriminator the fact that Deloitte proposed\n        key
+        personnel that exceeded the certification requirements for their positions,
+        and mapped\n        the skills of the key personnel to the RFQ requirements.\_
+        AR, Tab 14, ADD, at\n        26.\_ The contracting officer recognized that
+        22nd Century was also assessed a strength\n        because its proposed project
+        manager exceeded the certification requirements.\_\n        <u>Id.</u>\_ However,
+        the contracting officer noted that 22nd Century\u2019s quotation did\n        not
+        address whether its lead incident responder possessed the required ITIL\n
+        \       certification.\_ <u>Id.</u> \_</p>\n        <p>Based on our review
+        of the record, we do not find that the agency treated 22nd Century\n        unequally.\_
+        For example, 22nd Century argues that Deloitte was unequally assessed a\n
+        \       strength because its proposed senior security architect possessed
+        the highly recommended\n        PMP certification but 22nd Century\u2019s
+        proposed senior security architect also had the same\n        certification.\_
+        Protest at 10.\_ However, the TEP assessed a strength to\n        Deloitte\u2019s
+        senior security architect not only for having the required certification and
+        the\n        highly recommended PMP certification but also having an additional
+        [DELETED]\n        certification.\_ AR, Tab 10, TEP Report, at 10.\_ In assessing
+        the strength, the\n        agency found that having the PMP and the [DELETED]
+        could provide additional value and\n        insight.\_ <u>Id.</u>\_ 22nd Century
+        does not argue, nor does its quotation\n        demonstrate, that its proposed
+        senior security architect possessed the [DELETED]\n        certification.\_
+        <u>Compare</u> AR, Tab 6, 22nd Century\u2019s Tech. Quotation, at 81\n        <u>with</u>
+        AR, Tab\_16, Deloitte\u2019s Tech. Quotation, at A-5.<a name=\"_ftnref8\"
+        id=\"_ftnref8\" href=\"#_ftn8\">[8]</a>\_</p>\n        <p>Similarly, the record
+        shows that Deloitte\u2019s quotation mapped its key personnel to each\n        PWS
+        task and subtask area.\_ AR, Tab 16, Deloitte\u2019s Tech. Quotation, at 39;
+        <u>see\n        also</u> <u>id.</u> at A\u20111-A-20 (resumes describing experience
+        in each task area).\_ By\n        contrast, 22nd Century\u2019s quotation
+        mapped its key personnel to only two out of five task\n        areas of the
+        PWS.\_ AR, Tab 6, 22nd Century Tech. Quotation, at\_40.\_ For\n        example,
+        22nd Century\u2019s proposed project manager and senior security architect
+        were mapped\n        to the DI Assurance program management support task,
+        and within those task areas,\n        specifically the project management
+        support and security engineering and architecture\n        subtasks.\_ <u>Id.</u>\_
+        The remaining three key personnel were mapped to the\n        Enterprise Security
+        Operations Center support task, and three specific subtasks within that\n
+        \       task.\_ <u>Id.</u>\_ On this record, we have no basis to find that
+        the agency\n        treated the vendors unequally.\_ <u>Camber Corp.</u>,
+        <u>supra</u>.</p>\n        <p>Corporate Experience Subfactor</p>\n        <p>22nd
+        Century argues that the agency treated 22nd Century and Deloitte unequally
+        under\n        the corporate experience subfactor by identifying Deloitte\u2019s
+        Federal Risk and Authorization\n        Management Program (FedRAMP) and third
+        party assessment organization (3PAO) experience as a\n        strength and
+        overemphasized this experience in the selection decision when 22nd Century
+        had\n        similar experience.<a name=\"_ftnref9\" id=\"_ftnref9\" href=\"#_ftn9\">[9]</a>\_
+        Comments and Supp. Protest\n        at\_15-17; Protester\u2019s Supp. Comments,
+        Nov. 21, 2019, at\_11-15.\_ 22nd Century\n        also argues that the agency
+        unreasonably credited Deloitte\u2019s lack of experience with DOL\n        more
+        than it credited 22nd Century\u2019s DOL experience.\_ Comments and Supp.
+        Protest\n        at\_17-18; Protester\u2019s Supp. Comments, Nov. 21, 2019,
+        at 13-14.\_</p>\n        <p>The agency explains that Deloitte\u2019s quotation
+        described and documented in greater detail\n        the nature and level of
+        its experience as compared to 22nd Century\u2019s quotation.\_ Supp.\n        MOL
+        at 9.\_ The agency also explains that it did not overemphasize Deloitte\u2019s
+        FedRAMP\n        experience in its evaluation because the experience was related
+        to a specific PWS task\n        area.\_ <u>Id.</u> at 12-13.\_ Finally, the
+        agency explains that the contracting\n        officer\u2019s comparative assessment
+        found Deloitte\u2019s experience with FedRAMP and 3PAO--and not\n        its
+        lack of experience with DOL--to be more advantageous than 22nd Century\u2019s
+        experience\n        with DOL.\_ Supp. MOL at 9-13; 2nd Supp. MOL at 10-12.</p>\n
+        \       <p>An agency\u2019s evaluation of experience and past performance
+        is, by its nature, subjective,\n        and that evaluation, including the
+        agency\u2019s assessments with regard to relevance, scope,\n        and significance,
+        are matters of discretion which we will not disturb absent a clear\n        demonstration
+        that the assessments are unreasonable or inconsistent with the solicitation\n
+        \       criteria. \_<u>Jefferson Consulting Grp., LLC</u>, B-417555, B-417555.2,
+        Aug. 16, 2019,\n        2019 CPD \xB6 293 at 6 (<u>citing</u> <u>Glenn Def.
+        Marine-Asia PTE, Ltd.</u>, B-402687.6,\n        B\u2011402687.7, Oct. 13,
+        2011, 2012 CPD \xB6 3 at 7; <u>SIMMEC Training Sols.</u>, B-406819,\n        Aug.\_20,
+        2012, 2012 CPD \xB6 238 at 4).\_</p>\n        <p>The RFQ stated that under
+        the corporate experience subfactor, the agency would evaluate\n        the
+        similarity in nature, scope, complexity, and difficulty to the orders contemplated\n
+        \       under the solicitation.\_ RFQ at 101.\_ 22nd Century was assessed
+        one strength and\n        assigned an adequate rating, while Deloitte was
+        assessed three strengths and assigned a\n        good rating.\_ AR, Tab 10,
+        TEP Report, at 6, 11-12.\_ Specifically, 22nd Century\u2019s\n        quotation
+        was assessed a strength under this subfactor based on its experience at DOL,\n
+        \       which the TEP found would benefit the agency because of 22nd Century\u2019s
+        knowledge of the\n        agency\u2019s policies and procedures.\_ AR, Tab
+        10, TEP Report, at 7.\_ Deloitte was\n        assessed three strengths, which
+        included:\_ (1) its experience and knowledge of\n        [DELETED]\_ and [DELETED],
+        and experience providing a variety of training techniques,\n        which
+        the TEP found would benefit the agency in delivery of security awareness trainings;\n
+        \       and (2) its experience as a FedRAMP accredited 3PAO organization,
+        which the agency found\n        validates the contractor\u2019s expertise
+        in FedRAMP knowledge, since 3PAO accreditation means\n        the company
+        has been selected by the government\u2019s JAB to audit FedRAMP certified
+        cloud\n        service providers.\_ <u>Id.</u> at 11-12.\_</p>\n        <p>In
+        the comparative assessment, the contracting officer identified Deloitte\u2019s
+        experience\n        with FedRAMP and as a 3PAO as a discriminator because
+        Deloitte exceeded the experience\n        necessary to perform the solicitation\u2019s
+        requirements and can provide additional value and\n        insight.\_ AR,
+        Tab 14, ADD, at 26.\_ The contracting officer also identified\n        Deloitte\u2019s
+        use of tools ([DELETED] \_and [DELETED]) that the agency was currently using\n
+        \       as an advantage that would \u201Censure continuity of services . .
+        . with minimum disruption and\n        additional savings on training personnel.\u201D\_
+        <u>Id.</u>\_ With regard to 22nd\n        Century, the contracting officer
+        recognized its experience working with the department as a\n        strength
+        because of its institutional knowledge.\_ <u>Id.</u> at 27.\_ The\n        contracting
+        officer, however, found that Deloitte \u201Cbring[s] new ideas and insight
+        on how to\n        approach DOL requirements . . . . [and was] worth the additional
+        cost.\u201D\_\n        <u>Id.</u>\_ \_</p>\n        <p>Based on the record
+        presented, we find nothing unreasonable or unequal with regard to\n        the
+        agency\u2019s evaluation under the corporate experience subfactor.\_ First,
+        the\n        enterprise security authorization management support task, ATO
+        management subtask, provided\n        a detailed description of the work to
+        be performed, including providing expert knowledge\n        and resources
+        to assist federal staff in meeting FedRAMP requirements.\_ RFQ at\n        31.\_
+        Deloitte\u2019s quotation highlighted, as part of the depth of its corporate\n
+        \       experience in cybersecurity, that it was a FedRAMP accredited 3PAO.\_
+        AR, Tab 16,\n        Deloitte Tech. Quotation, at 42.\_ 22nd Century\u2019s
+        quotation stated that it provided\n        subject matter expertise in FedRAMP
+        and the cloud service accreditation process to include\n        the review
+        and analysis of 3PAO reports, provisional ATO packages, and agency ATO\n        packages.\_
+        AR, Tab 6, 22nd Century Tech. Quotation, at 43, 44.\_ Here, 22nd\n        Century
+        has not shown how its expertise in FedRAMP and review of 3PAO reports is equal
+        to\n        Deloitte\u2019s FedRAMP experience and 3PAO accreditation.\_ The
+        protester also has not\n        shown that the differences in ratings did
+        not stem from differences between the\n        quotations.\_ <u>See</u> <u>Camber
+        Corp.</u>, <u>supra</u>.</p>\n        <p>Additionally, we have routinely found
+        that an agency may reasonably consider more\n        relevant or specialized
+        experience as a discriminator between proposals. \_<u>See,\n        e.g.</u>,
+        <u>Environmental Chem. Corp.</u>, B-416166.3 <u>et al.</u>, June 12, 2019,
+        2019\n        CPD \xB6 217 at\_11 (citations omitted).\_ Here, the agency\u2019s
+        evaluation found that\n        Deloitte\u2019s experience as a 3PAO \u201Cvalidates
+        the contractor\u2019s expertise in FedRAMP\n        knowledge.\u201D\_ AR,
+        Tab 10, TEP Report, at 12.\_ As the agency explained, this 3PAO\n        experience
+        provides \u201Cadditional value and insight\u201D for the ATO management requirement,\n
+        \       which requires expert knowledge and resources to assist federal staff
+        in meeting FedRAMP\n        requirements.\_ <u>Id.</u>; AR, Tab 14, ADD, at
+        26.\_ The contracting officer also\n        found that while 22nd Century\u2019s
+        corporate experience was a strength because of its\n        institutional
+        knowledge, Deloitte\u2019s strength in its corporate experience--which could\n
+        \       provide additional insight into how to approach the agency\u2019s
+        requirement--was a\n        discriminator.\_ AR, Tab 14, ADD, at 26-27.\_</p>\n
+        \       <p>Further, as discussed above, the record does not show that the
+        contracting officer\n        \u201Ccredited\u201D Deloitte with the lack of
+        DOL experience.\_ Rather, the record shows that\n        the contracting officer
+        acknowledged the strength of 22nd Century\u2019s corporate experience\n        stemming
+        from its experience with the agency.\_ AR, Tab 14, ADD, at 26-27.\_ The\n
+        \       agency, however, found that Deloitte\u2019s corporate experience--especially
+        as a 3PAO that\n        exceeded the requirements of the solicitation--would
+        be beneficial to the agency as it\n        could provide different ideas and
+        insight as to how to approach the agency\u2019s\n        requirement.\_ <u>Id.</u>\_
+        22nd Century\u2019s disagreement with the contracting\n        officer\u2019s
+        determination that Deloitte\u2019s quotation was more advantageous to 22nd
+        Century\u2019s\n        quotation in this regard provides no basis to sustain
+        the protest.\_</p>\n        <p>Exception to Terms of the Solicitation</p>\n
+        \       <p>22nd Century argues that Deloitte\u2019s price quotation took an
+        exception to material terms\n        of the solicitation, and, as a result,
+        should have been eliminated from the\n        competition.\_ Specifically,
+        the protester contends that Deloitte\u2019s price quotation\n        contains
+        statements reflecting its intent not to be bound by the ceiling rates proposed
+        in\n        its quotation and imposed other conditions affecting established
+        deliverables\n        schedules.\_ Comments and Supp. Protest at\_4-6.\_ The
+        agency responds that the\n        statements relied on by 22nd Century describe
+        assumptions made by Deloitte in its price\n        quotation, but contends
+        that those assumptions did not take exception to the material terms\n        of
+        the solicitation.\_ Supp. MOL at 20-21.</p>\n        <p>Clearly stated solicitation
+        requirements are considered material to the needs of the\n        government,
+        and a proposal that fails to conform to the material terms and conditions
+        of\n        the solicitation is considered unacceptable and may not form the
+        basis for award.\n        \_<u>Akira Techs., Inc.; Team ASSIST</u>, B-412017
+        <u>et al.</u>, Dec. 7, 2015, 2015\n        CPD \xB6 383 at 5.\_ Material terms
+        of a solicitation are those which affect the price,\n        quantity, quality,
+        or delivery of the goods or services being provided. \_<u>Arrington\n        Dixon
+        &amp; Assocs., Inc.</u>, B\u2011409981, B-409981.2, Oct. 3, 2014, 2014 CPD
+        \xB6 284 at 11.</p>\n        <p>The RFQ contemplated the establishment a BPA
+        under which fixed-price and labor-hour type\n        orders would be issued.\_
+        RFQ at 1.\_ For the price factor, vendors were instructed\n        to complete
+        a workbook that reflected the agency\u2019s estimate of labor categories and
+        labor\n        hours necessary to perform each PWS task area for the base
+        and option periods.\_\n        <u>Id.</u> at\_1, 99, 102; RFQ, attach. 6,
+        Pricing Worksheet.\_ The RFQ did not\n        require vendors to utilize the
+        agency-provided labor categories or hours.\_\n        <u>Id.</u>\_ The RFQ,
+        however, required the fixed-priced labor rates proposed by the\n        vendors
+        to be utilized as ceiling labor rates for orders placed under the BPA.\_ RFQ
+        at\n        1.\_</p>\n        <p>Deloitte\u2019s price quotation proposed
+        fixed-price labor rates that Deloitte represented\n        would be \u201Cused
+        as ceiling rates for pricing all labor proposed under future fixed priced\n
+        \       orders under the BPA.\u201D\_ AR, Tab 9A, Deloitte Price Quotation,
+        at 16-17.\_\n        Deloitte\u2019s price quotation also included an assumptions
+        and clarifications section\n        describing its assumptions utilized in
+        pricing its quotation.\_ <u>Id.</u> at\n        22-23.\_</p>\n        <p>With
+        regard to the level of effort, Deloitte explained that for pricing purposes
+        it\n        utilized the labor categories and hours provided in the RFQ.\_
+        <u>Id.</u> at 22.\_\n        However, it also stated the following:</p>\n
+        \       <p>[Deloitte] understand[s] that upon BPA award, task orders\n        will
+        be diverse, which will require us to propose varying levels of effort across
+        labor\n        categories.\_ For individual task orders, Deloitte assumes
+        that additional scoping and\n        sizing information will be provided prior
+        to developing estimated levels of effort and\n        pricing.</p>\n        <p><u>Id.</u>\_
+        Deloitte\u2019s quotation also stated that it assumed information requested\n
+        \       from the government and/or third parties would be provided within
+        a certain time frame and\n        be accurate, but if not, \u201Cmay lead
+        to a change order if it results in a project schedule\n        delay.\u201D\_
+        <u>Id.</u>\_</p>\n        <p>The record does not support 22nd Century\u2019s
+        contention that Deloitte\u2019s assumption--that\n        the agency would
+        provide additional information that would be utilized to develop an\n        estimate
+        and price for an order--reflected Deloitte\u2019s lack of commitment to be
+        bound by the\n        ceiling labor rates.\_ Deloitte\u2019s quotation clearly
+        stated that the labor rates\n        proposed in its quotation would be utilized
+        as ceiling rates for future orders to be placed\n        under the BPA.</p>\n
+        \       <p>Similarly, we do not agree with 22nd Century that Deloitte modified
+        the requirement that\n        it meet established schedules for contract deliverables
+        when it stated that a change order\n        could result from delays in the
+        availability and accuracy of information.\_ Deloitte\u2019s\n        quotation
+        only stated that delays in the project schedule stemming from unavailability
+        or\n        inaccuracy of information provided to Deloitte, during the performance
+        of a yet-to-be\n        issued order, may result in a change order.\_ These
+        statements do not indicate that\n        Deloitte does not intend to commit
+        to the RFQ\u2019s terms.\_ Accordingly, we do not find\n        that Deloitte
+        took exception to material terms of the solicitation in its price quotation,\n
+        \       and, we deny these protest grounds.\_ <u>See</u> <u>BillSmart Sols.,
+        LLC</u>,\n        B-413272.4, B-413272.5, Oct.\_23, 2017, 2017 CPD \xB6 325
+        at 12.\_</p>\n        <p>Evaluation of Deloitte\u2019s Price Quotation</p>\n
+        \       <p>22nd Century argues that the agency failed to perform and document
+        an adequate price\n        reasonableness evaluation which would have determined
+        that Deloitte\u2019s price--which was $25\n        million and 22.8 percent
+        higher than 22nd Century\u2019s--was unreasonable.\_ Protest at 16;\n        Comments
+        and Supp. Protest at 28-32.\_ The agency responds that it concluded and\n
+        \       documented that Deloitte\u2019s price was reasonable based on a comparison
+        of the vendors\u2019\n        proposed prices to each other, and to the independent
+        government cost estimate\n        (IGCE).\_ Contracting Officer\u2019s Statement
+        (COS) at\_16-17; MOL at 36-37; Supp. MOL\n        at 18-20.\_</p>\n        <p>A
+        price reasonableness determination is a matter of administrative discretion
+        involving\n        the exercise of business judgment by the contracting officer
+        that our Office will only\n        question where it is shown to be unreasonable.
+        \_<u>See</u> <u>TCG, Inc.</u>, B-417610,\n        B-417610.2, Sept. 3, 2019,
+        2019 CPD \xB6 312 at 7; <u>InfoZen, Inc.</u>, B-411530, B\u2011411530.2,\n
+        \       Aug. 12, 2015, 2015 CPD \xB6 270 at 5.\_ The manner and depth of an
+        agency\u2019s price\n        analysis is a matter within the sound exercise
+        of the agency\u2019s discretion, and we will not\n        disturb such an
+        analysis unless it lacks a reasonable basis. \_<u>See</u> <u>Gentex\n        Corp.\u2014W.
+        Operations</u>, B\u2011291793 <u>et al.</u>, Mar \_25, 2003, 2003 CPD \xB6
+        66 at\n        27-28. \_</p>\n        <p>The RFQ stated that in evaluating
+        price reasonableness and completeness, quotations\n        would be evaluated
+        using one or more of the techniques defined in FAR \xA7\_15.404.\n        \_RFQ
+        at 103.\_ These techniques include, among other methods, a comparison of the\n
+        \       proposed prices received in response to the solicitation (with adequate
+        price competition\n        normally establishing a fair and reasonable price),
+        and comparison of prices to an\n        independent government estimate. \_FAR
+        \xA7 15.404-1(b)(2).</p>\n        <p>Here, the agency evaluated the reasonableness
+        of Deloitte\u2019s pricing by comparing\n        vendors\u2019 total proposed
+        prices to each other and the IGCE.\_ <u>See generally</u> AR,\n        Tab\_13,
+        Price Analysis, at 2-8.\_ In the pricing analysis, the contracting officer\n
+        \       found that Deloitte\u2019s price was higher than the total proposed
+        prices of three other\n        vendors, including 22nd Century, but was lower
+        than the other remaining vendor and 28\n        percent lower than the IGCE.\_
+        <u>Id.</u> at 2, 4.\_ Similarly, of the five\n        quotations received,
+        22nd Century\u2019s total proposed price was 42 percent lower than the IGCE\n
+        \       and was lower than two vendors, including Deloitte, but higher than
+        two other\n        vendors.\_ <u>See</u> <u>id</u>.\_ The contracting officer
+        also compared the labor\n        rates between 22nd Century and Deloitte for
+        the base and option years and did not find\n        these labor rates to be
+        unreasonable.\_ <u>Id.</u> at\_5-7.\_ As a result, the\n        contracting
+        officer concluded that Deloitte and 22nd Century\u2019s total proposed prices
+        were\n        reasonable.\_ <u>Id.</u> at 8.\_ We find this conclusion to
+        be reasonable, within\n        the agency\u2019s sound discretion, and well-documented.\_</p>\n
+        \       <p>In reaching these conclusions, we find 22nd Century\u2019s reliance
+        on our decisions in\n        <u>Cognosante, LLC</u>, B-417111 <u>et al.</u>,
+        Feb. 21, 2019, 2019 CPD \xB6 93 at 5, and\n        <u>Technatomy Corp.</u>,
+        B\u2011414672.5, Oct. 10, 2018, 2018 CPD \xB6 353 at 14, to be\n        misplaced.\_
+        In those decisions, we sustained the protests because the records did not\n
+        \       demonstrate that the agencies performed any assessment or comparison
+        of the proposed prices\n        but instead showed reliance solely on adequate
+        price competition, <u>i.e.</u>, the receipt\n        of multiple responses
+        to the solicitation, to determine that the awardees\u2019 prices were\n        reasonable.\_
+        To the extent 22nd Century believes the agency should have conducted a\n        more
+        in-depth analysis of the price quotations, as discussed above, the depth of
+        an\n        agency\u2019s price analysis is a matter within the sound exercise
+        of the agency\u2019s discretion;\n        we find no legal requirement here
+        for the agency to have done a more in-depth analysis than\n        was undertaken
+        here.\_ <u>See</u> <u>Indtai Inc.</u>, B-298432.3, Jan. 17, 2007, 2007\n        CPD
+        \xB6 13 at 4.\_ Accordingly, this protest ground is denied.\_</p>\n        <p>Best-Value
+        Tradeoff</p>\n        <p>Finally, 22nd Century argues that the agency\u2019s
+        best-value tradeoff decision was flawed\n        because the agency failed
+        to meaningfully consider Deloitte\u2019s price and the decision was\n        inadequately
+        documented.\_ Protest at 17-19; Comments and Supp. Protest\n        at\_32\u201133.</p>\n
+        \       <p>Where, as here, a procurement conducted pursuant to FAR subpart
+        8.4 provides for the\n        establishment of a BPA on a best-value tradeoff
+        basis, it is the function of the selection\n        authority to perform a
+        price/technical tradeoff, that is, to determine whether one\n        quotation\u2019s
+        technical superiority is worth its higher price.\_ <u>SRA Int\u2019l, Inc.;
+        NTT\n        DATA Servs. Fed. Gov\u2019t, Inc.</u>, B-413220.4 <u>et al.</u>,
+        May 19, 2017, 2017 CPD \xB6 173 at\n        15.\_ An agency may properly select
+        a more highly rated quotation over one offering a\n        lower price where
+        it has reasonably determined that the technical superiority outweighs the\n
+        \       price difference.\_ <u>Id.</u>\_ The agency\u2019s decision is governed
+        only by the test\n        of rationality and consistency with the solicitation\u2019s
+        stated evaluation scheme.\_\n        <u>Id.</u></p>\n        <p>Here, the
+        record shows that the contracting officer performed a comparative assessment\n
+        \       between the vendors under each factor and subfactor, identified discriminators
+        between the\n        quotations, and ultimately concluded that Deloitte demonstrated
+        technical superiority over\n        22nd Century under the technical factor.\_
+        Specifically, under the understanding of the\n        requirement, key personnel,
+        corporate experience, and quality control plan subfactors, the\n        agency
+        identified attributes of both vendors that represented discriminators.\_ AR,
+        Tab\n        14, ADD, at 25-28. The contracting officer also concluded that
+        the collective technical\n        superiority based on the discriminators
+        identified under each subfactor was worth the price\n        premium associated
+        with Deloitte\u2019s quotation.\_ <u>Id.</u> at 27. Given that the record\n
+        \       shows that the agency\u2019s selection decision had a reasonable basis,
+        and was properly\n        documented, and given that 22nd Century has not
+        prevailed on its substantive challenges to\n        the agency\u2019s evaluation,
+        we see no basis to disturb the selection decision here.\_</p>\n        <p>The
+        protest is denied.</p>\n        <p>Thomas H. Armstrong<br />\n        General
+        Counsel</p>\n    </div>\n    <div>\n        <br /><hr /><div>\n            <p><a
+        name=\"_ftn1\" id=\"_ftn1\" href=\"#_ftnref1\">[1]</a> These initiatives include,
+        but are not\n            limited to, enterprise architecture, e-government
+        (EGov) achievement, and IT capital\n            planning and investment control
+        (CPIC).\_ RFQ at 8.\_</p>\n        </div>\n        <div>\n            <p><a
+        name=\"_ftn2\" id=\"_ftn2\" href=\"#_ftnref2\">[2]</a> The solicitation was
+        amended four\n            times.\_ Citations to the solicitation are to the
+        final version as amended.</p>\n        </div>\n        <div>\n            <p><a
+        name=\"_ftn3\" id=\"_ftn3\" href=\"#_ftnref3\">[3]</a> For example, 22nd Century
+        challenges the\n            agency\u2019s assignment of adjectival ratings
+        for several subfactors.\_ <u>See,\n            e.g.</u>, Protest at 13-14;
+        Comments and Supp. Protest at 8-9, 14-15, 19-20, 26.\_\n            It is
+        well-established that adjectival ratings are only guides for intelligent decision\n
+        \           making in the procurement process.\_ <u>Protection Strategies,
+        Inc.</u>,\n            B\u2011414648.2, B-414648.3, Nov. 20, 2017, 2017 CPD
+        \xB6 365 at 17. The essence of an agency\u2019s\n            evaluation is
+        reflected in the evaluation record itself, not in the adjectival ratings\n
+        \           or adjectival characterizations of proposal features as strengths
+        or weaknesses.\_\n            <u>See</u> <u>Systems Eng\u2019g Partners, LLC</u>,
+        B-412329, B-412329.2, Jan. 20, 2016,\n            2016 CPD \xB6\_31 at 7.
+        \_We find 22nd Century\u2019s argument to be without merit as\n            the
+        record shows that the contracting officer looked behind the adjectival ratings
+        to\n            the substance of the evaluation, performed a comparative assessment
+        of the quotations,\n            and identified discriminators in the selection
+        decision.\_ <u>See</u> <u>L-3\n            Commc\u2019ns, L-3 Link Simulations
+        &amp; Training</u>, B-410644.2, Jan. 20, 2016, 2016 CPD \xB6 44\n            at
+        7 (denying protest where agency properly considered relative merits of two\n
+        \           proposals).</p>\n        </div>\n        <div>\n            <p><a
+        name=\"_ftn4\" id=\"_ftn4\" href=\"#_ftnref4\">[4]</a> The task areas are:\_
+        Division of\n            Information Assurance (DIA) program management support;
+        enterprise policy and\n            governance; enterprise security authorization
+        management support; enterprise security\n            operations center support;
+        and information assurance transition plan.\_ RFQ at\n            23-37.\_</p>\n
+        \       </div>\n        <div>\n            <p><a name=\"_ftn5\" id=\"_ftn5\"
+        href=\"#_ftnref5\">[5]</a> After filing its initial protest on\n            September
+        25, 2019, 22nd Century filed a supplemental protest on September 30 alleging\n
+        \           additional protest grounds and consolidating the initial grounds
+        of protest. \_For\n            the purpose of consistency, all citations in
+        this decision to the \u201CProtest\u201D will refer\n            to the protester\u2019s
+        September 30 filing.</p>\n        </div>\n        <div>\n            <p><a
+        name=\"_ftn6\" id=\"_ftn6\" href=\"#_ftnref6\">[6]</a> Deloitte\u2019s technical
+        quotation was\n            provided to the protester and our Office after
+        DOL submitted its agency report.\_\n            Electronic Protest Docketing
+        System (EPDS) docket entry\_32.\_ While the agency\n            did not assign
+        this document an agency report document number, for the purpose of\n            consistency
+        with the agency report documents that were produced, this decision refers\n
+        \           to this document as Tab 16.\_</p>\n        </div>\n        <div>\n
+        \           <p><a name=\"_ftn7\" id=\"_ftn7\" href=\"#_ftnref7\">[7]</a> For
+        the first time in its comments, 22nd\n            Century argues that it should
+        have been assessed additional strengths because its key\n            personnel
+        exceeded the solicitation\u2019s educational and experience requirements.\_\n
+        \           Comments and Supp. Protest at\_11-14.\_ While the protester asserts
+        this\n            argument is timely because the agency assessed Deloitte
+        a strength, in part, for\n            exceeding the experience requirements
+        in the RFQ, we disagree.\_ Under our Bid\n            Protest Regulations,
+        protests based on other than solicitation improprieties must be\n            filed
+        within 10 days of when the protester knew or should have known their basis.\_\n
+        \           4\_C.F.R. \xA7 21.2(a)(2).\_ Because the protester had knowledge
+        of the proposal\n            strengths identified by the agency on September
+        20, 2019, and did not challenge the\n            failure of the agency to
+        assess additional strengths until it submitted its comments on\n            the
+        agency report on November 4, 2019, these additional assertions are untimely
+        and\n            will not be considered further.\_ 4\_C.F.R. \xA7 21.2(a)(2).</p>\n
+        \       </div>\n        <div>\n            <p><a name=\"_ftn8\" id=\"_ftn8\"
+        href=\"#_ftnref8\">[8]</a> Similarly, Deloitte\u2019s senior security\n            engineer
+        was assessed a strength for having, in addition to the required certifications\n
+        \           and highly recommended PMP certification, a [DELETED] and [DELETED]\n
+        \           certification.\_ AR, Tab 10, TEP Report, at 11.\_ A review of
+        22nd Century\u2019s\n            quotation does not show that its proposed
+        senior security engineer possessed the same\n            certifications.\_
+        <u>See</u> AR, Tab 6, 22nd Century Tech. Quotation,\n            at\_85.</p>\n
+        \       </div>\n        <div>\n            <p><a name=\"_ftn9\" id=\"_ftn9\"
+        href=\"#_ftnref9\">[9]</a> FedRAMP is a government-wide program\n            that
+        provides a standardized approach to security assessment, authorization, and\n
+        \           continuous monitoring for cloud products and services.\_ Supp.
+        MOL at 12-13\n            (<u>quoting</u> fedramp.gov/faqs/).\_ There are
+        two types of FedRAMP\n            authorizations:\_ a provisional authority
+        to operate through the Joint\n            Authorization Board (JAB) and an
+        agency authority to operate.\_ <u>Id.</u>\_\n            3PAOs perform the
+        initial and periodic assessments of cloud systems to ensure they meet\n            FedRAMP
+        security requirements as part of a cloud service provider\u2019s FedRAMP\n
+        \           authorization for both JAB and agency authorizations.\_ <u>See</u>\n
+        \           <a href=\"https://www.fedramp.gov/assessors/\">https://www.fedramp.gov/assessors/</a>
+        (last visited Dec. 19, 2019).\_</p>\n        </div>\n    </div></div>\n                </div>\n
+        \ </div>\n\n<section  class=\"js-endpoint-downloads full-reports-group\">\n
+        \   <h2>Downloads</h2>\n    <div class=\"field-group-content-wrapper\">\n
+        \ \n      <div class=\"field field--name-field-full-reports field--type-entity-reference
+        field--label-hidden field__items\">\n              <div class=\"field__item\"><figure
+        class=\"media media--type-file media--view-mode-teaser file-type--PDF file-mime--application-pdf\">\n
+        \ \n  <a href=\"/assets/b-418029.pdf\" target=\"_blank\">\n          \n            <div
+        class=\"field field--name-field-link-label field--type-string field--label-hidden
+        field__item\">Full Report (16 pages)</div>\n      \n      </a>\n</figure>\n</div>\n
+        \         </div>\n  \n  </div>\n</section>\n\n  </div>\n\n    </div>\n\n      </div>\n</section>\n<section
+        id=\"block-legalrelatedpages\" class=\"block block-gao-core block-legal-related-pages-list\"
+        data-entity-id=\"legal_related_pages_list\" data-entity-type=\"block\">\n
+        \ \n    \n  <div class=\"block__content block-legal-related-pages-list__content\">\n
+        \         <section id=\"gao-legal-related-pages\">\n  <h2>Related Pages</h2>\n
+        \     <div class=\"js-endpoint-related-pages gao-legal-related_pages\">\n
+        \     \n<article role=\"article\" class=\"node node--type-page node--view-mode-teaser-labeled\"
+        data-entity-id=\"446\" data-entity-type=\"node\">\n  <a href=\"/legal/appropriations-law\">\n
+        \   <header>\n      <div class=\"related-page-label\">\n        <p>Related</p>\n
+        \     </div>\n    </header>\n    <div class=\"node__content\">\n      <span
+        class=\"field field--name-title field--type-string field--label-hidden\">Appropriations
+        Law</span>\n\n    </div>\n  </a>\n</article>\n\n\n<article role=\"article\"
+        class=\"node node--type-page node--view-mode-teaser-labeled\" data-entity-id=\"421\"
+        data-entity-type=\"node\">\n  <a href=\"/legal/bid-protests\">\n    <header>\n
+        \     <div class=\"related-page-label\">\n        <p>Related</p>\n      </div>\n
+        \   </header>\n    <div class=\"node__content\">\n      <span class=\"field
+        field--name-title field--type-string field--label-hidden\">Bid Protests</span>\n\n
+        \   </div>\n  </a>\n</article>\n\n\n<article role=\"article\" class=\"node
+        node--type-page node--view-mode-teaser-labeled\" data-entity-id=\"476\" data-entity-type=\"node\">\n
+        \ <a href=\"/legal/other-legal-work/decisions-and-faqs\">\n    <header>\n
+        \     <div class=\"related-page-label\">\n        <p>Related</p>\n      </div>\n
+        \   </header>\n    <div class=\"node__content\">\n      <span class=\"field
+        field--name-title field--type-string field--label-hidden\">Decisions &amp;
+        FAQs</span>\n\n    </div>\n  </a>\n</article>\n\n\n<article role=\"article\"
+        class=\"node node--type-page node--view-mode-teaser-labeled\" data-entity-id=\"466\"
+        data-entity-type=\"node\">\n  <a href=\"/legal/appropriations-law/red-book\">\n
+        \   <header>\n      <div class=\"related-page-label\">\n        <p>Related</p>\n
+        \     </div>\n    </header>\n    <div class=\"node__content\">\n      <span
+        class=\"field field--name-title field--type-string field--label-hidden\">The
+        Red Book</span>\n\n    </div>\n  </a>\n</article>\n\n\n<article role=\"article\"
+        class=\"node node--type-page node--view-mode-teaser-labeled\" data-entity-id=\"491\"
+        data-entity-type=\"node\">\n  <a href=\"/legal/other-legal-work/contract-appeals-board\">\n
+        \   <header>\n      <div class=\"related-page-label\">\n        <p>Related</p>\n
+        \     </div>\n    </header>\n    <div class=\"node__content\">\n      <span
+        class=\"field field--name-title field--type-string field--label-hidden\">Contract
+        Appeals Board</span>\n\n    </div>\n  </a>\n</article>\n\n\n<article role=\"article\"
+        class=\"node node--type-page node--view-mode-teaser-labeled\" data-entity-id=\"481\"
+        data-entity-type=\"node\">\n  <a href=\"/legal/federal-vacancies-reform-act\">\n
+        \   <header>\n      <div class=\"related-page-label\">\n        <p>Related</p>\n
+        \     </div>\n    </header>\n    <div class=\"node__content\">\n      <span
+        class=\"field field--name-title field--type-string field--label-hidden\">Federal
+        Vacancies Reform Act</span>\n\n    </div>\n  </a>\n</article>\n\n\n<article
+        role=\"article\" class=\"node node--type-page node--view-mode-teaser-labeled\"
+        data-entity-id=\"486\" data-entity-type=\"node\">\n  <a href=\"/legal/other-legal-work/congressional-review-act\">\n
+        \   <header>\n      <div class=\"related-page-label\">\n        <p>Related</p>\n
+        \     </div>\n    </header>\n    <div class=\"node__content\">\n      <span
+        class=\"field field--name-title field--type-string field--label-hidden\">Congressional
+        Review Act</span>\n\n    </div>\n  </a>\n</article>\n\n\n    </div>\n  </section>\n\n
+        \     </div>\n</section>\n<section class=\"views-element-container block block-views
+        block-views-blockcontent-contacts-block-1\" id=\"block-views-block-content-contacts-block-1\"
+        data-entity-id=\"views_block:content_contacts-block_1\" data-entity-type=\"block\">\n
+        \ \n      <header class=\"title block__title block-views-blockcontent-contacts-block-1__title\">GAO
+        Contacts</header>\n    \n  <div class=\"block__content block-views-blockcontent-contacts-block-1__content\">\n
+        \         <div>\n\n  \n<div class=\"js-endpoint-contacts view--content-contacts--block-1
+        view view-content-contacts view-id-content_contacts view-display-id-block_1
+        js-view-dom-id-01b5905b7c7add9a5399b48efc8aec62275770ae9fe3c02da92df2f31c3e8f50\"
+        data-entity-id=\"content_contacts\" data-entity-type=\"view\">\n  \n    \n
+        \     \n  <div class=\"d-flex flex-row justify-content-between justify-content-md-start
+        mx-auto row view-content\">\n              <div class=\"views-row col-12 col-md-6
+        pl-md-0 mb-md-2 text-center\">\n<article role=\"article\" class=\"node node--type-staff-profile
+        node--view-mode-teaser-large-no-image node--view-mode-teaser-large\" data-entity-id=\"1086\"
+        data-entity-type=\"node\">\n  <div class=\"media\">\n    <div class=\"media-body\">\n
+        \             <a class=\"node-title\" href=\"/about/contact-us/find-an-expert/kenneth-e-patton\">Kenneth
+        E. Patton</a>\n            \n            <div class=\"field field--name-field-staff-contact-title
+        field--type-string field--label-hidden field__item\">Managing Associate General
+        Counsel</div>\n      \n            <div class=\"field field--name-field-staff-director-email
+        field--type-email field--label-hidden field__item\"><a href=\"mailto:pattonk@gao.gov\">pattonk@gao.gov</a></div>\n
+        \     \n            <div class=\"field field--name-field-staff-phone field--type-telephone
+        field--label-hidden field__item\"><a href=\"tel:+1-202-512-8205\">(202) 512-8205</a></div>\n
+        \     \n    </div>\n  </div>\n</article>\n</div>\n    <div class=\"views-row
+        col-12 col-md-6 pl-md-0 mb-md-2 text-center\">\n<article role=\"article\"
+        class=\"node node--type-staff-profile node--view-mode-teaser-large-no-image
+        node--view-mode-teaser-large\" data-entity-id=\"1349186\" data-entity-type=\"node\">\n
+        \ <div class=\"media\">\n    <div class=\"media-body\">\n              <a
+        class=\"node-title\" href=\"/about/contact-us/find-an-expert/edward-goldstein\">Edward
+        (Ed) Goldstein</a>\n            \n            <div class=\"field field--name-field-staff-contact-title
+        field--type-string field--label-hidden field__item\">Managing Associate General
+        Counsel</div>\n      \n            <div class=\"field field--name-field-staff-director-email
+        field--type-email field--label-hidden field__item\"><a href=\"mailto:goldsteine@gao.gov\">goldsteine@gao.gov</a></div>\n
+        \     \n            <div class=\"field field--name-field-staff-phone field--type-telephone
+        field--label-hidden field__item\"><a href=\"tel:+1-202-512-4483\">(202) 512-4483</a></div>\n
+        \     \n    </div>\n  </div>\n</article>\n</div>\n\n      </div>\n\n          </div>\n</div>\n\n
+        \     </div>\n</section>\n\n\n              </div>\n            </div>\n                      </div>\n
+        \       </main>\n      </div>\n    </div>\n  </div>\n      <section class=\"layout-pre-footer
+        container-fluid\">\n      <div class=\"layout-pre-footer__content\">\n                          <div
+        class=\"layout-contact\">\n            <div class=\"layout-contact__content\">\n
+        \             \n  <section class=\"views-element-container block block-views
+        block-views-blockopa-contact-block-1\" id=\"block-views-block-opa-contact-block-1\"
+        data-entity-id=\"views_block:opa_contact-block_1\" data-entity-type=\"block\">\n
+        \ \n      <header class=\"title block__title block-views-blockopa-contact-block-1__title\">Office
+        of Public Affairs</header>\n    \n  <div class=\"block__content block-views-blockopa-contact-block-1__content\">\n
+        \         <div>\n\n  \n\n\n<div data-entity-id=\"opa_contact\" data-entity-type=\"view\"
+        class=\"view--opa-contact--block-1 view view-opa-contact view-id-opa_contact
+        view-display-id-block_1 js-view-dom-id-10deac3c8bc0bd418fc27e475d67cce2efd8638150fec3473f376c1a55044f88\">\n
+        \ \n    \n      \n  <div class=\"view-content\">\n          \t\t\t\t\t<div
+        class=\"views-row\">\n<article role=\"article\" class=\"node node--type-staff-profile
+        node--view-mode-teaser-large-no-image node--view-mode-teaser-large\" data-entity-id=\"1206\"
+        data-entity-type=\"node\">\n  <div class=\"media\">\n    <div class=\"media-body\">\n
+        \             <a class=\"node-title\" href=\"/about/contact-us/find-an-expert/chuck-young\">Chuck
+        Young</a>\n            \n            <div class=\"field field--name-field-staff-contact-title
+        field--type-string field--label-hidden field__item\">Managing Director</div>\n
+        \     \n            <div class=\"field field--name-field-staff-director-email
+        field--type-email field--label-hidden field__item\"><a href=\"mailto:youngc1@gao.gov\">youngc1@gao.gov</a></div>\n
+        \     \n            <div class=\"field field--name-field-staff-phone field--type-telephone
+        field--label-hidden field__item\"><a href=\"tel:+1-202-512-4800\">(202) 512-4800</a></div>\n
+        \     \n    </div>\n  </div>\n</article>\n</div>\n\t\t\n      </div>\n\n          </div>\n</div>\n\n
+        \     </div>\n</section>\n\n\n            </div>\n          </div>\n              </div>\n
+        \   </section>\n  </div>\n  <footer>\n    <section class=\"layout-footer\">\n
+        \     <div class=\"layout-footer__content\">\n        <div class=\"layout-upper-footer\">\n
+        \         <div class=\"layout-upper-footer__content\">\n            \n  <div
+        class=\"upper-footer-container\">\n    \n<div id=\"block--gao_newsletter_signup\"
+        class=\"newsletter-signup\">\n  <h2 class=\"newsletter-main-text\">Receive
+        GAO Updates</h2>\n  <p class=\"newsletter-secondary-text\">\n    Stay informed
+        as we add new reports & testimonies.\n  </p>\n  <form method=\"get\" action=\"https://public.govdelivery.com/accounts/USGAO/subscribers/qualify\"
+        class=\"signup\">\n    <input type=\"email\" name=\"email\" class=\"email\"
+        onfocus=\"this.placeholder=''\"\n      aria-label=\"Enter Your Email Address\"\n
+        \     onblur=\"this.placeholder='&#xf0e0; Enter Your Email Address'\"\n      placeholder=\"&#xf0e0;
+        Enter Your Email Address\" />\n    <input type=\"submit\" value=\"Subscribe\"
+        class=\"submit subscribe\" />\n  </form>\n</div>\n\n  </div>\n\n          </div>\n
+        \       </div>\n                  <div class=\"layout-lower-footer container\">\n
+        \           <div class=\"row\">\n                              <div class=\"layout-footer-1
+        col-12 col-lg-5\">\n                  <div class=\"layout-footer-1__content\">\n
+        \                   \n  \n  <div id=\"block--gao_footer_info\">\n    <div
+        class=\"footer-info-logo\">\n      <img src=\"/themes/custom/gao/img/GAO-logo-footer.png\"
+        alt=\"GAO Logo\" />\n    </div>\n    <div class=\"top-text\">\n      U.S.
+        Government Accountability Office\n    </div>\n    <div class=\"social-links\">\n
+        \             <a href=\"https://www.facebook.com/usgao\" class=\"social-link
+        facebook\"\n          aria-label=\"Facebook\"></a>\n              <a href=\"https://twitter.com/usgao\"
+        class=\"social-link twitter\"\n          aria-label=\"Twitter\"></a>\n              <a
+        href=\"https://www.linkedin.com/company/us-government\" class=\"social-link
+        linkedin\"\n          aria-label=\"Linkedin\"></a>\n              <a href=\"https://www.instagram.com/usgao/\"
+        class=\"social-link instagram\"\n          aria-label=\"Instagram\"></a>\n
+        \             <a href=\"https://www.youtube.com/usgao\" class=\"social-link
+        youtube\"\n          aria-label=\"YouTube\"></a>\n              <a href=\"https://www.flickr.com/photos/usgao\"
+        class=\"social-link flickr\"\n          aria-label=\"Flickr\"></a>\n              <a
+        href=\"/blog\" class=\"social-link watchdog-blog\"\n          aria-label=\"WatchBlog:
+        Following the Federal Dollar\"></a>\n              <a href=\"/podcast\" class=\"social-link
+        watchdog-report-podcast\"\n          aria-label=\"Podcast: WatchDog Report\"></a>\n
+        \             <a href=\"/about/contact-us/stay-connected\" class=\"social-link
+        rss\"\n          aria-label=\"RSS Feeds: Stay Connected\"></a>\n              <a
+        href=\"https://public.govdelivery.com/accounts/USGAO/subscriber/new?preferences=true\"
+        class=\"social-link gao-updates-subscribe\"\n          aria-label=\"Subscribe
+        to GAO Updates\"></a>\n          </div>\n  </div>\n\n\n                  </div>\n
+        \                 <span class='version'>v</span>\n                </div>\n
+        \                                           <div class=\"layout-footer-2 col-12
+        col-lg-7\">\n                  <div class=\"layout-footer-2__content\">\n
+        \                   \n  <nav aria-labelledby=\"block-gao-footer-menu\" id=\"block-gao-footer\"
+        class=\"block block-system block-system-menu-blockfooter block-menu navigation
+        menu--footer\" data-entity-id=\"system_menu_block:footer\" data-entity-type=\"block\">\n
+        \           \n  <h2 class=\"title block__title block-system-menu-blockfooter__title
+        visually-hidden\" id=\"block-gao-footer-menu\">Footer menu</h2>\n  \n\n        \n
+        \             <ul class=\"menu\">\n              <li>\n        <span>Column
+        1</span>\n                                <ul>\n              <li>\n        <a
+        href=\"/press-center\" data-drupal-link-system-path=\"press-center\">Press
+        Center</a>\n              </li>\n          <li>\n        <a href=\"/about/contact-us\"
+        data-drupal-link-system-path=\"node/361\">Contact Us</a>\n              </li>\n
+        \         <li>\n        <a href=\"/ig\" data-drupal-link-system-path=\"node/656\">Inspector
+        General</a>\n              </li>\n          <li>\n        <a href=\"/reports-testimonies/restricted\"
+        data-drupal-link-system-path=\"node/396\">Restricted Reports</a>\n              </li>\n
+        \       </ul>\n  \n              </li>\n          <li>\n        <span>Column
+        2</span>\n                                <ul>\n              <li>\n        <a
+        href=\"/copyright\" data-drupal-link-system-path=\"node/331\">Copyright &amp;
+        Terms of Use</a>\n              </li>\n          <li>\n        <a href=\"/privacy-policy\"
+        data-drupal-link-system-path=\"node/326\">Privacy Policy</a>\n              </li>\n
+        \         <li>\n        <a href=\"/accessibility\" data-drupal-link-system-path=\"node/321\">Accessibility</a>\n
+        \             </li>\n          <li>\n        <a href=\"/sitemap\" data-drupal-link-system-path=\"node/20231\">Sitemap</a>\n
+        \             </li>\n        </ul>\n  \n              </li>\n          <li>\n
+        \       <span>Column 3</span>\n                                <ul>\n              <li>\n
+        \       <a href=\"/foia-requests\" data-drupal-link-system-path=\"node/681\">FOIA
+        Requests</a>\n              </li>\n          <li>\n        <a href=\"/scam-alerts\"
+        data-drupal-link-system-path=\"node/316\">Scam Alerts</a>\n              </li>\n
+        \         <li>\n        <a href=\"/no-fear-act-data\" data-drupal-link-system-path=\"node/311\">No
+        FEAR Act Data</a>\n              </li>\n          <li>\n        <a href=\"/about/what-gao-does/hcac\"
+        data-drupal-link-system-path=\"node/541\">Health Care Advisory Committees</a>\n
+        \             </li>\n        </ul>\n  \n              </li>\n        </ul>\n
+        \ \n\n\n  </nav>\n\n\n                  </div>\n                </div>\n                          </div>\n
+        \         </div>\n                <div class=\"layout-lower-footer\">\n          <div
+        class=\"layout-lower-footer__content\">\n            \n          </div>\n
+        \       </div>\n      </div>\n    </section>\n  </footer>\n<div class=\"search-lightbox\"></div>\n\n
+        \ </div>\n\n    \n    <script type=\"application/json\" data-drupal-selector=\"drupal-settings-json\">{\"path\":{\"baseUrl\":\"\\/\",\"scriptPath\":null,\"pathPrefix\":\"\",\"currentPath\":\"node\\/1108607\",\"currentPathIsAdmin\":false,\"isFront\":false,\"currentLanguage\":\"en\"},\"pluralDelimiter\":\"\\u0003\",\"suppressDeprecationErrors\":true,\"gtm\":{\"tagId\":null,\"settings\":{\"data_layer\":\"dataLayer\",\"include_classes\":false,\"allowlist_classes\":\"google\\nnonGooglePixels\\nnonGoogleScripts\\nnonGoogleIframes\",\"blocklist_classes\":\"customScripts\\ncustomPixels\",\"include_environment\":false,\"environment_id\":\"\",\"environment_token\":\"\"},\"tagIds\":[\"GTM-TZMWNH7\"]},\"gtag\":{\"tagId\":\"\",\"otherIds\":[],\"events\":[],\"additionalConfigInfo\":[]},\"ajaxPageState\":{\"libraries\":\"back_to_top\\/back_to_top_icon,back_to_top\\/back_to_top_js,classa11y\\/base,classa11y\\/lib--bootstrap,classa11y\\/lib--font-awesome,classy\\/base,classy\\/messages,core\\/normalize,extlink\\/drupal.extlink,gao\\/base,gao\\/block,gao\\/block--core,gao\\/block--core--page-title-block,gao\\/block--gao-core,gao\\/block--gao-core--gao-footer-info,gao\\/block--gao-core--gao-newsletter-signup,gao\\/block--gao-core--legal-related-pages-list,gao\\/block--gao-core--post-title-info,gao\\/block--gao-core--share-links,gao\\/block--gao-search,gao\\/block--gao-search--search-block,gao\\/block--system,gao\\/block--system--system-breadcrumb-block,gao\\/block--system--system-main-block,gao\\/block--system--system-menu-blockfooter,gao\\/block--system--system-menu-blockjump-to,gao\\/block--system--system-menu-blockmain,gao\\/block--system--system-messages-block,gao\\/block--views,gao\\/block--views--views-blockcontent-contacts-block-1,gao\\/block--views--views-blockopa-contact-block-1,gao\\/media,gao\\/media--teaser,gao\\/media--teaser--file,gao\\/node,gao\\/node--full,gao\\/node--full--product,gao\\/node--teaser-labeled,gao\\/node--teaser-labeled--page,gao\\/node--teaser-large-no-image,gao\\/node--teaser-large-no-image--staff-profile,gao\\/region,gao\\/region--breadcrumbs,gao\\/region--contact,gao\\/region--content,gao\\/region--footer-1,gao\\/region--footer-2,gao\\/region--help,gao\\/region--navigation,gao\\/region--page-title,gao\\/region--post-title,gao\\/region--sidebar-two,gao\\/region--upper-footer,gao\\/view,gao\\/view--content-contacts,gao\\/view--content-contacts--block-1,gao\\/view--opa-contact,gao\\/view--opa-contact--block-1,google_tag\\/gtag,google_tag\\/gtag.ajax,google_tag\\/gtm,system\\/base,views\\/views.module\",\"theme\":\"gao\",\"theme_token\":null},\"ajaxTrustedUrl\":{\"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM\":true},\"back_to_top\":{\"back_to_top_button_trigger\":100,\"back_to_top_prevent_on_mobile\":true,\"back_to_top_prevent_in_admin\":true,\"back_to_top_button_type\":\"image\",\"back_to_top_button_text\":\"Back
+        to top\"},\"data\":{\"extlink\":{\"extTarget\":false,\"extTargetNoOverride\":false,\"extNofollow\":false,\"extNoreferrer\":false,\"extFollowNoOverride\":false,\"extClass\":\"ext\",\"extLabel\":\"(Exit
+        GAO website)\",\"extImgClass\":false,\"extSubdomains\":true,\"extExclude\":\"\",\"extInclude\":\"\",\"extCssExclude\":\".media--view-mode-inline
+        .video-teaser-image a\",\"extCssExplicit\":\"\",\"extAlert\":false,\"extAlertText\":\"This
+        link will take you to an external web site. We are not responsible for their
+        content.\",\"mailtoClass\":\"0\",\"mailtoLabel\":\"(link sends email)\",\"extUseFontAwesome\":false,\"extIconPlacement\":\"append\",\"extFaLinkClasses\":\"fa
+        fa-external-link\",\"extFaMailtoClasses\":\"fa fa-envelope-o\",\"whitelistedDomains\":[]}},\"field_group\":{\"html_element\":{\"mode\":\"full\",\"context\":\"view\",\"settings\":{\"classes\":\"js-endpoint-downloads
+        full-reports-group\",\"id\":\"\",\"element\":\"section\",\"show_label\":true,\"label_element\":\"h2\",\"label_element_classes\":\"\",\"attributes\":\"\",\"effect\":\"none\",\"speed\":\"fast\"}}},\"user\":{\"uid\":0,\"permissionsHash\":\"454de18410362ab4e55e298026fe9babb4431053d295c7f940146bfd120561da\"}}</script>\n<script
+        src=\"/assets/js/js_R_kxe7s_3O0d-HXa_OmSHwgLpsCXVhqbbv9CS-qespY.js\"></script>\n<script
+        src=\"/modules/contrib/google_tag/js/gtm.js?s1p96u\"></script>\n<script src=\"/modules/contrib/google_tag/js/gtag.js?s1p96u\"></script>\n<script
+        src=\"/assets/js/js_VzIHdLoIko17xoKbk84yiNCPopYdHkAUmMgTj3KyhTQ.js\"></script>\n\n
+        \ <script type=\"text/javascript\">window.NREUM||(NREUM={});NREUM.info={\"beacon\":\"bam.nr-data.net\",\"licenseKey\":\"NRJS-025d5a9ac81a843ddec\",\"applicationID\":\"1448534985\",\"transactionName\":\"M1UEZhYDWUFWW0wKWQofJ1EQC1hcGHxKFkYFXDpcCwZSbnRXVhdEC1wKVxY+eV1TXW4KUxNzCVwQEFheW11KTggSWQNF\",\"queueTime\":3,\"applicationTime\":871,\"atts\":\"HxIHEF4ZSk8=\",\"errorBeacon\":\"bam.nr-data.net\",\"agent\":\"\"}</script></body>\n</html>\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=31536000, public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - report-uri /report-csp-violation; upgrade-insecure-requests
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-language:
+      - en
+      Date:
+      - Sat, 30 Sep 2023 13:12:10 GMT
+      ETag:
+      - '"1696079529"'
+      Expires:
+      - Sun, 19 Nov 1978 05:00:00 GMT
+      Last-Modified:
+      - Sat, 30 Sep 2023 13:12:09 GMT
+      Referrer-Policy:
+      - no-referrer
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=1000
+      Vary:
+      - Cookie,Accept-Encoding
+      Via:
+      - varnish
+      X-AH-Environment:
+      - prod
+      X-Cache:
+      - MISS
+      X-Content-Security-Policy:
+      - report-uri /report-csp-violation; upgrade-insecure-requests
+      X-Content-Type-Options:
+      - nosniff
+      X-Drupal-Cache:
+      - MISS
+      X-Drupal-Dynamic-Cache:
+      - MISS
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Generator:
+      - Drupal 9 (https://www.drupal.org)
+      X-Request-ID:
+      - v-f66c2b6c-5f92-11ee-ad71-8bc05f8ed1a5
+      X-UA-Compatible:
+      - IE=edge
+      X-WebKit-CSP:
+      - report-uri /report-csp-violation; upgrade-insecure-requests
+      X-XSS-Protection:
+      - 1; mode=block
+      transfer-encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+version: 1
