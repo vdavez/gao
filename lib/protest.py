@@ -2,33 +2,109 @@ from lxml import etree, html
 from lib.opinion import Opinion
 import json
 import re
+import requests
 
 
 class Protest:
     def __init__(self, protestdata):
         self.elems = html.fromstring(protestdata)
-        self.data = self.get_protest_data()
+        self.get_protest_data()
 
     def get_protest_data(self):
-        data = {}
-        data["name"] = self.elems.xpath('//a/text()[(following::br)]')[0].strip()
-        data["docket_url"] = self.elems.find_class('release_info')[0]\
-                         .text_content().strip()
+        self.data = {}
+        url = "https://www.gao.gov" + self.elems.xpath("//h4/a/@href")[0].strip()
+        self.data["docket_url"] = url
+        self.get_data_from_url(url)
+        return True
 
-        # Get the field that's identified, and then save the attribute
-        # Responsible for solicitation_number, agency, file_number, and outcome
-        for key in self.elems.xpath('//following-sibling::b'):
-            field = key.text_content().replace(' ', '_').lower()
-            data[field] = re.sub(r'^:', '', key.xpath('following-sibling::text()')[0]).strip()
-            if len(key.xpath("following-sibling::a/@href")) > 0:
-                data["opinion"] = Opinion(key.xpath("following-sibling::a/@href")[0].split('/')[-1])
+    def get_data_from_url(self, url):
+        res = requests.get(url)
+        elems = html.fromstring(res.text)
 
-        # TODO: For all of these dates, convert them into dates,
-        # not like in current form "Dec 10, 2015"
-        data["filed_date"] = self.elems.xpath('//tr/td[2]/text()')[0]
-        data["due_date"] = self.elems.xpath('//tr/td[2]/text()')[1]
+        try:
+            self.data["name"] = (
+                elems.find_class("field--name-field-protestor")[0]
+                .cssselect(".field__item")[0]
+                .text_content()
+            )
 
-        data["case_type"] = self.elems.xpath('//tr/td[2]/text()')[2]
-        data["gao_attorney"] = self.elems.xpath('//tr/td[2]/text()')[3]
+            solicitation = elems.find_class("field--name-field-solicitation-number")
+            self.data["solicitation_number"] = ""
+            if solicitation != []:
+                self.data["solicitation_number"] = (
+                    solicitation[0].cssselect(".field__item")[0].text_content()
+                )
+            # Need to adjust for the SBA, which only has one span
+            agency_div = (
+                elems.find_class("field--type-entity-reference")[0]
+                .cssselect(".field__item")[0]
+                .cssselect("span")
+            )
+            if len(agency_div) == 2:
+                self.data["agency"] = (
+                    agency_div[0].text_content() + ";" + agency_div[1].text_content()
+                )
+            elif len(agency_div) == 1:
+                self.data["agency"] = agency_div[0].text_content()
+            elif len(agency_div) == 0:
+                self.data["agency"] = (
+                    elems.find_class("field--type-entity-reference")[0]
+                    .cssselect(".field__item")[0]
+                    .text_content()
+                )
+            self.data["file_number"] = (
+                elems.find_class("field--type-entity-reference")[1]
+                .cssselect(".field__item")[0]
+                .text_content()
+                .strip()
+            )
+            self.data["outcome"] = ""
+            outcome = elems.find_class("field--name-field-outcome")
+            if outcome != []:
+                self.data["outcome"] = (
+                    outcome[0].find_class("field__item")[0].text_content().strip()
+                )
 
-        return data
+            decision = elems.find_class("field--name-field-decision-date")
+            if decision != []:
+                self.data["decision_date"] = (
+                    decision[0].cssselect("time")[0].get("datetime")
+                )
+            else:
+                self.data["decision_date"] = ""
+            self.data["filed_date"] = (
+                elems.find_class("field--name-field-filed-date")[0]
+                .cssselect("time")[0]
+                .get("datetime")
+            )
+            self.data["due_date"] = (
+                elems.find_class("field--name-field-due-date")[0]
+                .cssselect("time")[0]
+                .get("datetime")
+            )
+            self.data["type"] = (
+                elems.find_class("field--name-field-case-type")[0]
+                .cssselect(".field__item")[0]
+                .text_content()
+            )
+
+            attorney = elems.find_class("field--name-field-gao-attorney")
+            self.data["attorney"] = ""
+            if attorney != []:
+                self.data["attorney"] = (
+                    attorney[0].cssselect(".field__item")[0].text_content()
+                )
+
+            opinion = elems.find_class("field--name-field-decision-summary")
+            self.data["opinion_url"] = ""
+            if opinion != []:
+                url = "https://www.gao.gov" + opinion[0].cssselect("a")[0].get("href")
+                if url != "https://www.gao.gov/legal/bid-protests/faqs":
+                    self.data["opinion_url"] = url
+        except Exception as error:
+            print(error)
+            import pdb
+
+            pdb.set_trace()
+
+        return True
